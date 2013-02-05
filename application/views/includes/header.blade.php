@@ -11,7 +11,7 @@
 	<!-- end / #label -->
 </div>
 <div class="eight columns" id="intro">
-	<p>Looking for a change of career into a challenging position as a web developer, with opportunity for advancement.</p>
+	<p>Looking for a challenging position as a web developer, with opportunity for advancement.</p>
 	<!-- end / #intro -->
 </div>
 <!-- end / #header -->
