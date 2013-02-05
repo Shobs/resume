@@ -1,4 +1,4 @@
-<div class="section" id="work" name="section4">
+<div class="section" name="section4">
 	<h2>Work History</h2>
 	<h3>Yahoo</h3>
 	<h4>Performance Engineer <em class="right">09/2007 - Present</em></h4>

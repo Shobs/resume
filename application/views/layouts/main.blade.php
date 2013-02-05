@@ -56,6 +56,7 @@
         {{ HTML::script('js/foundation/jquery.foundation.forms.js') }}
         {{ HTML::script('js/foundation/app.js') }}
         {{ HTML::script('js/waypoints.min.js') }}
+        {{ HTML::script('js/jquery.scrollTo-1.4.3.1-min.js') }}
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
 

@@ -1,10 +1,11 @@
-<div id="sidebar">
+<div id="sidebar" class="">
 	<div id="avatar">
 		<a href="#">
 			{{HTML::image('http://placehold.it/125x125', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
 		</a>
 	</div>
-	<nav class="nav-bar vertical">
+	<div class="nav-bar vertical">
+	<nav>
 		<ul id="navMain">
 			<!-- You can change the order of the menu here -->
 			<li>{{HTML::link('#education', 'education', array('class' => 'selected', 'id'=>'nav_section1'));}}</li>
@@ -16,6 +17,7 @@
 			<li>{{HTML::link('#', 'contact me', array('data-reveal-id' => 'contact', 'id'=>'nav_section1'));}}</li>
 			<!-- end / #navMain -->
 		</ul>
+	</nav>
 		<ul id="networkLinks" class="inline-list">
 			<li>
 				<a href="#">
@@ -44,6 +46,7 @@
 			</li>
 			<!-- end / #networkLinks -->
 		</ul>
-	</nav>
+
+	</div>
 </div>
 

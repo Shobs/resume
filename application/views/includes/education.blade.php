@@ -1,4 +1,4 @@
-<div class="section" id="education" name="section1">
+<div class="section" name="section1">
 	<h2>Education</h2>
 	<h3>HEB - ESI<em class="right">2012 - present</em></h3>
 	<p>L'option en informatique de gestion appartient à la catégorie d'enseignement économique. C'est une section polyvalente qui aborde tous les domaines de l'informatique et ouvre les portes au développement de systèmes dans le monde des architectures client-serveur, des bases de données, des interfaces graphiques, des réseaux intranet et internet.</p>

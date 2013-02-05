@@ -1,4 +1,4 @@
-<div class="section" id="gallery" name="section5">
+<div class="section" name="section5">
 	<h2>Sample Works</h2>
 	<h3>Some Category</h3>
 	<ul class="row">

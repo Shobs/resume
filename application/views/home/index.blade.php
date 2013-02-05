@@ -27,37 +27,37 @@
 		<!-- Content section Begins -->
 		<div class="eight columns" id="content">
 			<!-- Education Section Begins -->
-			<section>
+			<section id="education">
 				@include('includes.education')
 				<!-- end #education -->
 			</section>
 
 			<!-- Technical Expertise Section Begins -->
-			<section>
+			<section id="technical">
 				@include('includes.technical')
 				<!-- end #technical -->
 			</section>
 
 			<!-- Skills Section Begins -->
-			<section>
+			<section id="skills">
 				@include('includes.skills')
 				<!-- end #skills -->
 			</section>
 
 			<!-- Work History Section Begins -->
-			<section>
+			<section id="work">
 				@include('includes.work')
 				<!-- end #work -->
 			</section>
 
 			<!-- Sample Works Section Begins -->
-			<section>
+			<section id="gallery">
 				@include('includes.gallery')
 				<!-- end .gallery 2 -->
 			</section>
 
 			<!-- Awards and Accomplishments Section Begins -->
-			<section>
+			<section id="awards">
 				@include('includes.awards')
 				<!-- end #awards -->
 			</section>

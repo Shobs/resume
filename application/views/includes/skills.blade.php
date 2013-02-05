@@ -1,5 +1,5 @@
 <section>
-<div class="section" id="skills" name="section3">
+<div class="section" name="section3">
 	<h2>Skills</h2>
 	<h4>Web</h4>
 	<p>HTML, XHTML, XML, CSS</p>

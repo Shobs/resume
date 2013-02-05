@@ -125,8 +125,8 @@ $font: Helvetica,Arial,sans-serif;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
+	position: fixed;
+	top: 0;
 }
 
 /**** Styling ****/
@@ -253,10 +253,10 @@ abbr{
 }
 
 #sidebar {
+	position: fixed;
 	z-index: 10;
 	top: 66px;
 	background: none;
-	left: auto;
 	text-align: right;
 	width: auto;
 
@@ -270,9 +270,9 @@ abbr{
 			display: block;
 		}
 	}
-	nav	{
-		&.nav-bar{
-			background: none;
+	.nav-bar{
+		background: none;
+		nav	{
 			ul{
 				z-index: 1000;
 				&#navMain {
