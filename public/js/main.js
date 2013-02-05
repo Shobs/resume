@@ -23,10 +23,3 @@ $(function() {
 	});
 });
 
-// $(function() {                     // When the page has loaded,
-//   $('#sidebar').waypoint(               // create a waypoint
-//     function() {
-//       alert("Waypoint reached.");
-//     }
-//   )
-// });
