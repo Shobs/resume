@@ -22,12 +22,12 @@
 	<div id="networkLinks">
 		<ul  class="inline-list">
 			<li>
-				<a href="#">
+				<a href="download?id=doc">
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a .DOC Format'));}}
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="download?id=pdf">
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a PDF Format'));}}
 				</a>
 			</li>

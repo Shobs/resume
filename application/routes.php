@@ -37,7 +37,7 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
-Route::post('email', function()
+Route::any('email', function()
 {
 	// Aquiring data from contact form
 	$name = Input::get('name');
@@ -53,7 +53,7 @@ Route::post('email', function()
 	$rules = array(
 		'name' => 'required|alpha|max:50',
 		'email' => 'required|email',
-		'message' => 'alpha|max:1000'
+		'message' => 'max:1000'
 		);
 
 	$validation = Validator::make($input, $rules);
@@ -61,16 +61,21 @@ Route::post('email', function()
 	if($validation->fails()){
 		return Redirect::back()->with_errors($validation)->with_input();
 	}else{
-		Message::send(function($message){
-			$message->to('marcellinja@gmail.com');
-			$message->from($email, $name);
+		// Message::send(function($message){
+		// 	$message->to('xkluzv@jeanmarcellin.net');
+		// 	$message->from(Input::get('email'), Input::get('name'));
 
-			$message->subject('www.jeanmarcell.net - Message from ' + $name);
-			$message->body($message);
-		});
+		// 	$message->subject('www.jeanmarcellin.net - Message from ' + Input::get('name'));
+		// 	$message->body(Input::get('message'));
+		// });
+		$myEmail = 'marcellinja@gmail.com';
+		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
+		$eMess = $message;
+		$eHead = $email;
 
-		if(Message::was_sent())
-		{
+		$mailsend=mail("$myEmail","$subj","$eMess","$eHead");
+
+		if($mailsend){
 			$successMessage = 'Your message has been sucessfuly sent!';
 			return Redirect::back($successMessage);
 		}else{
@@ -79,6 +84,20 @@ Route::post('email', function()
 		}
 
 	}
+});
+
+Route::any('download', function(){
+	$id = Input::get('id');
+	$location = 'public/_resumes/';
+
+	if($id == 'doc'){
+		return Response::download($location.'JeanMarcellinCV.doc');
+	}else{
+		return Response::download($location.'JeanMarcellinCV.pdf');
+	}
+
+
+
 });
 
 /*
