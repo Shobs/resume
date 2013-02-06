@@ -5,7 +5,7 @@
 	<p>{{HTML::link('maps.html?iframe=true&amp;width=600&amp;height=400', 'View Google Map', array('rel' => 'prettyPhoto'));}}
 	</p>
 	<div id="note"></div>
-	{{Form::open('email', 'post');}}
+	{{Form::open('MAILTO:marcellinja@gmail.com', 'post');}}
 		<!-- Change your email id in the config.php file -->
 		<div class="field">
 			{{Form::label('name', 'Name *', array('class' => 'label', 'for' => 'name'));}}
@@ -22,8 +22,8 @@
 		</div>
 		<p>* Fields are required.</p>
 		<div class="buttons">
-			{{Form::submit('Submit', array('class' => 'small button submit'));}}
-			{{Form::reset('Reset', array('class' => 'small button submit'));}}
+			{{Form::submit('Submit', array('class' => 'medium button submit'));}}
+			{{Form::reset('Reset', array('class' => 'medium button submit'));}}
 		</div>
 	{{Form::close();}}
 

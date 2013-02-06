@@ -1,5 +1,5 @@
 <div class="four columns" id="label">
-	<h1 id="title">Jean Marcellin toto</h1>
+	<h1 id="title">Jean Marcellin</h1>
 	<p class="address">
 		Blvd Lambermont, 422<br>
 		1030, Schaerbeek<br>

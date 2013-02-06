@@ -18,7 +18,9 @@
 			<!-- end / #navMain -->
 		</ul>
 	</nav>
-		<ul id="networkLinks" class="inline-list">
+
+	<div id="networkLinks">
+		<ul  class="inline-list">
 			<li>
 				<a href="#">
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a .DOC Format'));}}
@@ -46,7 +48,7 @@
 			</li>
 			<!-- end / #networkLinks -->
 		</ul>
-
+		</div>
 	</div>
 </div>
 

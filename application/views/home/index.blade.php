@@ -18,7 +18,7 @@
 
 <div class="row">
 	<div class="twelve columns" id="contentWrapper">
-		<div class="four columns">
+		<div class="three columns">
 			<!-- Side Bar section Begins -->
 			@include('includes.sidebar')
 			<!-- end / #sidebar -->

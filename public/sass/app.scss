@@ -256,6 +256,7 @@ abbr{
 	position: fixed;
 	z-index: 10;
 	top: 66px;
+	padding-left: 70px;
 	background: none;
 	text-align: right;
 	width: auto;
@@ -296,11 +297,11 @@ abbr{
 					}
 				}
 
-				&#networkLinks{
-					float: right;
-					padding-top: 30px;
-				}
 			}
+		}
+		#networkLinks{
+			float: right;
+			padding-top: 30px;
 		}
 	}
 }

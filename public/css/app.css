@@ -6269,39 +6269,40 @@ abbr {
   position: fixed;
   z-index: 10;
   top: 66px;
+  padding-left: 70px;
   background: none;
   text-align: right;
   width: auto;
 }
-/* line 263, ../sass/app.scss */
+/* line 264, ../sass/app.scss */
 #sidebar #avatar {
   height: 125px;
   margin: 0 0 45px;
   top: -190px;
   z-index: 0;
 }
-/* line 269, ../sass/app.scss */
+/* line 270, ../sass/app.scss */
 #sidebar #avatar a {
   display: block;
 }
-/* line 273, ../sass/app.scss */
+/* line 274, ../sass/app.scss */
 #sidebar .nav-bar {
   background: none;
 }
-/* line 276, ../sass/app.scss */
+/* line 277, ../sass/app.scss */
 #sidebar .nav-bar nav ul {
   z-index: 1000;
 }
-/* line 279, ../sass/app.scss */
+/* line 280, ../sass/app.scss */
 #sidebar .nav-bar nav ul#navMain li {
   margin-bottom: 7px;
 }
-/* line 282, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 #sidebar .nav-bar nav ul#navMain li a:hover, #sidebar .nav-bar nav ul#navMain li a:focus, #sidebar .nav-bar nav ul#navMain li a.selected {
   background-color: #555555;
   color: #66ccdd;
 }
-/* line 287, ../sass/app.scss */
+/* line 288, ../sass/app.scss */
 #sidebar .nav-bar nav ul#navMain li a {
   background-color: #555555;
   color: #f8f8f8;
@@ -6310,32 +6311,32 @@ abbr {
   text-shadow: none;
   text-transform: uppercase;
 }
-/* line 299, ../sass/app.scss */
-#sidebar .nav-bar nav ul#networkLinks {
+/* line 302, ../sass/app.scss */
+#sidebar .nav-bar #networkLinks {
   float: right;
   padding-top: 30px;
 }
 
-/* line 309, ../sass/app.scss */
+/* line 310, ../sass/app.scss */
 #content {
   position: relative;
   top: 0;
 }
-/* line 313, ../sass/app.scss */
+/* line 314, ../sass/app.scss */
 #content ul, #content ol {
   margin: 10px 30px 10px 30px;
 }
-/* line 315, ../sass/app.scss */
+/* line 316, ../sass/app.scss */
 #content ul li, #content ol li {
   margin: 0 30px 0 30px;
 }
-/* line 325, ../sass/app.scss */
+/* line 326, ../sass/app.scss */
 #content #technical table {
   margin: 20px 30px 20px 30px;
   border: 1px solid #dddddd;
   border-collapse: collapse;
 }
-/* line 330, ../sass/app.scss */
+/* line 331, ../sass/app.scss */
 #content #technical table th {
   background-color: #ebebeb;
   font-weight: bold;
@@ -6343,28 +6344,28 @@ abbr {
   padding: 4px 8px;
   color: #555555;
 }
-/* line 336, ../sass/app.scss */
+/* line 337, ../sass/app.scss */
 #content #technical table th abbr {
   color: #555555;
 }
-/* line 342, ../sass/app.scss */
+/* line 343, ../sass/app.scss */
 #content #technical table td {
   border: 1px solid #dddddd;
   font: 13px/21px Helvetica, Arial, sans-serif;
   color: #555555;
 }
-/* line 360, ../sass/app.scss */
+/* line 361, ../sass/app.scss */
 #content #gallery ul {
   margin: 0 20px 0 20px;
 }
-/* line 362, ../sass/app.scss */
+/* line 363, ../sass/app.scss */
 #content #gallery ul li {
   margin: 0 0 0 0;
   float: left;
   display: inline;
   padding: 0 13px 20px 12px;
 }
-/* line 367, ../sass/app.scss */
+/* line 368, ../sass/app.scss */
 #content #gallery ul li a {
   display: block;
   width: 70px;
@@ -6374,7 +6375,7 @@ abbr {
   opacity: 0.75;
 }
 
-/* line 385, ../sass/app.scss */
+/* line 386, ../sass/app.scss */
 #footerBg {
   -webkit-box-shadow: #dddddd 2px 0px 20px;
   -moz-box-shadow: #dddddd 2px 0px 20px;
@@ -6383,52 +6384,52 @@ abbr {
   background-color: #555555;
   padding: 6px 0;
 }
-/* line 390, ../sass/app.scss */
+/* line 391, ../sass/app.scss */
 #footerBg #footer {
   text-align: center;
   color: #f8f8f8;
 }
-/* line 393, ../sass/app.scss */
+/* line 394, ../sass/app.scss */
 #footerBg #footer p {
   text-shadow: none;
   padding: 10px 0 0 0;
 }
 
-/* line 400, ../sass/app.scss */
+/* line 401, ../sass/app.scss */
 #contact {
   z-index: 100;
 }
-/* line 402, ../sass/app.scss */
+/* line 403, ../sass/app.scss */
 #contact .label {
   background: #f8f8f8;
   color: #555555;
 }
-/* line 406, ../sass/app.scss */
+/* line 407, ../sass/app.scss */
 #contact .field {
   margin: 0 30px 0 30px;
 }
-/* line 408, ../sass/app.scss */
+/* line 409, ../sass/app.scss */
 #contact .field #message {
   max-width: 400px;
 }
-/* line 412, ../sass/app.scss */
+/* line 413, ../sass/app.scss */
 #contact span {
   float: right;
   color: red;
 }
-/* line 416, ../sass/app.scss */
+/* line 417, ../sass/app.scss */
 #contact .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 419, ../sass/app.scss */
+/* line 420, ../sass/app.scss */
 #contact .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 427, ../sass/app.scss */
+/* line 428, ../sass/app.scss */
 #contact .close-reveal-modal {
   font-size: 1.5rem;
 }
