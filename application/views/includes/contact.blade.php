@@ -5,7 +5,7 @@
 	<p>{{HTML::link('maps.html?iframe=true&amp;width=600&amp;height=400', 'View Google Map', array('rel' => 'prettyPhoto'));}}
 	</p>
 	<div id="note"></div>
-	{{Form::open('mailto:marcellinja@gmail.com', 'post');}}
+	{{Form::open('email', 'post');}}
 		<!-- Change your email id in the config.php file -->
 		<div class="field">
 			{{Form::label('name', 'Name *', array('class' => 'label', 'for' => 'name'));}}

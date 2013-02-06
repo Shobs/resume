@@ -37,7 +37,7 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
-Route::any('email', function()
+Route::post('email', function()
 {
 	// Aquiring data from contact form
 	$name = Input::get('name');
@@ -61,8 +61,23 @@ Route::any('email', function()
 	if($validation->fails()){
 		return Redirect::back()->with_errors($validation)->with_input();
 	}else{
-		$successMessage = 'Your message has been sucessfuly sent!';
-		return Redirect::back($successMessage);
+		Message::send(function($message){
+			$message->to('marcellinja@gmail.com');
+			$message->from($email, $name);
+
+			$message->subject('www.jeanmarcell.net - Message from ' + $name);
+			$message->body($message);
+		});
+
+		if(Message::was_sent())
+		{
+			$successMessage = 'Your message has been sucessfuly sent!';
+			return Redirect::back($successMessage);
+		}else{
+			$failMessage = 'Your message was not sent, please contact me directly at: marcellinja@gmail.com';
+			return Redirect::back($failMessage);
+		}
+
 	}
 });
 
