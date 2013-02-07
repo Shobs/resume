@@ -77,10 +77,10 @@ Route::any('email', function()
 
 		if($mailsend){
 			$successMessage = 'Your message has been sucessfuly sent!';
-			return Redirect::back($successMessage);
+			return Redirect::back()->with('success', $successMessage);
 		}else{
 			$failMessage = 'Your message was not sent, please contact me directly at: marcellinja@gmail.com';
-			return Redirect::back($failMessage);
+			return Redirect::back()->with('fail', $failMessage);
 		}
 
 	}

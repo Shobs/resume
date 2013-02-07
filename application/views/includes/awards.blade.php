@@ -1,4 +1,4 @@
-<div class="section" name="section6">
+<div data-magellan-destination='awards' class="section" name="section6">
 	<h2>Awards and Accomplishments</h2>
 	<h3>Some Award</h3>
 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

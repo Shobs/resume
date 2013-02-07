@@ -1,4 +1,4 @@
-<div class="section" name="section5">
+<div data-magellan-destination='gallery' class="section" name="section5">
 	<h2>Sample Works</h2>
 	<h3>Some Category</h3>
 	<ul class="row">

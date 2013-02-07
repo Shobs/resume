@@ -1,4 +1,4 @@
-<div id="sidebar" class="">
+<div data-magellan-expedition='fixed' id="sidebar" class="">
 	<div id="avatar">
 		<a href="#">
 			{{HTML::image('http://placehold.it/125x125', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
@@ -8,12 +8,12 @@
 	<nav>
 		<ul id="navMain">
 			<!-- You can change the order of the menu here -->
-			<li>{{HTML::link('#education', 'education', array('class' => 'selected', 'id'=>'nav_section1'));}}</li>
-			<li>{{HTML::link('#technical', 'technical expertise', array('id'=>'nav_section2'));}}</li>
-			<li>{{HTML::link('#skills', 'skills', array('id'=>'nav_section3'));}}</li>
-			<li>{{HTML::link('#work', 'work history', array('id'=>'nav_section4'));}}</li>
-			<li>{{HTML::link('#gallery', 'sample works', array('id'=>'nav_section5'));}}</li>
-			<li>{{HTML::link('#awards', 'awards &amp; accomplishments', array('id'=>'nav_section6'));}}</li>
+			<li>{{HTML::link('#education', 'education', array('class' => 'selected', 'id'=>'nav_section1', 'data-magellan-arrival'=>'education'));}}</li>
+			<li>{{HTML::link('#technical', 'technical expertise', array('id'=>'nav_section2', 'data-magellan-arrival'=>'technical'));}}</li>
+			<li>{{HTML::link('#skills', 'skills', array('id'=>'nav_section3', 'data-magellan-arrival'=>'skills'));}}</li>
+			<li>{{HTML::link('#work', 'work history', array('id'=>'nav_section4', 'data-magellan-arrival'=>'work'));}}</li>
+			<li>{{HTML::link('#gallery', 'sample works', array('id'=>'nav_section5', 'data-magellan-arrival'=>'gallery'));}}</li>
+			<li>{{HTML::link('#awards', 'awards &amp; accomplishments', array('id'=>'nav_section6', 'data-magellan-arrival'=>'awards'));}}</li>
 			<li>{{HTML::link('#', 'contact me', array('data-reveal-id' => 'contact', 'id'=>'nav_section1'));}}</li>
 			<!-- end / #navMain -->
 		</ul>

@@ -1,4 +1,4 @@
-<div class="section" name="section2">
+<div data-magellan-destination='technical' class="section" name="section2">
 	<h2>Technical Expertise</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 	<!-- The class of page-break can be used to make sure the table doesn't split between pages. This is totally optional and can be removed if not required. -->
