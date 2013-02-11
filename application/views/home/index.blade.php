@@ -78,9 +78,8 @@
 	</div>
 </div>
 
-<!-- Contact Section Begins -->
-@include('includes.contact')
+<!-- Modal Section Begins -->
+@include('includes.modal')
 <!-- end #contact -->
-
 
 @endsection

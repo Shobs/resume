@@ -9,5 +9,16 @@ $(function() {
 			}
 			);
 	});
+
+	var submit = $('#contact submit');
+	submit.click(function (event){
+		$.post('email', $('#email').serialize())
+		.done(function (data){
+			alert(data);
+		});
+	});
+
 });
+
+
 

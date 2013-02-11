@@ -31,3 +31,9 @@
 	{{HTML::link('#', '&#215;', array('class' => 'close-reveal-modal'));}}
 </div>
 
+<!--<div id="message" class="reveal-modal">
+	<h4>{{$message}}<h4>
+	{{HTML::link('#', '&#215;', array('class' => 'close-reveal-modal'));}}
+</div>-->
+
+

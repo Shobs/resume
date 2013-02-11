@@ -61,27 +61,21 @@ Route::any('email', function()
 	if($validation->fails()){
 		return Redirect::back()->with_errors($validation)->with_input();
 	}else{
-		// Message::send(function($message){
-		// 	$message->to('xkluzv@jeanmarcellin.net');
-		// 	$message->from(Input::get('email'), Input::get('name'));
-
-		// 	$message->subject('www.jeanmarcellin.net - Message from ' + Input::get('name'));
-		// 	$message->body(Input::get('message'));
-		// });
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
-		$eMess = $message;
-		$eHead = $email;
+		$eMess = 'NAME: '.$name;
+		$eMess .= '/n MESSAGE: '.$message;
+		$eHead = 'EMAIL" '.$email;
 
 		$mailsend=mail("$myEmail","$subj","$eMess","$eHead");
 
 		if($mailsend){
-			$successMessage = 'Your message has been sucessfuly sent!';
-			return Redirect::back()->with('success', $successMessage);
+			$message = 'Your message has been sucessfuly sent!';
+			return Redirect::back()->with('message', $message);
 		}else{
-			$failMessage = 'Your message was not sent, please contact me directly at: marcellinja@gmail.com';
-			return Redirect::back()->with('fail', $failMessage);
+			$message = 'Your message was not sent, please contact me directly at: marcellinja@gmail.com';
 		}
+	return Redirect::back()->with('fail', $message);
 
 	}
 });

@@ -261,19 +261,19 @@ abbr{
 	width: auto;
 	padding: 0px 0px 0px 70px;
 
-	#avatar {
-		height: 125px;
-		margin: 0 0 45px;
-		top: -190px;
-		z-index: 0;
+	nav	{
+		#avatar {
+			height: 125px;
+			margin: 0 0 45px;
+			top: -190px;
+			z-index: 0;
 
-		a{
-			display: block;
+			a{
+				display: block;
+			}
 		}
-	}
-	.nav-bar{
-		background: none;
-		nav	{
+		.nav-bar{
+			background: none;
 			ul{
 				z-index: 1000;
 				&#navMain {
@@ -299,11 +299,11 @@ abbr{
 
 			}
 		}
+	}
 		#networkLinks{
 			float: right;
 			padding-top: 30px;
 		}
-	}
 }
 
 

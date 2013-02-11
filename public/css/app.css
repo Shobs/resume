@@ -6114,7 +6114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /** Footer ***/
 /**** Classes ****/
 /* line 120, ../sass/app.scss */
-.mozBorderColorNone, h2, h3, #sidebar .nav-bar nav ul#navMain li a {
+.mozBorderColorNone, h2, h3, #sidebar nav .nav-bar ul#navMain li a {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
@@ -6274,36 +6274,36 @@ abbr {
   width: auto;
   padding: 0px 0px 0px 70px;
 }
-/* line 264, ../sass/app.scss */
-#sidebar #avatar {
+/* line 265, ../sass/app.scss */
+#sidebar nav #avatar {
   height: 125px;
   margin: 0 0 45px;
   top: -190px;
   z-index: 0;
 }
-/* line 270, ../sass/app.scss */
-#sidebar #avatar a {
+/* line 271, ../sass/app.scss */
+#sidebar nav #avatar a {
   display: block;
 }
-/* line 274, ../sass/app.scss */
-#sidebar .nav-bar {
+/* line 275, ../sass/app.scss */
+#sidebar nav .nav-bar {
   background: none;
 }
 /* line 277, ../sass/app.scss */
-#sidebar .nav-bar nav ul {
+#sidebar nav .nav-bar ul {
   z-index: 1000;
 }
 /* line 280, ../sass/app.scss */
-#sidebar .nav-bar nav ul#navMain li {
+#sidebar nav .nav-bar ul#navMain li {
   margin-bottom: 7px;
 }
 /* line 283, ../sass/app.scss */
-#sidebar .nav-bar nav ul#navMain li a:hover, #sidebar .nav-bar nav ul#navMain li a:focus, #sidebar .nav-bar nav ul#navMain li a.selected {
+#sidebar nav .nav-bar ul#navMain li a:hover, #sidebar nav .nav-bar ul#navMain li a:focus, #sidebar nav .nav-bar ul#navMain li a.selected {
   background-color: #555555;
   color: #66ccdd;
 }
 /* line 288, ../sass/app.scss */
-#sidebar .nav-bar nav ul#navMain li a {
+#sidebar nav .nav-bar ul#navMain li a {
   background-color: #555555;
   color: #f8f8f8;
   padding: 2px 8px;
@@ -6311,8 +6311,8 @@ abbr {
   text-shadow: none;
   text-transform: uppercase;
 }
-/* line 302, ../sass/app.scss */
-#sidebar .nav-bar #networkLinks {
+/* line 303, ../sass/app.scss */
+#sidebar #networkLinks {
   float: right;
   padding-top: 30px;
 }
