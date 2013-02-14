@@ -37,8 +37,9 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
-Route::any('email', function()
+Route::post('contactMe', function()
 {
+
 	// Aquiring data from contact form
 	$name = Input::get('name');
 	$email = Input::get('email');
@@ -59,7 +60,11 @@ Route::any('email', function()
 	$validation = Validator::make($input, $rules);
 
 	if($validation->fails()){
-		return Redirect::back()->with_errors($validation)->with_input();
+		// if (Request::ajax()){
+			echo implode('', $validation->errors->all());
+		// }else{
+		// 	return Redirect::back()->with_errors($validation)->with_input();
+		// }
 	}else{
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
@@ -71,11 +76,19 @@ Route::any('email', function()
 
 		if($mailsend){
 			$message = 'Your message has been sucessfuly sent!';
-			return Redirect::back()->with('message', $message);
+			// if (Request::ajax()) {
+				echo $message;
+			// }else{
+				// return Redirect::back()->with('message', $message);
+			// }
 		}else{
-			$message = 'Your message was not sent, please contact me directly at: marcellinja@gmail.com';
+			$message = 'Your message was not sent, please contact me directly at: <a href="webmailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
+			// if (Request::ajax()) {
+				echo $message;
+			// }else{
+				// return Redirect::back()->with('fail', $message);
+			// }
 		}
-	return Redirect::back()->with('fail', $message);
 
 	}
 });
