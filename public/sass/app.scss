@@ -300,10 +300,10 @@ abbr{
 			}
 		}
 	}
-		#networkLinks{
-			float: right;
-			padding-top: 30px;
-		}
+	#networkLinks{
+		float: right;
+		padding-top: 30px;
+	}
 }
 
 
@@ -381,6 +381,9 @@ abbr{
 
 		}
 	}
+	#awards{
+		margin: 0 0 150px 0;
+	}
 }
 
 #footerBg{
@@ -432,6 +435,9 @@ abbr{
 
 #alert{
 	z-index: 100;
+	h4{
+		border-bottom: none;
+	}
 	.buttons{
 		float: right;
 		margin: $margin30x0;
@@ -447,6 +453,7 @@ abbr{
 		font-size: 1.5rem;
 	}
 }
+
 
 
 

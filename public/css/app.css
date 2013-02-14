@@ -6374,8 +6374,12 @@ abbr {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
+/* line 384, ../sass/app.scss */
+#content #awards {
+  margin: 0 0 150px 0;
+}
 
-/* line 386, ../sass/app.scss */
+/* line 389, ../sass/app.scss */
 #footerBg {
   -webkit-box-shadow: #dddddd 2px 0px 20px;
   -moz-box-shadow: #dddddd 2px 0px 20px;
@@ -6384,73 +6388,77 @@ abbr {
   background-color: #555555;
   padding: 6px 0;
 }
-/* line 391, ../sass/app.scss */
+/* line 394, ../sass/app.scss */
 #footerBg #footer {
   text-align: center;
   color: #f8f8f8;
 }
-/* line 394, ../sass/app.scss */
+/* line 397, ../sass/app.scss */
 #footerBg #footer p {
   text-shadow: none;
   padding: 10px 0 0 0;
 }
 
-/* line 401, ../sass/app.scss */
+/* line 404, ../sass/app.scss */
 #contact {
   z-index: 100;
 }
-/* line 403, ../sass/app.scss */
+/* line 406, ../sass/app.scss */
 #contact .label {
   background: #f8f8f8;
   color: #555555;
 }
-/* line 407, ../sass/app.scss */
+/* line 410, ../sass/app.scss */
 #contact .field {
   margin: 0 30px 0 30px;
 }
-/* line 409, ../sass/app.scss */
+/* line 412, ../sass/app.scss */
 #contact .field #message {
   max-width: 400px;
 }
-/* line 413, ../sass/app.scss */
+/* line 416, ../sass/app.scss */
 #contact span {
   float: right;
   color: red;
 }
-/* line 417, ../sass/app.scss */
+/* line 420, ../sass/app.scss */
 #contact .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 420, ../sass/app.scss */
+/* line 423, ../sass/app.scss */
 #contact .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 428, ../sass/app.scss */
+/* line 431, ../sass/app.scss */
 #contact .close-reveal-modal {
   font-size: 1.5rem;
 }
 
-/* line 433, ../sass/app.scss */
+/* line 436, ../sass/app.scss */
 #alert {
   z-index: 100;
 }
-/* line 435, ../sass/app.scss */
+/* line 438, ../sass/app.scss */
+#alert h4 {
+  border-bottom: none;
+}
+/* line 441, ../sass/app.scss */
 #alert .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 438, ../sass/app.scss */
+/* line 444, ../sass/app.scss */
 #alert .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 446, ../sass/app.scss */
+/* line 452, ../sass/app.scss */
 #alert .close-reveal-modal {
   font-size: 1.5rem;
 }

@@ -68,8 +68,8 @@ Route::post('contactMe', function()
 	}else{
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
-		$eMess = 'NAME: '.$name;
-		$eMess .= '/n MESSAGE: '.$message;
+		$eMess = 'NAME: '.$name.'<br>';
+		$eMess .= 'MESSAGE: '.$message;
 		$eHead = 'EMAIL" '.$email;
 
 		$mailsend=mail("$myEmail","$subj","$eMess","$eHead");
@@ -82,7 +82,7 @@ Route::post('contactMe', function()
 				// return Redirect::back()->with('message', $message);
 			// }
 		}else{
-			$message = 'Your message was not sent, please contact me directly at: <a href="webmailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
+			$message = 'Your message was not sent, please contact me directly at: <a href="mailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
 			// if (Request::ajax()) {
 				echo $message;
 			// }else{

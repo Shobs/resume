@@ -1,3 +1,349 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+
+/**** Variables ****/
+
+/*** Colors ***/
+$color1: #000000; 	//Black
+$color2: #555555;	//Dark-Gray
+$color3: #ebebeb;	//Light-Gray
+$color4: #dddddd;	//Light Blue
+$color5: #66ccdd;	//Lighter Blue
+$color6: #f8f8f8;	//White
+
+/** Body **/
+$bodyBgClr: $color6;
+$bodyTxtClr: $color2;
+
+/** Header **/
+$nameClr: $color1;			//Text color for the name
+$headerBgClr: $color3;		//Background color
+$textClr: $color2;			//Text color
+$textShadowClr: $color3;	//Text shadow color
+$boxShadowClr: $color3;
+
+/** Navigation **/
+$navTxtClr: $color6;	// Text color
+$navBgClr: $color2;		//Background color
+$hoverTxtClr: $color5;
+$hoverBgClr: $color2;
+
+/** Content **/
+/* Titles */
+$titlePriTxtClr: $color6;		//Text color for primary titles
+$titlePriBgClr: $color2;		//Background color for primary titles
+$titleSecTxtClr: $color2;				//Text color for secondary titles
+$titleSecBgClr: $color3;				//Background color for secondary titles
+$selectTxtClr:$color6;
+$selectBgClr: $color2;
+
+/* Links */
+$linkTxtClr: $color5;
+$linkTxtHoverClr: $color2;
+
+/* Borders */
+$titleDarkBdrClr: #111111 #444444 #444444 #111111;
+$titleLightBdrClr: #BCBCBC #DDDDDD #DDDDDD #BCBCBC;
+
+/* Table */
+$tableOutBdrClr: $color4;
+$tableInBdrClr: $color4;
+$tableThBgClr: $color3;
+$tableThTxtClr: $color2;
+$tableTdTxtClr:	$color2;
+
+/** Footer ***/
+$footerBgClr: $color2;
+$footerTxtClr: $color6;
+
+// Margins
+$margin20x0: 0 20px 0 20px;
+$margin20x16: 0 20px 16px 20px;
+$margin30x0: 0 30px 0 30px;
+$margin30x10: 10px 30px 10px 30px;
+
+// Fonts
+$font: Helvetica,Arial,sans-serif;
+
+
+/**** Classes ****/
+// Firefox border fix
+.mozBorderColorNone{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
+
+/**** Styling ****/
+
+body{
+	font: 13px/21px $font;
+	color: $bodyTxtClr;
+	text-shadow: 1px 1px 0 $color6;
+
+}
+
+h1{
+	font: 21px/31px $font;
+}
+
+h2{
+	@extend .mozBorderColorNone;
+	background-color: $titlePriBgClr;
+	color: $titlePriTxtClr;
+	font: 17px/21px $font;
+	margin: 16px 0 16px 0;
+	padding: 4px 10px;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+h3{
+	@extend .mozBorderColorNone;
+	background-color: $titleSecBgClr;
+	color: $titleSecTxtClr;
+	font: bold 15px/21px $font;
+	margin: 16px 10px 16px 10px;
+	padding: 4px 10px;
+	text-transform: uppercase;
+}
+
+h4{
+	margin: $margin20x16;
+	border-bottom: 1px solid $color4;
+	font: 15px/21px $font;
+	padding: 4px 0;
+	position: relative;
+	color: $color2;
+}
+
+h5{
+	margin: $margin20x16;
+	border-bottom: 1px solid $color4;
+	font: 15px/19px $font;
+	color: $color2;
+}
+
+p {
+	margin: 0 30px 16px 30px;
+}
+
+abbr{
+	color: $color5;
+}
+
+#headerWrapper{
+	// background: url("../img/header-bg.png") repeat-x scroll left bottom $headerBgClr;
+	clear: both;
+	padding: 50px 0 0 0;
+	overflow: hidden;
+	position: relative;
+	// width: 100%;
+	z-index: 20;
+	#header{
+		overflow: hidden;
+		color: $textClr;
+		#label{
+			text-align: right;
+			overflow: hidden;
+			h1{
+
+				&#title{
+					background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
+					color: $nameClr;
+					margin: 0 0 12px;
+					padding: 0 0 8px;
+					text-align: right;
+					text-transform: uppercase;
+					width: 100%;
+				}
+			}
+			p{
+				margin-right: 0;
+			}
+		}
+		#intro{
+			font-size: 14px;
+			line-height: 27px;
+			p{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+#headerShadow{
+	clear: both;
+	height: 25px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+}
+
+#sidebar {
+	display: none;
+}
+
+
+#content{
+	position: relative;
+	top: 0;
+
+	ul, ol{
+		margin: $margin30x10;
+		li{
+			margin: $margin30x0;
+		}
+	}
+
+	#education{
+
+	}
+
+	#technical{
+		table{
+			margin: 20px 30px 20px 30px;
+			border: 1px solid $tableOutBdrClr;
+			border-collapse: collapse;
+
+			th{
+				background-color: $tableThBgClr;
+				font-weight: bold;
+				border: 1px solid $tableInBdrClr;
+				padding: 4px 8px;
+				color: $tableThTxtClr;
+				abbr{
+					color: $tableThTxtClr;
+				}
+
+			}
+
+			td{
+				border: 1px solid $tableInBdrClr;
+				font: 13px/21px $font;
+				color: $tableTdTxtClr;
+
+			}
+		}
+	}
+
+	#skills{
+
+	}
+
+	#work{
+
+	}
+
+	#gallery{
+		ul{
+			margin: $margin20x0;
+			li{
+				margin: 0 0 0 0;
+				float: left;
+				display: inline;
+				padding: 0 13px 20px 12px;
+				a{
+					// float: left;
+					display: block;
+					width: 70px;
+					height: 65px;
+					filter: alpha(opacity=75);
+					-moz-opacity: 0.75;
+					opacity: 0.75;
+				}
+			}
+		}
+
+		h3{
+
+		}
+	}
+	#awards{
+		margin: 0 0 150px 0;
+	}
+}
+
+#footerBg{
+	width: 100%;
+	background-color: $footerBgClr;
+	padding: 6px 0;
+	#footer{
+		text-align: center;
+		color: $footerTxtClr;
+		p{
+			text-shadow: none;
+			padding:10px 0 0 0;
+		}
+	}
+}
+
+#contact{
+	z-index: 100;
+	.label{
+		background: $color6;
+		color: $color2;
+	}
+	.field{
+		margin: $margin30x0;
+		#message{
+			max-width: 400px;
+		}
+	}
+	span{
+		float: right;
+		color: red;
+	}
+	.buttons{
+		float: right;
+		margin: $margin30x0;
+		.submit{
+			background: $color2;
+			color: $color6;
+			border: 1px solid $color2;
+			padding: 3px 10px 3px;
+
+		}
+	}
+	.close-reveal-modal{
+		font-size: 1.5rem;
+	}
+}
+
+#alert{
+	z-index: 100;
+	h4{
+		border-bottom: none;
+	}
+	.buttons{
+		float: right;
+		margin: $margin30x0;
+		.submit{
+			background: $color2;
+			color: $color6;
+			border: 1px solid $color2;
+			padding: 3px 10px 3px;
+
+		}
+	}
+	.close-reveal-modal{
+		font-size: 1.5rem;
+	}
+}
+
+
+
+
+
+
+
+

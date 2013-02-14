@@ -39,9 +39,8 @@ $(function() {
 		}
 	});
 
-	$('#myAddress').webmailto();
+	$('a.print-preview').printPreview();
 
-	// alert($('#name').val().length);
 });
 
 

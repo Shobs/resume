@@ -13,7 +13,9 @@
         <!-- if you need normalize.css -->
         {{-- HTML::style('css/normalize.min.css') }}
 
-        {{ HTML::style('css/app.css') }}
+        {{ HTML::style('css/app.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/print-preview.css') }}
+        {{ HTML::style('css/print.css', array('media' => 'print')) }}
 
         {{ HTML::script('js/foundation/modernizr.foundation.js') }}
     </head>
@@ -60,6 +62,7 @@
         {{ HTML::script('js/happy.js');}}
         {{ HTML::script('js/happy.methods.js');}}
         {{ HTML::script('js/jquery.webmailto.js');}}
+        {{ HTML::script('js/jquery.print-preview.js');}}
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
 

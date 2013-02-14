@@ -33,7 +33,7 @@
 				</a>
 			</li>
 			<li class="divider">
-				<a href="#">
+				<a href="#" id="print" class="print-preview">
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Print Resume'));}}
 				</a>
 			</li>
