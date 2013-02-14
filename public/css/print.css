@@ -1,290 +1,132 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/**** Variables ****/
-/*** Colors ***/
-/** Body **/
-/** Header **/
-/** Navigation **/
-/** Content **/
-/* Titles */
-/* Links */
-/* Borders */
-/* Table */
-/** Footer ***/
-/**** Classes ****/
-/* line 73, ../sass/print.scss */
-.mozBorderColorNone, h2, h3 {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-}
-
-/* line 80, ../sass/print.scss */
-.sticky {
-  position: fixed;
-  top: 0;
-}
-
-/**** Styling ****/
-/* line 87, ../sass/print.scss */
+/* line 8, ../sass/print.scss */
 body {
-  font: 13px/21px Helvetica, Arial, sans-serif;
-  color: #555555;
-  text-shadow: 1px 1px 0 #f8f8f8;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background-color: #FFFFFF;
+  line-height: 1.3;
 }
 
-/* line 94, ../sass/print.scss */
+/* line 16, ../sass/print.scss */
 h1 {
   font: 21px/31px Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
-/* line 98, ../sass/print.scss */
+/* line 18, ../sass/print.scss */
 h2 {
-  background-color: #555555;
-  color: #f8f8f8;
-  font: 17px/21px Helvetica, Arial, sans-serif;
-  margin: 16px 0 16px 0;
-  padding: 4px 10px;
-  text-shadow: none;
+  font: bold 17px/21px Helvetica, Arial, sans-serif;
+  margin-top: 25px;
   text-transform: uppercase;
+  border-bottom: solid 1px gray;
 }
 
-/* line 109, ../sass/print.scss */
+/* line 20, ../sass/print.scss */
 h3 {
-  background-color: #ebebeb;
-  color: #555555;
   font: bold 15px/21px Helvetica, Arial, sans-serif;
-  margin: 16px 10px 16px 10px;
-  padding: 4px 10px;
   text-transform: uppercase;
 }
 
-/* line 119, ../sass/print.scss */
+/* line 22, ../sass/print.scss */
 h4 {
-  margin: 0 20px 16px 20px;
-  border-bottom: 1px solid #dddddd;
-  font: 15px/21px Helvetica, Arial, sans-serif;
-  padding: 4px 0;
-  position: relative;
-  color: #555555;
+  font: bold 15px/21px Helvetica, Arial, sans-serif;
 }
 
-/* line 128, ../sass/print.scss */
+/* line 24, ../sass/print.scss */
 h5 {
-  margin: 0 20px 16px 20px;
-  border-bottom: 1px solid #dddddd;
   font: 15px/19px Helvetica, Arial, sans-serif;
-  color: #555555;
 }
 
-/* line 135, ../sass/print.scss */
-p {
-  margin: 0 30px 16px 30px;
+/* line 26, ../sass/print.scss */
+aside h2 {
+  font-size: 18pt;
 }
 
-/* line 139, ../sass/print.scss */
-abbr {
-  color: #66ccdd;
-}
-
-/* line 143, ../sass/print.scss */
-#headerWrapper {
-  clear: both;
-  padding: 50px 0 0 0;
-  overflow: hidden;
-  position: relative;
-  z-index: 20;
-}
-/* line 151, ../sass/print.scss */
-#headerWrapper #header {
-  overflow: hidden;
-  color: #555555;
-}
-/* line 154, ../sass/print.scss */
-#headerWrapper #header #label {
-  text-align: right;
-  overflow: hidden;
-}
-/* line 159, ../sass/print.scss */
-#headerWrapper #header #label h1#title {
-  background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
+/* line 28, ../sass/print.scss */
+a {
   color: black;
-  margin: 0 0 12px;
-  padding: 0 0 8px;
-  text-align: right;
-  text-transform: uppercase;
-  width: 100%;
-}
-/* line 169, ../sass/print.scss */
-#headerWrapper #header #label p {
-  margin-right: 0;
-}
-/* line 173, ../sass/print.scss */
-#headerWrapper #header #intro {
-  font-size: 14px;
-  line-height: 27px;
-}
-/* line 176, ../sass/print.scss */
-#headerWrapper #header #intro p {
-  margin-right: 0;
 }
 
-/* line 183, ../sass/print.scss */
-#headerShadow {
-  clear: both;
-  height: 25px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 100;
+@page {
+  margin: 0.5cm;
 }
 
-/* line 192, ../sass/print.scss */
+/* line 32, ../sass/print.scss */
+blockquote, ul {
+  margin: 0;
+}
+
+/* line 34, ../sass/print.scss */
+header:after {
+  content: "www.jeanmarcellin.net";
+}
+
+/* line 36, ../sass/print.scss */
+p {
+  padding-left: 10px;
+}
+
+/* line 39, ../sass/print.scss */
 #sidebar {
   display: none;
 }
 
-/* line 197, ../sass/print.scss */
-#content {
-  position: relative;
-  top: 0;
+/* line 42, ../sass/print.scss */
+#header #label {
+  width: 220px;
+  display: inline-block;
 }
-/* line 201, ../sass/print.scss */
-#content ul, #content ol {
-  margin: 10px 30px 10px 30px;
+/* line 46, ../sass/print.scss */
+#header #intro {
+  width: 400px;
+  float: right;
+  display: inline-block;
+  margin: -110px 0 0 0;
 }
-/* line 203, ../sass/print.scss */
-#content ul li, #content ol li {
-  margin: 0 30px 0 30px;
+
+/* line 55, ../sass/print.scss */
+#education em {
+  float: right;
 }
-/* line 213, ../sass/print.scss */
-#content #technical table {
+
+/* line 59, ../sass/print.scss */
+#technical table {
   margin: 20px 30px 20px 30px;
   border: 1px solid #dddddd;
   border-collapse: collapse;
 }
-/* line 218, ../sass/print.scss */
-#content #technical table th {
+/* line 64, ../sass/print.scss */
+#technical table th {
   background-color: #ebebeb;
   font-weight: bold;
   border: 1px solid #dddddd;
   padding: 4px 8px;
-  color: #555555;
 }
-/* line 224, ../sass/print.scss */
-#content #technical table th abbr {
-  color: #555555;
-}
-/* line 230, ../sass/print.scss */
-#content #technical table td {
+/* line 71, ../sass/print.scss */
+#technical table td {
   border: 1px solid #dddddd;
   font: 13px/21px Helvetica, Arial, sans-serif;
-  color: #555555;
-}
-/* line 248, ../sass/print.scss */
-#content #gallery ul {
-  margin: 0 20px 0 20px;
-}
-/* line 250, ../sass/print.scss */
-#content #gallery ul li {
-  margin: 0 0 0 0;
-  float: left;
-  display: inline;
-  padding: 0 13px 20px 12px;
-}
-/* line 255, ../sass/print.scss */
-#content #gallery ul li a {
-  display: block;
-  width: 70px;
-  height: 65px;
-  filter: alpha(opacity=75);
-  -moz-opacity: 0.75;
-  opacity: 0.75;
-}
-/* line 271, ../sass/print.scss */
-#content #awards {
-  margin: 0 0 150px 0;
 }
 
-/* line 276, ../sass/print.scss */
-#footerBg {
-  width: 100%;
-  background-color: #555555;
-  padding: 6px 0;
-}
-/* line 280, ../sass/print.scss */
-#footerBg #footer {
-  text-align: center;
-  color: #f8f8f8;
-}
-/* line 283, ../sass/print.scss */
-#footerBg #footer p {
-  text-shadow: none;
-  padding: 10px 0 0 0;
+/* line 79, ../sass/print.scss */
+#work em {
+  float: right;
 }
 
-/* line 290, ../sass/print.scss */
+/* line 83, ../sass/print.scss */
+#gallery {
+  display: none;
+}
+
+/* line 85, ../sass/print.scss */
 #contact {
-  z-index: 100;
-}
-/* line 292, ../sass/print.scss */
-#contact .label {
-  background: #f8f8f8;
-  color: #555555;
-}
-/* line 296, ../sass/print.scss */
-#contact .field {
-  margin: 0 30px 0 30px;
-}
-/* line 298, ../sass/print.scss */
-#contact .field #message {
-  max-width: 400px;
-}
-/* line 302, ../sass/print.scss */
-#contact span {
-  float: right;
-  color: red;
-}
-/* line 306, ../sass/print.scss */
-#contact .buttons {
-  float: right;
-  margin: 0 30px 0 30px;
-}
-/* line 309, ../sass/print.scss */
-#contact .buttons .submit {
-  background: #555555;
-  color: #f8f8f8;
-  border: 1px solid #555555;
-  padding: 3px 10px 3px;
-}
-/* line 317, ../sass/print.scss */
-#contact .close-reveal-modal {
-  font-size: 1.5rem;
+  display: none;
 }
 
-/* line 322, ../sass/print.scss */
+/* line 87, ../sass/print.scss */
 #alert {
-  z-index: 100;
-}
-/* line 324, ../sass/print.scss */
-#alert h4 {
-  border-bottom: none;
-}
-/* line 327, ../sass/print.scss */
-#alert .buttons {
-  float: right;
-  margin: 0 30px 0 30px;
-}
-/* line 330, ../sass/print.scss */
-#alert .buttons .submit {
-  background: #555555;
-  color: #f8f8f8;
-  border: 1px solid #555555;
-  padding: 3px 10px 3px;
-}
-/* line 338, ../sass/print.scss */
-#alert .close-reveal-modal {
-  font-size: 1.5rem;
+  display: none;
 }
