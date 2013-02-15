@@ -123,7 +123,7 @@ figure {
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, #headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, #headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -153,7 +153,7 @@ aside p {
 }
 
 /* line 15, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1, #headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6 {
+h1, #headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -164,14 +164,14 @@ h1, #headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1 small, #headerWrapper #header #buttonSmall span small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, #headerWrapperMobile #buttonSmall span small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
 }
 
 /* line 27, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1, #headerWrapper #header #buttonSmall span {
+h1, #headerWrapperMobile #buttonSmall span {
   font-size: 44px;
 }
 
@@ -2322,12 +2322,12 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   margin: 0 auto;
 }
 /* line 38, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1, .top-bar > ul .name #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .top-bar > ul .name span {
+.top-bar > ul .name h1, .top-bar > ul .name #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .top-bar > ul .name span {
   line-height: 45px;
   margin: 0;
 }
 /* line 39, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1 a, .top-bar > ul .name #headerWrapper #header #buttonSmall span a, #headerWrapper #header #buttonSmall .top-bar > ul .name span a {
+.top-bar > ul .name h1 a, .top-bar > ul .name #headerWrapperMobile #buttonSmall span a, #headerWrapperMobile #buttonSmall .top-bar > ul .name span a {
   font-weight: bold;
   padding: 0 22.5px;
   font-size: 17px !important;
@@ -3170,7 +3170,7 @@ ul.orbit-bullets li.active.has-thumb {
 
 /* Typography */
 /* line 23, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_joyride.scss */
-.joyride-tip-guide h1, .joyride-tip-guide #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .joyride-tip-guide span,
+.joyride-tip-guide h1, .joyride-tip-guide #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .joyride-tip-guide span,
 .joyride-tip-guide h2,
 .joyride-tip-guide h3,
 .joyride-tip-guide h4,
@@ -4008,7 +4008,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall ul.accordion > li > div.title span, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall ul.accordion > li > div.title span, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
   margin: 0;
 }
 /* line 107, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -5756,11 +5756,11 @@ table.hide-for-medium {
     height: 45px;
   }
   /* line 367, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1, .top-bar ul > li.name #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .top-bar ul > li.name span {
+  .top-bar ul > li.name h1, .top-bar ul > li.name #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .top-bar ul > li.name span {
     line-height: 1;
   }
   /* line 368, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1 a, .top-bar ul > li.name #headerWrapper #header #buttonSmall span a, #headerWrapper #header #buttonSmall .top-bar ul > li.name span a {
+  .top-bar ul > li.name h1 a, .top-bar ul > li.name #headerWrapperMobile #buttonSmall span a, #headerWrapperMobile #buttonSmall .top-bar ul > li.name span a {
     color: white;
     display: block;
     line-height: 45px !important;
@@ -6039,7 +6039,7 @@ table.hide-for-medium {
 /* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1,
-#headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6, p, blockquote, pre,
+#headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -6154,7 +6154,7 @@ body {
 }
 
 /* line 155, ../sass/app.scss */
-h1, #headerWrapper #header #buttonSmall span {
+h1, #headerWrapperMobile #buttonSmall span {
   font: 21px/31px Helvetica, Arial, sans-serif;
 }
 
@@ -6248,7 +6248,7 @@ abbr {
   overflow: hidden;
 }
 /* line 236, ../sass/app.scss */
-#headerWrapper #header #label h1#title, #headerWrapper #header #label #buttonSmall span#title, #headerWrapper #header #buttonSmall #label span#title {
+#headerWrapper #header #label h1#title, #headerWrapper #header #label #headerWrapperMobile #buttonSmall span#title, #headerWrapperMobile #buttonSmall #headerWrapper #header #label span#title {
   background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
   color: black;
   margin: 0 0 12px;
@@ -6270,51 +6270,66 @@ abbr {
 #headerWrapper #header #intro p {
   margin-right: 0;
 }
-/* line 257, ../sass/app.scss */
-#headerWrapper #header #buttonSmall {
+/* line 258, ../sass/app.scss */
+#headerWrapper #header p {
+  margin-right: 0;
+}
+
+/* line 265, ../sass/app.scss */
+#headerWrapperMobile {
+  -webkit-box-shadow: #ebebeb 2px 0px 20px;
+  -moz-box-shadow: #ebebeb 2px 0px 20px;
+  box-shadow: #ebebeb 2px 0px 20px;
+  background: url("../img/header-bg.png") repeat-x scroll left bottom #ebebeb;
+  clear: both;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+/* line 274, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall {
   overflow: hidden;
   color: #555555;
+  margin-bottom: 10px;
 }
-/* line 260, ../sass/app.scss */
-#headerWrapper #header #buttonSmall .button {
+/* line 278, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall .button {
   background-color: #dddddd;
   border-color: #cccccc;
   color: #222222;
   width: 20%;
   display: inline-block;
 }
-/* line 268, ../sass/app.scss */
-#headerWrapper #header #buttonSmall .button:hover {
+/* line 286, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall .button:hover {
   background-color: #bbb;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
   /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
   border-color: #444444;
   color: #222222;
 }
-/* line 275, ../sass/app.scss */
-#headerWrapper #header #buttonSmall .button:focus {
+/* line 293, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall .button:focus {
   -webkit-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   color: #222;
 }
-/* line 281, ../sass/app.scss */
-#headerWrapper #header #buttonSmall span {
+/* line 299, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall span {
   right: 0px;
 }
-/* line 285, ../sass/app.scss */
-#headerWrapper #header #buttonSmall span#title {
+/* line 303, ../sass/app.scss */
+#headerWrapperMobile #buttonSmall span#title {
   background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
   color: black;
   text-transform: uppercase;
   width: 100%;
 }
-/* line 292, ../sass/app.scss */
-#headerWrapper #header #buttonSmall p {
-  margin-right: 0;
-}
 
-/* line 299, ../sass/app.scss */
+/* line 313, ../sass/app.scss */
 #headerShadow {
   clear: both;
   height: 25px;
@@ -6324,11 +6339,11 @@ abbr {
   z-index: 100;
 }
 
-/* line 308, ../sass/app.scss */
+/* line 322, ../sass/app.scss */
 .callout {
   padding: 20px 0;
 }
-/* line 310, ../sass/app.scss */
+/* line 324, ../sass/app.scss */
 .callout p {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -6338,7 +6353,7 @@ abbr {
   margin-bottom: 0;
 }
 
-/* line 319, ../sass/app.scss */
+/* line 333, ../sass/app.scss */
 #sidebar {
   position: absolute;
   z-index: 10;
@@ -6348,35 +6363,35 @@ abbr {
   width: auto;
   padding: 0px 0px 0px 70px;
 }
-/* line 329, ../sass/app.scss */
+/* line 343, ../sass/app.scss */
 #sidebar nav #avatar {
   height: 125px;
   margin: 0 0 45px;
   top: -190px;
   z-index: 0;
 }
-/* line 335, ../sass/app.scss */
+/* line 349, ../sass/app.scss */
 #sidebar nav #avatar a {
   display: block;
 }
-/* line 339, ../sass/app.scss */
+/* line 353, ../sass/app.scss */
 #sidebar nav .nav-bar {
   background: none;
 }
-/* line 341, ../sass/app.scss */
+/* line 355, ../sass/app.scss */
 #sidebar nav .nav-bar ul {
   z-index: 1000;
 }
-/* line 344, ../sass/app.scss */
+/* line 358, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li {
   margin-bottom: 7px;
 }
-/* line 347, ../sass/app.scss */
+/* line 361, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li a:hover, #sidebar nav .nav-bar ul#navMain li a:focus, #sidebar nav .nav-bar ul#navMain li a.selected {
   background-color: #555555;
   color: #66ccdd;
 }
-/* line 352, ../sass/app.scss */
+/* line 366, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li a {
   background-color: #555555;
   color: #f8f8f8;
@@ -6385,32 +6400,32 @@ abbr {
   text-shadow: none;
   text-transform: uppercase;
 }
-/* line 367, ../sass/app.scss */
+/* line 381, ../sass/app.scss */
 #sidebar #networkLinks {
   float: right;
   padding-top: 30px;
 }
 
-/* line 374, ../sass/app.scss */
+/* line 388, ../sass/app.scss */
 #content {
   position: relative;
   top: 0;
 }
-/* line 378, ../sass/app.scss */
+/* line 392, ../sass/app.scss */
 #content ul, #content ol {
   margin: 10px 30px 10px 30px;
 }
-/* line 380, ../sass/app.scss */
+/* line 394, ../sass/app.scss */
 #content ul li, #content ol li {
   margin: 0 30px 0 30px;
 }
-/* line 390, ../sass/app.scss */
+/* line 404, ../sass/app.scss */
 #content #technical table {
   margin: 20px 30px 20px 30px;
   border: 1px solid #dddddd;
   border-collapse: collapse;
 }
-/* line 395, ../sass/app.scss */
+/* line 409, ../sass/app.scss */
 #content #technical table th {
   background-color: #ebebeb;
   font-weight: bold;
@@ -6418,28 +6433,28 @@ abbr {
   padding: 4px 8px;
   color: #555555;
 }
-/* line 401, ../sass/app.scss */
+/* line 415, ../sass/app.scss */
 #content #technical table th abbr {
   color: #555555;
 }
-/* line 407, ../sass/app.scss */
+/* line 421, ../sass/app.scss */
 #content #technical table td {
   border: 1px solid #dddddd;
   font: 13px/21px Helvetica, Arial, sans-serif;
   color: #555555;
 }
-/* line 425, ../sass/app.scss */
+/* line 439, ../sass/app.scss */
 #content #gallery ul {
   margin: 0 20px 0 20px;
 }
-/* line 427, ../sass/app.scss */
+/* line 441, ../sass/app.scss */
 #content #gallery ul li {
   margin: 0 0 0 0;
   float: left;
   display: inline;
   padding: 0 13px 20px 12px;
 }
-/* line 432, ../sass/app.scss */
+/* line 446, ../sass/app.scss */
 #content #gallery ul li a {
   display: block;
   width: 70px;
@@ -6448,12 +6463,12 @@ abbr {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
-/* line 448, ../sass/app.scss */
+/* line 462, ../sass/app.scss */
 #content #awards {
   margin: 0 0 150px 0;
 }
 
-/* line 453, ../sass/app.scss */
+/* line 467, ../sass/app.scss */
 #footerBg {
   -webkit-box-shadow: #dddddd 2px 0px 20px;
   -moz-box-shadow: #dddddd 2px 0px 20px;
@@ -6462,102 +6477,145 @@ abbr {
   background-color: #555555;
   padding: 6px 0;
 }
-/* line 458, ../sass/app.scss */
+/* line 472, ../sass/app.scss */
 #footerBg #footer {
   text-align: center;
   color: #f8f8f8;
 }
-/* line 461, ../sass/app.scss */
+/* line 475, ../sass/app.scss */
 #footerBg #footer p {
   text-shadow: none;
   padding: 10px 0 0 0;
 }
 
-/* line 468, ../sass/app.scss */
+/* line 482, ../sass/app.scss */
 #contact {
   z-index: 100;
 }
-/* line 470, ../sass/app.scss */
+/* line 484, ../sass/app.scss */
 #contact .label {
   background: #f8f8f8;
   color: #555555;
 }
-/* line 474, ../sass/app.scss */
+/* line 488, ../sass/app.scss */
 #contact .field {
   margin: 0 30px 0 30px;
 }
-/* line 476, ../sass/app.scss */
+/* line 490, ../sass/app.scss */
 #contact .field #message {
   max-width: 400px;
 }
-/* line 480, ../sass/app.scss */
+/* line 494, ../sass/app.scss */
 #contact span {
   float: right;
   color: red;
 }
-/* line 484, ../sass/app.scss */
+/* line 498, ../sass/app.scss */
 #contact .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 487, ../sass/app.scss */
+/* line 501, ../sass/app.scss */
 #contact .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 495, ../sass/app.scss */
+/* line 509, ../sass/app.scss */
 #contact .close-reveal-modal {
   font-size: 1.5rem;
 }
 
-/* line 500, ../sass/app.scss */
+/* line 514, ../sass/app.scss */
 #alert {
   z-index: 100;
 }
-/* line 502, ../sass/app.scss */
+/* line 516, ../sass/app.scss */
 #alert h4 {
   border-bottom: none;
 }
-/* line 505, ../sass/app.scss */
+/* line 519, ../sass/app.scss */
 #alert .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 508, ../sass/app.scss */
+/* line 522, ../sass/app.scss */
 #alert .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 516, ../sass/app.scss */
+/* line 530, ../sass/app.scss */
 #alert .close-reveal-modal {
   font-size: 1.5rem;
 }
 
-/* line 521, ../sass/app.scss */
+/* line 535, ../sass/app.scss */
+#sidebarmobile {
+  margin-top: 20px;
+  position: fixed;
+  height: 100%;
+  right: auto;
+}
+/* line 543, ../sass/app.scss */
+#sidebarmobile #contactMobile {
+  margin-top: 20px;
+}
+/* line 545, ../sass/app.scss */
+#sidebarmobile #contactMobile .label {
+  background: #f8f8f8;
+  color: #555555;
+}
+/* line 549, ../sass/app.scss */
+#sidebarmobile #contactMobile .field {
+  margin: 0px;
+}
+/* line 551, ../sass/app.scss */
+#sidebarmobile #contactMobile .field #message {
+  max-width: auto;
+}
+/* line 555, ../sass/app.scss */
+#sidebarmobile #contactMobile span {
+  float: right;
+  color: red;
+}
+/* line 559, ../sass/app.scss */
+#sidebarmobile #contactMobile .buttons {
+  float: right;
+  display: inline-block;
+  margin: 0 30px 0 30px;
+}
+/* line 563, ../sass/app.scss */
+#sidebarmobile #contactMobile .buttons .submit {
+  background: #555555;
+  color: #f8f8f8;
+  border: 1px solid #555555;
+  padding: 3px 10px 3px;
+}
+
+/* line 573, ../sass/app.scss */
 [role="complementary"], [role="main"] {
   /* remove the default padding */
   padding: 0;
 }
 
 @media all and (min-width: 768px) {
-  /* line 528, ../sass/app.scss */
+  /* line 580, ../sass/app.scss */
   .js [role="complementary"] {
     /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
     width: 100%;
   }
 
-  /* line 532, ../sass/app.scss */
+  /* line 584, ../sass/app.scss */
   .js [role="main"] {
     width: 100%;
     padding: 0 0;
   }
 }
 /* end media query */
-/* line 537, ../sass/app.scss */
+/* line 589, ../sass/app.scss */
 [role="main"]:before {
   content: "";
   /* Changes the bg color of the flyout panel */
@@ -6565,17 +6623,17 @@ abbr {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 545, ../sass/app.scss */
+  /* line 597, ../sass/app.scss */
   .nav-bar > li:hover {
     border-bottom: none;
   }
 
-  /* line 549, ../sass/app.scss */
+  /* line 601, ../sass/app.scss */
   .nav-bar > li > a.main {
     border: none;
   }
 
-  /* line 553, ../sass/app.scss */
+  /* line 605, ../sass/app.scss */
   .menu-button {
     /* Add a margin betwen the logo and the 'Menu' button */
     margin-bottom: 20px;

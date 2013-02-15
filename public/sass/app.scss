@@ -254,182 +254,196 @@ abbr{
 				margin-right: 0;
 			}
 		}
-		#buttonSmall{
-			overflow: hidden;
-			color: $textClr;
-					.button {
-						background-color:#dddddd;
-						border-color: #cccccc;
-						color:#222222;
-						width: 20%;
-						display: inline-block;
-					}
 
-					.button:hover {
-						background-color: #bbb;
+		p{
+			margin-right: 0;
+		}
+	}
+}
+
+
+#headerWrapperMobile{
+	@include box-shadow ($boxShadowClr 2px 0px 20px);
+	background: url("../img/header-bg.png") repeat-x scroll left bottom $headerBgClr;
+	clear: both;
+	padding: 10px 0 0 0;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+	#buttonSmall{
+		overflow: hidden;
+		color: $textClr;
+		margin-bottom: 10px;
+		.button {
+			background-color:#dddddd;
+			border-color: #cccccc;
+			color:#222222;
+			width: 20%;
+			display: inline-block;
+		}
+
+		.button:hover {
+			background-color: #bbb;
     					box-shadow: 0px 0px 10px rgba(0, 0, 0, .8) inset; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
     					border-color: #444444;
     					color:#222222;
-					}
+    				}
 
-					.button:focus {
-						-webkit-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-						-moz-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-						box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-						color: #222;
-					}
-			span{
-				@extend h1;
-					right: 0px;
+    				.button:focus {
+    					-webkit-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    					-moz-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    					box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    					color: #222;
+    				}
+    				span{
+    					@extend h1;
+    					right: 0px;
 					// text-align: right;
-				&#title{
-					background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
-					color: $nameClr;
-					text-transform: uppercase;
-					width: 100%;
-				}
-			}
-			p{
-				margin-right: 0;
-			}
-		}
-	}
-}
-
-#headerShadow{
-	clear: both;
-	height: 25px;
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-	z-index: 100;
-}
-
-.callout {
-	padding:20px 0;
-	p {
-		font-family:'Open Sans', sans-serif;
-		text-align:center;
-		font-size:2em;
-		font-weight:600;
-		color:#222222;
-		margin-bottom: 0;
-	}
-}
-#sidebar {
-	position: absolute;
-	z-index: 10;
-	top: -155px;
-	background: none;
-	text-align: right;
-	width: auto;
-	padding: 0px 0px 0px 70px;
-
-	nav	{
-		#avatar {
-			height: 125px;
-			margin: 0 0 45px;
-			top: -190px;
-			z-index: 0;
-
-			a{
-				display: block;
-			}
-		}
-		.nav-bar{
-			background: none;
-			ul{
-				z-index: 1000;
-				&#navMain {
-					li{
-						margin-bottom: 7px;
-
-						a:hover, a:focus, a.selected{
-							background-color: $hoverBgClr;
-							color: $hoverTxtClr;
-						}
-
-						a{
-							@extend .mozBorderColorNone;
-							background-color: $navBgClr;
-							color: $navTxtClr;
-							padding: 2px 8px;
-							text-decoration: none;
-							text-shadow: none;
-							text-transform: uppercase;
-						}
+					&#title{
+						background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
+						color: $nameClr;
+						text-transform: uppercase;
+						width: 100%;
 					}
 				}
-
 			}
 		}
-	}
-	#networkLinks{
-		float: right;
-		padding-top: 30px;
-	}
-}
 
-
-#content{
-	position: relative;
-	top: 0;
-
-	ul, ol{
-		margin: $margin30x10;
-		li{
-			margin: $margin30x0;
+		#headerShadow{
+			clear: both;
+			height: 25px;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			z-index: 100;
 		}
-	}
 
-	#education{
+		.callout {
+			padding:20px 0;
+			p {
+				font-family:'Open Sans', sans-serif;
+				text-align:center;
+				font-size:2em;
+				font-weight:600;
+				color:#222222;
+				margin-bottom: 0;
+			}
+		}
+		#sidebar {
+			position: absolute;
+			z-index: 10;
+			top: -155px;
+			background: none;
+			text-align: right;
+			width: auto;
+			padding: 0px 0px 0px 70px;
 
-	}
+			nav	{
+				#avatar {
+					height: 125px;
+					margin: 0 0 45px;
+					top: -190px;
+					z-index: 0;
 
-	#technical{
-		table{
-			margin: 20px 30px 20px 30px;
-			border: 1px solid $tableOutBdrClr;
-			border-collapse: collapse;
-
-			th{
-				background-color: $tableThBgClr;
-				font-weight: bold;
-				border: 1px solid $tableInBdrClr;
-				padding: 4px 8px;
-				color: $tableThTxtClr;
-				abbr{
-					color: $tableThTxtClr;
+					a{
+						display: block;
+					}
 				}
+				.nav-bar{
+					background: none;
+					ul{
+						z-index: 1000;
+						&#navMain {
+							li{
+								margin-bottom: 7px;
 
+								a:hover, a:focus, a.selected{
+									background-color: $hoverBgClr;
+									color: $hoverTxtClr;
+								}
+
+								a{
+									@extend .mozBorderColorNone;
+									background-color: $navBgClr;
+									color: $navTxtClr;
+									padding: 2px 8px;
+									text-decoration: none;
+									text-shadow: none;
+									text-transform: uppercase;
+								}
+							}
+						}
+
+					}
+				}
 			}
-
-			td{
-				border: 1px solid $tableInBdrClr;
-				font: 13px/21px $font;
-				color: $tableTdTxtClr;
-
+			#networkLinks{
+				float: right;
+				padding-top: 30px;
 			}
 		}
-	}
 
-	#skills{
 
-	}
+		#content{
+			position: relative;
+			top: 0;
 
-	#work{
+			ul, ol{
+				margin: $margin30x10;
+				li{
+					margin: $margin30x0;
+				}
+			}
 
-	}
+			#education{
 
-	#gallery{
-		ul{
-			margin: $margin20x0;
-			li{
-				margin: 0 0 0 0;
-				float: left;
-				display: inline;
-				padding: 0 13px 20px 12px;
-				a{
+			}
+
+			#technical{
+				table{
+					margin: 20px 30px 20px 30px;
+					border: 1px solid $tableOutBdrClr;
+					border-collapse: collapse;
+
+					th{
+						background-color: $tableThBgClr;
+						font-weight: bold;
+						border: 1px solid $tableInBdrClr;
+						padding: 4px 8px;
+						color: $tableThTxtClr;
+						abbr{
+							color: $tableThTxtClr;
+						}
+
+					}
+
+					td{
+						border: 1px solid $tableInBdrClr;
+						font: 13px/21px $font;
+						color: $tableTdTxtClr;
+
+					}
+				}
+			}
+
+			#skills{
+
+			}
+
+			#work{
+
+			}
+
+			#gallery{
+				ul{
+					margin: $margin20x0;
+					li{
+						margin: 0 0 0 0;
+						float: left;
+						display: inline;
+						padding: 0 13px 20px 12px;
+						a{
 					// float: left;
 					display: block;
 					width: 70px;
@@ -518,6 +532,44 @@ abbr{
 	}
 }
 
+#sidebarmobile{
+	margin-top: 20px;
+	position: fixed;
+	height: 100%;
+	right: auto;
+	#sidemenu{
+
+	}
+	#contactMobile{
+		margin-top: 20px;
+		.label{
+			background: $color6;
+			color: $color2;
+		}
+		.field{
+			margin: 0px;
+			#message{
+				max-width: auto;
+			}
+		}
+		span{
+			float: right;
+			color: red;
+		}
+		.buttons{
+			float: right;
+			display: inline-block;
+			margin: $margin30x0;
+			.submit{
+				background: $color2;
+				color: $color6;
+				border: 1px solid $color2;
+				padding: 3px 10px 3px;
+
+			}
+		}
+	}
+}
 [role="complementary"], [role="main"] {
     /* remove the default padding */
     padding:0;
@@ -525,17 +577,17 @@ abbr{
 
 @media all and (min-width: 768px) {
 
-  .js [role="complementary"] {
+	.js [role="complementary"] {
     /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
     width: 100%;
 }
-  .js [role="main"] {
-    width: 100%; padding: 0 0;
+.js [role="main"] {
+	width: 100%; padding: 0 0;
 }
 } /* end media query */
 
 [role="main"]:before {
-    content:"";
+	content:"";
     /* Changes the bg color of the flyout panel */
     background-color: #322820;
 }
