@@ -1,4 +1,4 @@
-<div class="four columns" id="label">
+<div class="four columns hide-for-small" id="label">
 	<h1 id="title">Jean Marcellin</h1>
 	<p class="address">
 		Blvd Lambermont, 422<br>
@@ -10,9 +10,14 @@
 	</p>
 	<!-- end / #label -->
 </div>
-<div class="eight columns" id="intro">
+<div class="eight columns hide-for-small" id="intro">
 	<p>Looking for a challenging position as a web developer, with opportunity for advancement.</p>
 	<!-- end / #intro -->
+</div>
+<div class="twelve columns show-for-small" id="buttonSmall">
+	<a class='menu-button button' id="menuButton" href="#menu">Menu</a><!-- link goes to named anchor -->
+    <a class='sidebar-button button' id="sidebarButton" href="#contact" >Contact</a>
+	<span id="title">Jean Marcellin</span>
 </div>
 <!-- end / #header -->
 

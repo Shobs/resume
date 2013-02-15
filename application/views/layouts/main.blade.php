@@ -14,12 +14,25 @@
         {{-- HTML::style('css/normalize.min.css') }}
 
         {{ HTML::style('css/app.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/print-preview.css') }}
+        {{ HTML::style('css/social_foundicons.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/offcanvas.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/print-preview.css', array('media' => 'screen')) }}
         {{ HTML::style('css/print.css', array('media' => 'print')) }}
 
         {{ HTML::script('js/foundation/modernizr.foundation.js') }}
+
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="stylesheets/ie.css">
+        <![endif]-->
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
     </head>
-    <body>
+    <body class="off-canvas hide-extras">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -56,12 +69,12 @@
         {{ HTML::script('js/foundation/jquery.foundation.alerts.js') }}
         {{ HTML::script('js/foundation/jquery.foundation.magellan.js') }}
         {{ HTML::script('js/foundation/jquery.foundation.forms.js') }}
+        {{ HTML::script('js/foundation/jquery.offcanvas.js') }}
         {{ HTML::script('js/foundation/app.js') }}
         {{ HTML::script('js/waypoints.min.js') }}
         {{ HTML::script('js/jquery.scrollTo-1.4.3.1-min.js') }}
         {{ HTML::script('js/happy.js');}}
         {{ HTML::script('js/happy.methods.js');}}
-        {{ HTML::script('js/jquery.webmailto.js');}}
         {{ HTML::script('js/jquery.print-preview.js');}}
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}

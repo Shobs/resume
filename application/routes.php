@@ -60,11 +60,7 @@ Route::post('contactMe', function()
 	$validation = Validator::make($input, $rules);
 
 	if($validation->fails()){
-		// if (Request::ajax()){
 			echo implode('', $validation->errors->all());
-		// }else{
-		// 	return Redirect::back()->with_errors($validation)->with_input();
-		// }
 	}else{
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
@@ -76,20 +72,12 @@ Route::post('contactMe', function()
 
 		if($mailsend){
 			$message = 'Your message has been sucessfuly sent!';
-			// if (Request::ajax()) {
 				echo $message;
-			// }else{
-				// return Redirect::back()->with('message', $message);
-			// }
+
 		}else{
 			$message = 'Your message was not sent, please contact me directly at: <a href="mailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
-			// if (Request::ajax()) {
 				echo $message;
-			// }else{
-				// return Redirect::back()->with('fail', $message);
-			// }
 		}
-
 	}
 });
 

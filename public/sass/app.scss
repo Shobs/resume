@@ -48,7 +48,7 @@
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
-
+@charset "UTF-8";
 
 /**** Variables ****/
 
@@ -127,6 +127,20 @@ $font: Helvetica,Arial,sans-serif;
 .sticky {
 	position: fixed;
 	top: 0;
+}
+
+section {
+	padding:0;
+	margin:0;
+    /* Prevents horizontal scrollling for off-canvas elements */
+    overflow-x: hidden;
+}
+
+/* Make sure that the bands stretch to 100% width */
+.full-width, .site-footer {
+	min-width:100%;
+	position: relative;
+	z-index:9999;
 }
 
 /**** Styling ****/
@@ -240,6 +254,45 @@ abbr{
 				margin-right: 0;
 			}
 		}
+		#buttonSmall{
+			overflow: hidden;
+			color: $textClr;
+					.button {
+						background-color:#dddddd;
+						border-color: #cccccc;
+						color:#222222;
+						width: 20%;
+						display: inline-block;
+					}
+
+					.button:hover {
+						background-color: #bbb;
+    					box-shadow: 0px 0px 10px rgba(0, 0, 0, .8) inset; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+    					border-color: #444444;
+    					color:#222222;
+					}
+
+					.button:focus {
+						-webkit-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+						-moz-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+						box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+						color: #222;
+					}
+			span{
+				@extend h1;
+					right: 0px;
+					// text-align: right;
+				&#title{
+					background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
+					color: $nameClr;
+					text-transform: uppercase;
+					width: 100%;
+				}
+			}
+			p{
+				margin-right: 0;
+			}
+		}
 	}
 }
 
@@ -252,6 +305,17 @@ abbr{
 	z-index: 100;
 }
 
+.callout {
+	padding:20px 0;
+	p {
+		font-family:'Open Sans', sans-serif;
+		text-align:center;
+		font-size:2em;
+		font-weight:600;
+		color:#222222;
+		margin-bottom: 0;
+	}
+}
 #sidebar {
 	position: absolute;
 	z-index: 10;
@@ -453,6 +517,43 @@ abbr{
 		font-size: 1.5rem;
 	}
 }
+
+[role="complementary"], [role="main"] {
+    /* remove the default padding */
+    padding:0;
+}
+
+@media all and (min-width: 768px) {
+
+  .js [role="complementary"] {
+    /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
+    width: 100%;
+}
+  .js [role="main"] {
+    width: 100%; padding: 0 0;
+}
+} /* end media query */
+
+[role="main"]:before {
+    content:"";
+    /* Changes the bg color of the flyout panel */
+    background-color: #322820;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.nav-bar > li:hover {
+		border-bottom: none;
+	}
+
+	.nav-bar > li > a.main {
+		border:none;
+	}
+
+	.menu-button {
+        /* Add a margin betwen the logo and the 'Menu' button */
+        margin-bottom: 20px;}
+} /* end media query */
 
 
 

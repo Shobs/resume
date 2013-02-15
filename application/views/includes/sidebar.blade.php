@@ -1,5 +1,5 @@
 <div data-magellan-expedition='fixed' id="sidebar" class="">
-	<nav>
+	<nav class="hide-for-small">
 	<div id="avatar">
 		<a href="#top">
 			{{HTML::image('http://placehold.it/125x125', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
@@ -20,10 +20,11 @@
 		</ul>
 	</nav>
 
-	<div id="networkLinks">
+	<div id="networkLinks" class="hide-for-small">
 		<ul  class="inline-list">
 			<li>
 				<a href="download?id=doc">
+
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a .DOC Format'));}}
 				</a>
 			</li>
@@ -39,6 +40,7 @@
 			</li>
 			<li>
 				<a href="#">
+					<i class="foundicon-008"></i>
 					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Follow me on LinkedIn'));}}
 				</a>
 			</li>
@@ -50,6 +52,8 @@
 			<!-- end / #networkLinks -->
 		</ul>
 		</div>
+
 	</div>
+
 </div>
 

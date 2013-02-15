@@ -123,7 +123,7 @@ figure {
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, #headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -153,7 +153,7 @@ aside p {
 }
 
 /* line 15, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, #headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -164,14 +164,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, #headerWrapper #header #buttonSmall span small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
 }
 
 /* line 27, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1 {
+h1, #headerWrapper #header #buttonSmall span {
   font-size: 44px;
 }
 
@@ -2322,12 +2322,12 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   margin: 0 auto;
 }
 /* line 38, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1 {
+.top-bar > ul .name h1, .top-bar > ul .name #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .top-bar > ul .name span {
   line-height: 45px;
   margin: 0;
 }
 /* line 39, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1 a {
+.top-bar > ul .name h1 a, .top-bar > ul .name #headerWrapper #header #buttonSmall span a, #headerWrapper #header #buttonSmall .top-bar > ul .name span a {
   font-weight: bold;
   padding: 0 22.5px;
   font-size: 17px !important;
@@ -3170,7 +3170,7 @@ ul.orbit-bullets li.active.has-thumb {
 
 /* Typography */
 /* line 23, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_joyride.scss */
-.joyride-tip-guide h1,
+.joyride-tip-guide h1, .joyride-tip-guide #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .joyride-tip-guide span,
 .joyride-tip-guide h2,
 .joyride-tip-guide h3,
 .joyride-tip-guide h4,
@@ -4008,7 +4008,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall ul.accordion > li > div.title span, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
   margin: 0;
 }
 /* line 107, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -5756,11 +5756,11 @@ table.hide-for-medium {
     height: 45px;
   }
   /* line 367, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1 {
+  .top-bar ul > li.name h1, .top-bar ul > li.name #headerWrapper #header #buttonSmall span, #headerWrapper #header #buttonSmall .top-bar ul > li.name span {
     line-height: 1;
   }
   /* line 368, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1 a {
+  .top-bar ul > li.name h1 a, .top-bar ul > li.name #headerWrapper #header #buttonSmall span a, #headerWrapper #header #buttonSmall .top-bar ul > li.name span a {
     color: white;
     display: block;
     line-height: 45px !important;
@@ -6038,7 +6038,8 @@ table.hide-for-medium {
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+#headerWrapper #header #buttonSmall span, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -6127,8 +6128,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 0;
 }
 
+/* line 132, ../sass/app.scss */
+section {
+  padding: 0;
+  margin: 0;
+  /* Prevents horizontal scrollling for off-canvas elements */
+  overflow-x: hidden;
+}
+
+/* Make sure that the bands stretch to 100% width */
+/* line 140, ../sass/app.scss */
+.full-width, .site-footer {
+  min-width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+
 /**** Styling ****/
-/* line 134, ../sass/app.scss */
+/* line 148, ../sass/app.scss */
 body {
   font: 13px/21px Helvetica, Arial, sans-serif;
   color: #555555;
@@ -6136,12 +6153,12 @@ body {
   background: #f8f8f8;
 }
 
-/* line 141, ../sass/app.scss */
-h1 {
+/* line 155, ../sass/app.scss */
+h1, #headerWrapper #header #buttonSmall span {
   font: 21px/31px Helvetica, Arial, sans-serif;
 }
 
-/* line 145, ../sass/app.scss */
+/* line 159, ../sass/app.scss */
 h2 {
   background-color: #555555;
   color: #f8f8f8;
@@ -6152,7 +6169,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 156, ../sass/app.scss */
+/* line 170, ../sass/app.scss */
 h3 {
   background-color: #ebebeb;
   color: #555555;
@@ -6162,7 +6179,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 166, ../sass/app.scss */
+/* line 180, ../sass/app.scss */
 h4 {
   margin: 0 20px 16px 20px;
   border-bottom: 1px solid #dddddd;
@@ -6172,7 +6189,7 @@ h4 {
   color: #555555;
 }
 
-/* line 175, ../sass/app.scss */
+/* line 189, ../sass/app.scss */
 h5 {
   margin: 0 20px 16px 20px;
   border-bottom: 1px solid #dddddd;
@@ -6180,34 +6197,34 @@ h5 {
   color: #555555;
 }
 
-/* line 182, ../sass/app.scss */
+/* line 196, ../sass/app.scss */
 p {
   margin: 0 30px 16px 30px;
 }
 
-/* line 186, ../sass/app.scss */
+/* line 200, ../sass/app.scss */
 a {
   color: #66ccdd;
 }
-/* line 189, ../sass/app.scss */
+/* line 203, ../sass/app.scss */
 a:hover {
   text-shadow: #f8f8f8 1px 1px 5px, #f8f8f8 -1px -1px 5px;
   color: #555555;
 }
 
-/* line 195, ../sass/app.scss */
+/* line 209, ../sass/app.scss */
 abbr {
   color: #66ccdd;
 }
 
-/* line 199, ../sass/app.scss */
+/* line 213, ../sass/app.scss */
 ::selection {
   color: #f8f8f8;
   background-color: #555555;
   text-shadow: none;
 }
 
-/* line 205, ../sass/app.scss */
+/* line 219, ../sass/app.scss */
 #headerWrapper {
   -webkit-box-shadow: #ebebeb 2px 0px 20px;
   -moz-box-shadow: #ebebeb 2px 0px 20px;
@@ -6220,18 +6237,18 @@ abbr {
   width: 100%;
   z-index: 20;
 }
-/* line 214, ../sass/app.scss */
+/* line 228, ../sass/app.scss */
 #headerWrapper #header {
   overflow: hidden;
   color: #555555;
 }
-/* line 217, ../sass/app.scss */
+/* line 231, ../sass/app.scss */
 #headerWrapper #header #label {
   text-align: right;
   overflow: hidden;
 }
-/* line 222, ../sass/app.scss */
-#headerWrapper #header #label h1#title {
+/* line 236, ../sass/app.scss */
+#headerWrapper #header #label h1#title, #headerWrapper #header #label #buttonSmall span#title, #headerWrapper #header #buttonSmall #label span#title {
   background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
   color: black;
   margin: 0 0 12px;
@@ -6240,21 +6257,64 @@ abbr {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 232, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 #headerWrapper #header #label p {
   margin-right: 0;
 }
-/* line 236, ../sass/app.scss */
+/* line 250, ../sass/app.scss */
 #headerWrapper #header #intro {
   font-size: 14px;
   line-height: 27px;
 }
-/* line 239, ../sass/app.scss */
+/* line 253, ../sass/app.scss */
 #headerWrapper #header #intro p {
   margin-right: 0;
 }
+/* line 257, ../sass/app.scss */
+#headerWrapper #header #buttonSmall {
+  overflow: hidden;
+  color: #555555;
+}
+/* line 260, ../sass/app.scss */
+#headerWrapper #header #buttonSmall .button {
+  background-color: #dddddd;
+  border-color: #cccccc;
+  color: #222222;
+  width: 20%;
+  display: inline-block;
+}
+/* line 268, ../sass/app.scss */
+#headerWrapper #header #buttonSmall .button:hover {
+  background-color: #bbb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  border-color: #444444;
+  color: #222222;
+}
+/* line 275, ../sass/app.scss */
+#headerWrapper #header #buttonSmall .button:focus {
+  -webkit-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  color: #222;
+}
+/* line 281, ../sass/app.scss */
+#headerWrapper #header #buttonSmall span {
+  right: 0px;
+}
+/* line 285, ../sass/app.scss */
+#headerWrapper #header #buttonSmall span#title {
+  background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
+  color: black;
+  text-transform: uppercase;
+  width: 100%;
+}
+/* line 292, ../sass/app.scss */
+#headerWrapper #header #buttonSmall p {
+  margin-right: 0;
+}
 
-/* line 246, ../sass/app.scss */
+/* line 299, ../sass/app.scss */
 #headerShadow {
   clear: both;
   height: 25px;
@@ -6264,7 +6324,21 @@ abbr {
   z-index: 100;
 }
 
-/* line 255, ../sass/app.scss */
+/* line 308, ../sass/app.scss */
+.callout {
+  padding: 20px 0;
+}
+/* line 310, ../sass/app.scss */
+.callout p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+/* line 319, ../sass/app.scss */
 #sidebar {
   position: absolute;
   z-index: 10;
@@ -6274,35 +6348,35 @@ abbr {
   width: auto;
   padding: 0px 0px 0px 70px;
 }
-/* line 265, ../sass/app.scss */
+/* line 329, ../sass/app.scss */
 #sidebar nav #avatar {
   height: 125px;
   margin: 0 0 45px;
   top: -190px;
   z-index: 0;
 }
-/* line 271, ../sass/app.scss */
+/* line 335, ../sass/app.scss */
 #sidebar nav #avatar a {
   display: block;
 }
-/* line 275, ../sass/app.scss */
+/* line 339, ../sass/app.scss */
 #sidebar nav .nav-bar {
   background: none;
 }
-/* line 277, ../sass/app.scss */
+/* line 341, ../sass/app.scss */
 #sidebar nav .nav-bar ul {
   z-index: 1000;
 }
-/* line 280, ../sass/app.scss */
+/* line 344, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li {
   margin-bottom: 7px;
 }
-/* line 283, ../sass/app.scss */
+/* line 347, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li a:hover, #sidebar nav .nav-bar ul#navMain li a:focus, #sidebar nav .nav-bar ul#navMain li a.selected {
   background-color: #555555;
   color: #66ccdd;
 }
-/* line 288, ../sass/app.scss */
+/* line 352, ../sass/app.scss */
 #sidebar nav .nav-bar ul#navMain li a {
   background-color: #555555;
   color: #f8f8f8;
@@ -6311,32 +6385,32 @@ abbr {
   text-shadow: none;
   text-transform: uppercase;
 }
-/* line 303, ../sass/app.scss */
+/* line 367, ../sass/app.scss */
 #sidebar #networkLinks {
   float: right;
   padding-top: 30px;
 }
 
-/* line 310, ../sass/app.scss */
+/* line 374, ../sass/app.scss */
 #content {
   position: relative;
   top: 0;
 }
-/* line 314, ../sass/app.scss */
+/* line 378, ../sass/app.scss */
 #content ul, #content ol {
   margin: 10px 30px 10px 30px;
 }
-/* line 316, ../sass/app.scss */
+/* line 380, ../sass/app.scss */
 #content ul li, #content ol li {
   margin: 0 30px 0 30px;
 }
-/* line 326, ../sass/app.scss */
+/* line 390, ../sass/app.scss */
 #content #technical table {
   margin: 20px 30px 20px 30px;
   border: 1px solid #dddddd;
   border-collapse: collapse;
 }
-/* line 331, ../sass/app.scss */
+/* line 395, ../sass/app.scss */
 #content #technical table th {
   background-color: #ebebeb;
   font-weight: bold;
@@ -6344,28 +6418,28 @@ abbr {
   padding: 4px 8px;
   color: #555555;
 }
-/* line 337, ../sass/app.scss */
+/* line 401, ../sass/app.scss */
 #content #technical table th abbr {
   color: #555555;
 }
-/* line 343, ../sass/app.scss */
+/* line 407, ../sass/app.scss */
 #content #technical table td {
   border: 1px solid #dddddd;
   font: 13px/21px Helvetica, Arial, sans-serif;
   color: #555555;
 }
-/* line 361, ../sass/app.scss */
+/* line 425, ../sass/app.scss */
 #content #gallery ul {
   margin: 0 20px 0 20px;
 }
-/* line 363, ../sass/app.scss */
+/* line 427, ../sass/app.scss */
 #content #gallery ul li {
   margin: 0 0 0 0;
   float: left;
   display: inline;
   padding: 0 13px 20px 12px;
 }
-/* line 368, ../sass/app.scss */
+/* line 432, ../sass/app.scss */
 #content #gallery ul li a {
   display: block;
   width: 70px;
@@ -6374,12 +6448,12 @@ abbr {
   -moz-opacity: 0.75;
   opacity: 0.75;
 }
-/* line 384, ../sass/app.scss */
+/* line 448, ../sass/app.scss */
 #content #awards {
   margin: 0 0 150px 0;
 }
 
-/* line 389, ../sass/app.scss */
+/* line 453, ../sass/app.scss */
 #footerBg {
   -webkit-box-shadow: #dddddd 2px 0px 20px;
   -moz-box-shadow: #dddddd 2px 0px 20px;
@@ -6388,77 +6462,123 @@ abbr {
   background-color: #555555;
   padding: 6px 0;
 }
-/* line 394, ../sass/app.scss */
+/* line 458, ../sass/app.scss */
 #footerBg #footer {
   text-align: center;
   color: #f8f8f8;
 }
-/* line 397, ../sass/app.scss */
+/* line 461, ../sass/app.scss */
 #footerBg #footer p {
   text-shadow: none;
   padding: 10px 0 0 0;
 }
 
-/* line 404, ../sass/app.scss */
+/* line 468, ../sass/app.scss */
 #contact {
   z-index: 100;
 }
-/* line 406, ../sass/app.scss */
+/* line 470, ../sass/app.scss */
 #contact .label {
   background: #f8f8f8;
   color: #555555;
 }
-/* line 410, ../sass/app.scss */
+/* line 474, ../sass/app.scss */
 #contact .field {
   margin: 0 30px 0 30px;
 }
-/* line 412, ../sass/app.scss */
+/* line 476, ../sass/app.scss */
 #contact .field #message {
   max-width: 400px;
 }
-/* line 416, ../sass/app.scss */
+/* line 480, ../sass/app.scss */
 #contact span {
   float: right;
   color: red;
 }
-/* line 420, ../sass/app.scss */
+/* line 484, ../sass/app.scss */
 #contact .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 423, ../sass/app.scss */
+/* line 487, ../sass/app.scss */
 #contact .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 431, ../sass/app.scss */
+/* line 495, ../sass/app.scss */
 #contact .close-reveal-modal {
   font-size: 1.5rem;
 }
 
-/* line 436, ../sass/app.scss */
+/* line 500, ../sass/app.scss */
 #alert {
   z-index: 100;
 }
-/* line 438, ../sass/app.scss */
+/* line 502, ../sass/app.scss */
 #alert h4 {
   border-bottom: none;
 }
-/* line 441, ../sass/app.scss */
+/* line 505, ../sass/app.scss */
 #alert .buttons {
   float: right;
   margin: 0 30px 0 30px;
 }
-/* line 444, ../sass/app.scss */
+/* line 508, ../sass/app.scss */
 #alert .buttons .submit {
   background: #555555;
   color: #f8f8f8;
   border: 1px solid #555555;
   padding: 3px 10px 3px;
 }
-/* line 452, ../sass/app.scss */
+/* line 516, ../sass/app.scss */
 #alert .close-reveal-modal {
   font-size: 1.5rem;
 }
+
+/* line 521, ../sass/app.scss */
+[role="complementary"], [role="main"] {
+  /* remove the default padding */
+  padding: 0;
+}
+
+@media all and (min-width: 768px) {
+  /* line 528, ../sass/app.scss */
+  .js [role="complementary"] {
+    /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
+    width: 100%;
+  }
+
+  /* line 532, ../sass/app.scss */
+  .js [role="main"] {
+    width: 100%;
+    padding: 0 0;
+  }
+}
+/* end media query */
+/* line 537, ../sass/app.scss */
+[role="main"]:before {
+  content: "";
+  /* Changes the bg color of the flyout panel */
+  background-color: #322820;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 545, ../sass/app.scss */
+  .nav-bar > li:hover {
+    border-bottom: none;
+  }
+
+  /* line 549, ../sass/app.scss */
+  .nav-bar > li > a.main {
+    border: none;
+  }
+
+  /* line 553, ../sass/app.scss */
+  .menu-button {
+    /* Add a margin betwen the logo and the 'Menu' button */
+    margin-bottom: 20px;
+  }
+}
+/* end media query */
