@@ -6284,7 +6284,6 @@ abbr {
   clear: both;
   padding: 10px 0 0 0;
   overflow: hidden;
-  position: fixed;
   width: 100%;
   z-index: 20;
 }
@@ -6553,69 +6552,26 @@ abbr {
 }
 
 /* line 535, ../sass/app.scss */
-#sidebarmobile {
-  margin-top: 20px;
-  position: fixed;
-  height: 100%;
-  right: auto;
-}
-/* line 543, ../sass/app.scss */
-#sidebarmobile #contactMobile {
-  margin-top: 20px;
-}
-/* line 545, ../sass/app.scss */
-#sidebarmobile #contactMobile .label {
-  background: #f8f8f8;
-  color: #555555;
-}
-/* line 549, ../sass/app.scss */
-#sidebarmobile #contactMobile .field {
-  margin: 0px;
-}
-/* line 551, ../sass/app.scss */
-#sidebarmobile #contactMobile .field #message {
-  max-width: auto;
-}
-/* line 555, ../sass/app.scss */
-#sidebarmobile #contactMobile span {
-  float: right;
-  color: red;
-}
-/* line 559, ../sass/app.scss */
-#sidebarmobile #contactMobile .buttons {
-  float: right;
-  display: inline-block;
-  margin: 0 30px 0 30px;
-}
-/* line 563, ../sass/app.scss */
-#sidebarmobile #contactMobile .buttons .submit {
-  background: #555555;
-  color: #f8f8f8;
-  border: 1px solid #555555;
-  padding: 3px 10px 3px;
-}
-
-/* line 573, ../sass/app.scss */
 [role="complementary"], [role="main"] {
   /* remove the default padding */
   padding: 0;
 }
 
 @media all and (min-width: 768px) {
-  /* line 580, ../sass/app.scss */
+  /* line 542, ../sass/app.scss */
   .js [role="complementary"] {
     /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
     width: 100%;
   }
 
-  /* line 584, ../sass/app.scss */
+  /* line 546, ../sass/app.scss */
   .js [role="main"] {
     width: 100%;
     padding: 0 0;
   }
 }
 /* end media query */
-/* line 589, ../sass/app.scss */
+/* line 551, ../sass/app.scss */
 [role="main"]:before {
   content: "";
   /* Changes the bg color of the flyout panel */
@@ -6623,20 +6579,58 @@ abbr {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 597, ../sass/app.scss */
+  /* line 559, ../sass/app.scss */
   .nav-bar > li:hover {
     border-bottom: none;
   }
 
-  /* line 601, ../sass/app.scss */
+  /* line 562, ../sass/app.scss */
   .nav-bar > li > a.main {
     border: none;
   }
 
-  /* line 605, ../sass/app.scss */
+  /* line 565, ../sass/app.scss */
   .menu-button {
     /* Add a margin betwen the logo and the 'Menu' button */
-    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  /* line 569, ../sass/app.scss */
+  .first {
+    padding-bottom: 0 !important;
+    border-bottom: none;
+  }
+
+  /* line 573, ../sass/app.scss */
+  .full-width {
+    padding-bottom: 10px;
+  }
+
+  /* line 575, ../sass/app.scss */
+  .service {
+    /* add a 1px bottom border between the service panels */
+    padding: 15px 15px 30px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 580, ../sass/app.scss */
+  .service:last-child {
+    /* Removes the bottom border on the last service panel */
+    border: none;
+  }
+
+  /* ensures that the featured project div fills 100% of its parent */
+  /* line 585, ../sass/app.scss */
+  .featured {
+    width: 100%;
+  }
+
+  /* Removes the centering of the featured image and resizes the image as the viewport is scaled down */
+  /* line 588, ../sass/app.scss */
+  .featured img {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
   }
 }
 /* end media query */

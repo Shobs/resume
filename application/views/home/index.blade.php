@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div id="headerWrapper" class="hide-for-small">
+<header id="headerWrapper" class="hide-for-small">
 	<div class="row" >
 		<div class="twelve columns" id="header">
 			<!-- Header Wrapper section Begins -->
@@ -10,17 +10,7 @@
 			<!-- end / #headerWrapper -->
 		</div>
 	</div>
-</div>
-
-<div id="headerWrapperMobile" class="show-for-small">
-	<div class="row" >
-		<div class="twelve columns" id="headerMobile">
-			<!-- Header Wrapper section Begins -->
-			@include('includes.header-mobile')
-			<!-- end / #headerWrapper -->
-		</div>
-	</div>
-</div>
+</header>
 
 <div class="row" id="headerShadow">
 	<!-- end / #headerShadow -->
@@ -80,43 +70,7 @@
 </div>
 </section>
 
-<section id="sidebarmobile" role="complementary" class="phone-two"> <!-- This tells the javascript to take this content out of the main page and into the sidebar on small screens -->
-	<nav id="sidemenu" role="navigation">
-	    <ul id="sideMainNav" class="nav-bar">
-	        <li>{{HTML::link('#education', 'education', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
-			<li>{{HTML::link('#technical', 'technical expertise', array('data-magellan-arrival'=>'technical'));}}</li>
-			<li>{{HTML::link('#skills', 'skills', array('data-magellan-arrival'=>'skills'));}}</li>
-			<li>{{HTML::link('#work', 'work history', array('data-magellan-arrival'=>'work'));}}</li>
-			<li>{{HTML::link('#gallery', 'sample works', array('data-magellan-arrival'=>'gallery'));}}</li>
-			<li>{{HTML::link('#awards', 'awards &amp; accomplishments', array('data-magellan-arrival'=>'awards'));}}</li>
-	    </ul>
-	</nav>
-	<div id="contactMobile">
-    {{Form::open('contactMe', 'post', array('id'=>'contactMe'));}}
-		<!-- Change your email id in the config.php file -->
-		<div class="field">
-			{{Form::label('name', 'Name *', array('class' => 'label', 'for' => 'name'));}}
-			<span>{{$errors->first('name')}}</span>
-			{{Form::text('name', Input::old('name'), array('class' => 'text', 'id' => 'name', 'required' => 'sometimes'));}}
-		</div>
-		<div class="field">
-			{{Form::label('email', 'E-mail *', array('class' => 'label', 'for' => 'email'));}}<span>{{$errors->first('email')}}</span>
-			{{Form::email('email', Input::old('email'), array('class' => 'text', 'id' => 'email', 'required' => 'sometimes'));}}
-		</div>
-		<div class="field">
-			{{Form::label('message', 'Message *', array('class' => 'label', 'for' => 'message'));}}<span>{{$errors->first('message')}}</span>
-			{{Form::textarea('message', Input::old('message'), array('cols' => '25', 'rows' => '3', 'class' => 'textbox', 'id' => 'message', 'required' => 'sometimes'));}}
-		</div>
-		<p>* Fields are required.</p>
-		<div class="buttons">
-			{{Form::submit('Submit', array('class' => 'medium button submit', 'id' => 'submit'));}}
-			{{Form::reset('Reset', array('class' => 'medium button submit'));}}
-		</div>
-	{{Form::close();}}
-	</div>
-</section> <!-- end off-canvas sidebar -->
-
-<footer id="footerBg" class="site-footer row" role="contentinfo">
+<footer id="footerBg" class="row hide-for-small">
 	<div class="row" id="footer">
 		<div class="twelve columns"id="copyright">
 			<p>Jean Marcellin. All Rights Reserved.</p>
@@ -129,5 +83,137 @@
 <!-- Modal Section Begins -->
 @include('includes.modal')
 <!-- end #contact -->
+@endsection
+
+@section('content-mobile')
+	<!-- SMALL SCREEN NAVIGATION -->
+	<nav id="topMenu" role="navigation"> <!-- THIS IS KEY -->
+		<ul id="nav" class="nav-bar">
+			<li>{{HTML::link('#educationMobile', 'education', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
+			<li>{{HTML::link('#technicalMobile', 'technical expertise', array('data-magellan-arrival'=>'technical'));}}</li>
+			<li>{{HTML::link('#skillsMobile', 'skills', array('data-magellan-arrival'=>'skills'));}}</li>
+			<li>{{HTML::link('#workMobile', 'work history', array('data-magellan-arrival'=>'work'));}}</li>
+			<li>{{HTML::link('#galleryMobile', 'sample works', array('data-magellan-arrival'=>'gallery'));}}</li>
+			<li>{{HTML::link('#awardsMobile', 'awards &amp; accomplishments', array('data-magellan-arrival'=>'awards'));}}</li>
+		</ul>
+	</nav>
+	<div class="first full-width color-three">
+		<header id="header" class="row">
+
+			<!-- LOGO -->
+			<div class="five columns">
+				<a href="#" class="logo"><img src="images/site_assets/logo.png" />
+					<h1>Jean Marcellin</h1>
+				</a>
+			</div>
+
+			<!-- REGULAR NAVIGATION -->
+			<div class="seven columns">
+				<!-- SMALL SCREEN EXTRAS BUTTONS -->
+				<p class="show-for-small buttons">
+					<a class='menu-button medium button' id="menuButton" href="#menu">Menu</a><!-- link goes to named anchor -->
+					<a class='sidebar-button medium button' id="sidebarButton" href="#contact" >Contact Us</a>
+				</p> <!-- link goes to named anchor -->
+			</div>
+
+		</header>
+	</div><!-- end full width -->
+
+	<section role="main"> <!-- Main Section - This Is Part Of The Magic -->
+
+		<!-- CALLOUT TEXT -->
+		<div class="full-width color-five">
+			<div class="row callout">
+				<div class="twelve columns">
+					<p>Looking for a challenging position as a web developer, with opportunity for advancement.</p>
+				</div><!-- end columns -->
+			</div><!-- end row -->
+		</div><!-- end full width color five -->
+
+		<!-- SERVICES -->
+		<div class="full-width color-two">
+			<div class="row">
+				<div id="educationMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.education')
+
+				</div>
+
+				<div id="technicalMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.technical')
+
+				</div>
+
+				<div id="skillsMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.skills')
+
+				</div>
+				<div id="workMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.work')
+
+				</div>
+				<div id="galleryMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.gallery')
+
+				</div>
+				<div id="awardsMobile" class="four columns service">
+					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+					@include('includes.awards')
+
+				</div>
+
+			</div><!-- end row -->
+		</div><!-- end full-width -->
+
+	</section> <!-- end of main section -->
+
+	<section id="contact" role="complementary"> <!-- This tells the javascript to take this content out of the main section and into the sidebar on small screens -->
+
+		<!-- CONTACT US -->
+		<div class="full-width">
+			<div class="row">
+				<div class="ten columns centered">
+					<h2>Contact</h2>
+					<h4>Jean Marcellin / Web Developper</h4>
+					<!-- You can even use an image here. The width and height defined in the <a> element determines the width and height of the pop up. The title in the <a> element determines the title shown in the pop-up. -->
+					<p>{{HTML::link('maps.html?iframe=true&amp;width=600&amp;height=400', 'View Google Map', array('rel' => 'prettyPhoto'));}}
+					</p>
+					<div id="note"></div>
+					{{Form::open('contactMe', 'post', array('id'=>'contactMe'));}}
+						<!-- Change your email id in the config.php file -->
+						<div class="field">
+							{{Form::label('name', 'Name *', array('class' => 'label', 'for' => 'name'));}}
+							<span>{{$errors->first('name')}}</span>
+							{{Form::text('name', Input::old('name'), array('class' => 'text', 'id' => 'name', 'required' => 'sometimes'));}}
+						</div>
+						<div class="field">
+							{{Form::label('email', 'E-mail *', array('class' => 'label', 'for' => 'email'));}}<span>{{$errors->first('email')}}</span>
+							{{Form::email('email', Input::old('email'), array('class' => 'text', 'id' => 'email', 'required' => 'sometimes'));}}
+						</div>
+						<div class="field">
+							{{Form::label('message', 'Message *', array('class' => 'label', 'for' => 'message'));}}<span>{{$errors->first('message')}}</span>
+							{{Form::textarea('message', Input::old('message'), array('cols' => '25', 'rows' => '3', 'class' => 'textbox', 'id' => 'message', 'required' => 'sometimes'));}}
+						</div>
+						<p>* Fields are required.</p>
+						<div class="buttons">
+							{{Form::submit('Submit', array('class' => 'medium button submit', 'id' => 'submit'));}}
+							{{Form::reset('Reset', array('class' => 'medium button submit'));}}
+						</div>
+					{{Form::close();}}
+				</div>
+			</div> <!-- end row -->
+		</div><!-- end full width -->
+	</section> <!-- end off canvas sidebar -->
+
+	<!-- FOOTER -->
+	<footer id="footerBg" class=" color-four site-footer row">
+		<div id="footer" class="twelve columns">
+			<p>Jean Marcellin. All Rights Reserved.</p>
+		</div>
+	</footer>
 
 @endsection

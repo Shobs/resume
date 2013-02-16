@@ -268,7 +268,7 @@ abbr{
 	clear: both;
 	padding: 10px 0 0 0;
 	overflow: hidden;
-	position: fixed;
+	// position: fixed;
 	width: 100%;
 	z-index: 20;
 	#buttonSmall{
@@ -532,81 +532,61 @@ abbr{
 	}
 }
 
-#sidebarmobile{
-	margin-top: 20px;
-	position: fixed;
-	height: 100%;
-	right: auto;
-	#sidemenu{
-
-	}
-	#contactMobile{
-		margin-top: 20px;
-		.label{
-			background: $color6;
-			color: $color2;
-		}
-		.field{
-			margin: 0px;
-			#message{
-				max-width: auto;
-			}
-		}
-		span{
-			float: right;
-			color: red;
-		}
-		.buttons{
-			float: right;
-			display: inline-block;
-			margin: $margin30x0;
-			.submit{
-				background: $color2;
-				color: $color6;
-				border: 1px solid $color2;
-				padding: 3px 10px 3px;
-
-			}
-		}
-	}
-}
 [role="complementary"], [role="main"] {
-    /* remove the default padding */
-    padding:0;
+	/* remove the default padding */
+	padding:0;
 }
 
 @media all and (min-width: 768px) {
 
-	.js [role="complementary"] {
-    /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
-    width: 100%;
+  .js [role="complementary"] {
+  	/* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
+  	width: 100%;
 }
-.js [role="main"] {
-	width: 100%; padding: 0 0;
+  .js [role="main"] {
+  	width: 100%; padding: 0 0;
 }
 } /* end media query */
 
 [role="main"]:before {
 	content:"";
-    /* Changes the bg color of the flyout panel */
-    background-color: #322820;
+	/* Changes the bg color of the flyout panel */
+	background-color: #322820;
 }
 
 @media only screen and (max-width: 767px) {
 
 	.nav-bar > li:hover {
-		border-bottom: none;
-	}
+		border-bottom: none;}
 
 	.nav-bar > li > a.main {
-		border:none;
-	}
+		border:none;}
 
 	.menu-button {
-        /* Add a margin betwen the logo and the 'Menu' button */
-        margin-bottom: 20px;}
-} /* end media query */
+		/* Add a margin betwen the logo and the 'Menu' button */
+		margin-top:30px;}
 
+	.first {
+		padding-bottom:0 !important;
+		border-bottom: none;}
+
+	.full-width {padding-bottom: 10px;}
+
+	.service {
+		/* add a 1px bottom border between the service panels */
+		padding: 15px 15px 30px 15px;
+		border-bottom: 1px solid rgba(0,0,0,.2);}
+
+	.service:last-child {
+		/* Removes the bottom border on the last service panel */
+		border:none;}
+
+	/* ensures that the featured project div fills 100% of its parent */
+	.featured {width:100%;}
+
+	/* Removes the centering of the featured image and resizes the image as the viewport is scaled down */
+	.featured img {width:100%; left:0; margin-left:0;}
+} /* end media query */
 
 
 

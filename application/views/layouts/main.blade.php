@@ -32,14 +32,18 @@
         <![endif]-->
 
     </head>
-    <body class="off-canvas hide-extras">
+    <body id="page" class="off-canvas hide-extras">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
         <!-- begin content -->
-        <div class="wrapper">
+        <div class="wrapper container hide-for-small">
             @yield('content')
+        </div>
+
+        <div class="wrapper container show-for-small">
+            @yield('content-mobile')
         </div>
         <!-- end content -->
 
