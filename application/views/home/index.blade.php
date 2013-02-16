@@ -167,12 +167,12 @@
 
 	</section> <!-- end of main section -->
 
-	<section id="contact" role="complementary"> <!-- This tells the javascript to take this content out of the main section and into the sidebar on small screens -->
+	<section id="contactMobile" role="complementary"> <!-- This tells the javascript to take this content out of the main section and into the sidebar on small screens -->
 
 		<!-- CONTACT US -->
 		<div class="full-width">
 			<div class="row">
-				<div id="contactMobile"class="ten columns centered">
+				<div class="ten columns centered">
 					<h2>Contact</h2>
 					<h4>Jean Marcellin / Web Developper</h4>
 					<div id="note"></div>
@@ -193,8 +193,8 @@
 						</div>
 						<p>* Fields are required.</p>
 						<div class="buttons">
-							{{Form::submit('Submit', array('class' => 'medium button submit', 'id' => 'submit'));}}
-							{{Form::reset('Reset', array('class' => 'medium button submit'));}}
+							{{Form::submit('Submit', array('class' => 'button submit', 'id' => 'submit'));}}
+							{{Form::reset('Reset', array('class' => 'button submit'));}}
 						</div>
 					{{Form::close();}}
 				</div>
