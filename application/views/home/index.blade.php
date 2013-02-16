@@ -89,37 +89,33 @@
 	<!-- SMALL SCREEN NAVIGATION -->
 	<nav id="topMenu" role="navigation"> <!-- THIS IS KEY -->
 		<ul id="nav" class="nav-bar">
-			<li>{{HTML::link('#educationMobile', 'education', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
-			<li>{{HTML::link('#technicalMobile', 'technical expertise', array('data-magellan-arrival'=>'technical'));}}</li>
-			<li>{{HTML::link('#skillsMobile', 'skills', array('data-magellan-arrival'=>'skills'));}}</li>
-			<li>{{HTML::link('#workMobile', 'work history', array('data-magellan-arrival'=>'work'));}}</li>
-			<li>{{HTML::link('#galleryMobile', 'sample works', array('data-magellan-arrival'=>'gallery'));}}</li>
-			<li>{{HTML::link('#awardsMobile', 'awards &amp; accomplishments', array('data-magellan-arrival'=>'awards'));}}</li>
+			<li>{{HTML::link('#educationMobile', 'EDUCATION', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
+			<li>{{HTML::link('#technicalMobile', 'TECHNICAL EXPERTISE', array('data-magellan-arrival'=>'technical'));}}</li>
+			<li>{{HTML::link('#skillsMobile', 'SKILLS', array('data-magellan-arrival'=>'skills'));}}</li>
+			<li>{{HTML::link('#workMobile', 'WORK HISTORY', array('data-magellan-arrival'=>'work'));}}</li>
+			<li>{{HTML::link('#galleryMobile', 'SAMPLE WORKS', array('data-magellan-arrival'=>'gallery'));}}</li>
+			<li>{{HTML::link('#awardsMobile', 'AWARDS &amp; ACCOMPLISHMENTS', array('data-magellan-arrival'=>'awards'));}}</li>
 		</ul>
 	</nav>
 	<div class="first full-width color-three">
-		<header id="header" class="row">
-
-			<!-- LOGO -->
-			<div class="five columns">
-				<a href="#" class="logo"><img src="images/site_assets/logo.png" />
-					<h1>Jean Marcellin</h1>
-				</a>
-			</div>
-
-			<!-- REGULAR NAVIGATION -->
-			<div class="seven columns">
-				<!-- SMALL SCREEN EXTRAS BUTTONS -->
+		<header id="headerWrapperMobile" class="row">
+			<div id="navButtons" class="six columns">
 				<p class="show-for-small buttons">
 					<a class='menu-button medium button' id="menuButton" href="#menu">Menu</a><!-- link goes to named anchor -->
-					<a class='sidebar-button medium button' id="sidebarButton" href="#contact" >Contact Us</a>
+					<a class='sidebar-button medium button' id="sidebarButton" href="#contact" >Contact Me</a>
 				</p> <!-- link goes to named anchor -->
+				</div>
+			<!-- LOGO -->
+			<div class="six columns">
+				<span><a href="#" class="logo" id="labelMobile"><img src="images/site_assets/logo.png" />
+					<h1>Jean Marcellin</h1>
+				</a></span>
 			</div>
 
 		</header>
 	</div><!-- end full width -->
 
-	<section role="main"> <!-- Main Section - This Is Part Of The Magic -->
+	<section id="content" role="main"> <!-- Main Section - This Is Part Of The Magic -->
 
 		<!-- CALLOUT TEXT -->
 		<div class="full-width color-five">
@@ -176,12 +172,9 @@
 		<!-- CONTACT US -->
 		<div class="full-width">
 			<div class="row">
-				<div class="ten columns centered">
+				<div id="contactMobile"class="ten columns centered">
 					<h2>Contact</h2>
 					<h4>Jean Marcellin / Web Developper</h4>
-					<!-- You can even use an image here. The width and height defined in the <a> element determines the width and height of the pop up. The title in the <a> element determines the title shown in the pop-up. -->
-					<p>{{HTML::link('maps.html?iframe=true&amp;width=600&amp;height=400', 'View Google Map', array('rel' => 'prettyPhoto'));}}
-					</p>
 					<div id="note"></div>
 					{{Form::open('contactMe', 'post', array('id'=>'contactMe'));}}
 						<!-- Change your email id in the config.php file -->

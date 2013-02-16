@@ -21,7 +21,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1;
-  color: #222222;
+  color: #66ccdd;
   position: relative;
   -webkit-font-smoothing: antialiased;
 }
@@ -34,19 +34,19 @@ a img {
 
 /* line 12, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a {
-  color: #2ba6cb;
+  color: #555555;
   text-decoration: none;
   line-height: inherit;
 }
 
 /* line 13, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a:hover {
-  color: #2795b6;
+  color: #484848;
 }
 
 /* line 14, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
 a:focus {
-  color: #2795b6;
+  color: #484848;
 }
 
 /* line 15, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_globals.scss */
@@ -123,7 +123,7 @@ figure {
 
 /* Base Type Styles Using Modular Scale ---------------------- */
 /* line 3, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-body, div, dl, dt, dd, ul, ol, li, h1, #headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -153,7 +153,7 @@ aside p {
 }
 
 /* line 15, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1, #headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -164,14 +164,14 @@ h1, #headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6 {
   margin-top: 14px;
 }
 /* line 24, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1 small, #headerWrapperMobile #buttonSmall span small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
   color: #6f6f6f;
   line-height: 0;
 }
 
 /* line 27, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/common/_typography.scss */
-h1, #headerWrapperMobile #buttonSmall span {
+h1 {
   font-size: 44px;
 }
 
@@ -1355,8 +1355,8 @@ that IE7/8 do not support :nth-child.
 /* line 3, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button {
   width: auto;
-  background: #2ba6cb;
-  border: 1px solid #1e728c;
+  background: #555555;
+  border: 1px solid #2f2f2f;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1386,7 +1386,7 @@ that IE7/8 do not support :nth-child.
 /* line 6, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button:hover, .button:focus {
   color: white;
-  background-color: #2284a1;
+  background-color: #3b3b3b;
 }
 /* line 7, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button:active {
@@ -1420,12 +1420,12 @@ that IE7/8 do not support :nth-child.
 }
 /* line 17, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.primary {
-  background-color: #2ba6cb;
-  border: 1px solid #1e728c;
+  background-color: #555555;
+  border: 1px solid #2f2f2f;
 }
 /* line 18, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.primary:hover, .button.primary:focus {
-  background-color: #2284a1;
+  background-color: #3b3b3b;
 }
 /* line 20, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.success {
@@ -1487,14 +1487,14 @@ that IE7/8 do not support :nth-child.
 .button.disabled, .button[disabled] {
   opacity: 0.6;
   cursor: default;
-  background: #2ba6cb;
+  background: #555555;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 40, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.disabled:hover, .button[disabled]:hover {
-  background: #2ba6cb;
+  background: #555555;
 }
 /* line 42, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.disabled.success, .button[disabled].success {
@@ -1676,7 +1676,7 @@ input[type=submit].button, button.button {
 }
 /* line 87, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown > ul li:hover, .button.dropdown > ul li:focus {
-  background-color: #e3f4f9;
+  background-color: #c8c8c8;
   color: #222;
 }
 /* line 88, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
@@ -1714,7 +1714,7 @@ input[type=submit].button, button.button {
 }
 /* line 105, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split:hover, .button.dropdown.split:focus {
-  background-color: #2ba6cb;
+  background-color: #555555;
 }
 /* line 106, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split.alert:hover, .button.dropdown.split.alert:focus {
@@ -1742,7 +1742,7 @@ input[type=submit].button, button.button {
 }
 /* line 112, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > a:hover, .button.dropdown.split > a:focus {
-  background-color: #2284a1;
+  background-color: #3b3b3b;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1767,13 +1767,13 @@ input[type=submit].button, button.button {
 }
 /* line 119, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span {
-  background-color: #2ba6cb;
+  background-color: #555555;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 30px;
-  border-left: 1px solid #1e728c;
+  border-left: 1px solid #2f2f2f;
   -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1784,7 +1784,7 @@ input[type=submit].button, button.button {
 }
 /* line 120, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:hover, .button.dropdown.split > span:focus {
-  background-color: #2284a1;
+  background-color: #3b3b3b;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_buttons.scss */
 .button.dropdown.split > span:after {
@@ -2033,8 +2033,8 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 8, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active {
-  background: #2ba6cb;
-  border-color: #2284a1;
+  background: #555555;
+  border-color: #3b3b3b;
 }
 /* line 9, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active > a {
@@ -2043,7 +2043,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 10, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar > li.active:hover {
-  background: #2ba6cb;
+  background: #555555;
   cursor: default;
 }
 /* line 12, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
@@ -2144,7 +2144,7 @@ div.button-bar ul.button-group:last-child {
 }
 /* line 41, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li.active {
-  border-right: solid 1px #2284a1;
+  border-right: solid 1px #3b3b3b;
 }
 /* line 42, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_navbar.scss */
 .nav-bar.vertical > li:last-child {
@@ -2322,12 +2322,12 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
   margin: 0 auto;
 }
 /* line 38, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1, .top-bar > ul .name #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .top-bar > ul .name span {
+.top-bar > ul .name h1 {
   line-height: 45px;
   margin: 0;
 }
 /* line 39, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_topbar.scss */
-.top-bar > ul .name h1 a, .top-bar > ul .name #headerWrapperMobile #buttonSmall span a, #headerWrapperMobile #buttonSmall .top-bar > ul .name span a {
+.top-bar > ul .name h1 a {
   font-weight: bold;
   padding: 0 22.5px;
   font-size: 17px !important;
@@ -3170,7 +3170,7 @@ ul.orbit-bullets li.active.has-thumb {
 
 /* Typography */
 /* line 23, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_joyride.scss */
-.joyride-tip-guide h1, .joyride-tip-guide #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .joyride-tip-guide span,
+.joyride-tip-guide h1,
 .joyride-tip-guide h2,
 .joyride-tip-guide h3,
 .joyride-tip-guide h4,
@@ -3522,7 +3522,7 @@ ul.block-grid[data-clearing] {
 }
 /* line 11, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd a, .tabs li a {
-  color: #6f6f6f;
+  color: #e3f6f9;
   display: block;
   font-size: 14px;
   height: 40px;
@@ -3532,17 +3532,17 @@ ul.block-grid[data-clearing] {
 /* line 12, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd a:focus, .tabs li a:focus {
   font-weight: bold;
-  color: #2ba6cb;
+  color: #555555;
 }
 /* line 14, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd.active, .tabs li.active {
-  border-top: 3px solid #2ba6cb;
+  border-top: 3px solid #555555;
   margin-top: -3px;
 }
 /* line 15, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs dd.active a, .tabs li.active a {
   cursor: default;
-  color: #3c3c3c;
+  color: #90dae6;
   background: #fff;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
@@ -3637,7 +3637,7 @@ ul.block-grid[data-clearing] {
 }
 /* line 39, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_tabs.scss */
 .tabs.pill dd.active a, .tabs.pill li.active a {
-  background-color: #2ba6cb;
+  background-color: #555555;
   border: none;
   color: #fff;
 }
@@ -3738,7 +3738,7 @@ div.alert-box {
   font-weight: bold;
   font-size: 14px;
   color: white;
-  background-color: #2ba6cb;
+  background-color: #555555;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   -webkit-border-radius: 3px;
@@ -3796,7 +3796,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
   position: relative;
   bottom: 1px;
   color: #fff;
-  background: #2ba6cb;
+  background: #555555;
 }
 /* line 43, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .label.radius {
@@ -3839,8 +3839,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 56, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #196177;
-  color: #2ba6cb;
+  border-bottom: dotted 1px #222222;
+  color: #555555;
 }
 /* line 57, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .has-tip.tip-left, .has-tip.tip-right {
@@ -3918,8 +3918,8 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 73, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .tooltip.opened {
-  color: #2ba6cb !important;
-  border-bottom: dotted 1px #196177 !important;
+  color: #555555 !important;
+  border-bottom: dotted 1px #222222 !important;
 }
 
 /* line 77, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -3949,9 +3949,9 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 }
 /* line 86, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .panel.callout {
-  background: #2ba6cb;
+  background: #555555;
   color: #fff;
-  border-color: #2284a1;
+  border-color: #3b3b3b;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -3964,7 +3964,7 @@ div.alert-box a.close:hover, div.alert-box a.close:focus {
 .panel.callout .button {
   background: white;
   border: none;
-  color: #2ba6cb;
+  color: #555555;
   text-shadow: none;
 }
 /* line 90, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -4008,7 +4008,7 @@ ul.accordion > li > div.title {
   transition: 0.15s background linear;
 }
 /* line 106, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
-ul.accordion > li > div.title h1, ul.accordion > li > div.title #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall ul.accordion > li > div.title span, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
+ul.accordion > li > div.title h1, ul.accordion > li > div.title h2, ul.accordion > li > div.title h3, ul.accordion > li > div.title h4, ul.accordion > li > div.title h5 {
   margin: 0;
 }
 /* line 107, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -4030,7 +4030,7 @@ ul.accordion > li .content {
 }
 /* line 112, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active {
-  border-top: 3px solid #2ba6cb;
+  border-top: 3px solid #555555;
 }
 /* line 114, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.accordion > li.active .title {
@@ -4119,7 +4119,7 @@ dl.sub-nav dd a {
 /* line 144, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 dl.sub-nav dd.active a {
   font-weight: bold;
-  background: #2ba6cb;
+  background: #555555;
   color: #fff;
   padding: 3px 9px;
   cursor: default;
@@ -4162,14 +4162,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 }
 /* line 158, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a {
-  background: #2ba6cb;
+  background: #555555;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 /* line 159, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #2ba6cb;
+  background: #555555;
 }
 
 /* line 165, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
@@ -4312,9 +4312,9 @@ ul.inline-list > li > *, ul.link-list > li > * {
 }
 /* line 209, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 .th:hover img, .th:focus img {
-  -webkit-box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
-  -moz-box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
-  box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(85, 85, 85, 0.5);
+  -moz-box-shadow: 0 0 6px 1px rgba(85, 85, 85, 0.5);
+  box-shadow: 0 0 6px 1px rgba(85, 85, 85, 0.5);
 }
 
 /* Video - Mad props to http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ ---------------------- */
@@ -4456,7 +4456,7 @@ div.progress {
 }
 /* line 269, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_ui.scss */
 div.progress .meter {
-  background: #2ba6cb;
+  background: #555555;
   height: 100%;
   display: block;
   width: 50%;
@@ -5640,7 +5640,7 @@ table.hide-for-medium {
   /* line 321, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
   .tabs.mobile dd a.active, .tabs.mobile li a.active {
     border: none;
-    background: #2ba6cb;
+    background: #555555;
     color: #fff;
     margin: 0;
     position: static;
@@ -5756,11 +5756,11 @@ table.hide-for-medium {
     height: 45px;
   }
   /* line 367, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1, .top-bar ul > li.name #headerWrapperMobile #buttonSmall span, #headerWrapperMobile #buttonSmall .top-bar ul > li.name span {
+  .top-bar ul > li.name h1 {
     line-height: 1;
   }
   /* line 368, ../../../../../../../var/lib/gems/1.8/gems/zurb-foundation-3.2.4/scss/foundation/components/modules/_mqueries.scss */
-  .top-bar ul > li.name h1 a, .top-bar ul > li.name #headerWrapperMobile #buttonSmall span a, #headerWrapperMobile #buttonSmall .top-bar ul > li.name span a {
+  .top-bar ul > li.name h1 a {
     color: white;
     display: block;
     line-height: 45px !important;
@@ -6038,8 +6038,7 @@ table.hide-for-medium {
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1,
-#headerWrapperMobile #buttonSmall span, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -6115,7 +6114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /** Footer ***/
 /**** Classes ****/
 /* line 120, ../sass/app.scss */
-.mozBorderColorNone, h2, h3, #sidebar nav .nav-bar ul#navMain li a {
+.mozBorderColorNone, h2, h3 {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
@@ -6154,7 +6153,7 @@ body {
 }
 
 /* line 155, ../sass/app.scss */
-h1, #headerWrapperMobile #buttonSmall span {
+h1 {
   font: 21px/31px Helvetica, Arial, sans-serif;
 }
 
@@ -6248,7 +6247,7 @@ abbr {
   overflow: hidden;
 }
 /* line 236, ../sass/app.scss */
-#headerWrapper #header #label h1#title, #headerWrapper #header #label #headerWrapperMobile #buttonSmall span#title, #headerWrapperMobile #buttonSmall #headerWrapper #header #label span#title {
+#headerWrapper #header #label h1#title {
   background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
   color: black;
   margin: 0 0 12px;
@@ -6275,303 +6274,27 @@ abbr {
   margin-right: 0;
 }
 
-/* line 265, ../sass/app.scss */
-#headerWrapperMobile {
-  -webkit-box-shadow: #ebebeb 2px 0px 20px;
-  -moz-box-shadow: #ebebeb 2px 0px 20px;
-  box-shadow: #ebebeb 2px 0px 20px;
-  background: url("../img/header-bg.png") repeat-x scroll left bottom #ebebeb;
-  clear: both;
-  padding: 10px 0 0 0;
-  overflow: hidden;
-  width: 100%;
-  z-index: 20;
-}
-/* line 274, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall {
-  overflow: hidden;
-  color: #555555;
-  margin-bottom: 10px;
-}
-/* line 278, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall .button {
-  background-color: #dddddd;
-  border-color: #cccccc;
-  color: #222222;
-  width: 20%;
-  display: inline-block;
-}
-/* line 286, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall .button:hover {
-  background-color: #bbb;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
-  border-color: #444444;
-  color: #222222;
-}
-/* line 293, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall .button:focus {
-  -webkit-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 0 4px white, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  color: #222;
-}
-/* line 299, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall span {
-  right: 0px;
-}
-/* line 303, ../sass/app.scss */
-#headerWrapperMobile #buttonSmall span#title {
-  background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
-  color: black;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-/* line 313, ../sass/app.scss */
-#headerShadow {
-  clear: both;
-  height: 25px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 100;
-}
-
-/* line 322, ../sass/app.scss */
-.callout {
-  padding: 20px 0;
-}
-/* line 324, ../sass/app.scss */
-.callout p {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 2em;
-  font-weight: 600;
-  color: #222222;
-  margin-bottom: 0;
-}
-
-/* line 333, ../sass/app.scss */
-#sidebar {
-  position: absolute;
-  z-index: 10;
-  top: -155px;
-  background: none;
-  text-align: right;
-  width: auto;
-  padding: 0px 0px 0px 70px;
-}
-/* line 343, ../sass/app.scss */
-#sidebar nav #avatar {
-  height: 125px;
-  margin: 0 0 45px;
-  top: -190px;
-  z-index: 0;
-}
-/* line 349, ../sass/app.scss */
-#sidebar nav #avatar a {
-  display: block;
-}
-/* line 353, ../sass/app.scss */
-#sidebar nav .nav-bar {
-  background: none;
-}
-/* line 355, ../sass/app.scss */
-#sidebar nav .nav-bar ul {
-  z-index: 1000;
-}
-/* line 358, ../sass/app.scss */
-#sidebar nav .nav-bar ul#navMain li {
-  margin-bottom: 7px;
-}
-/* line 361, ../sass/app.scss */
-#sidebar nav .nav-bar ul#navMain li a:hover, #sidebar nav .nav-bar ul#navMain li a:focus, #sidebar nav .nav-bar ul#navMain li a.selected {
-  background-color: #555555;
-  color: #66ccdd;
-}
-/* line 366, ../sass/app.scss */
-#sidebar nav .nav-bar ul#navMain li a {
-  background-color: #555555;
-  color: #f8f8f8;
-  padding: 2px 8px;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: uppercase;
-}
-/* line 381, ../sass/app.scss */
-#sidebar #networkLinks {
-  float: right;
-  padding-top: 30px;
-}
-
-/* line 388, ../sass/app.scss */
-#content {
-  position: relative;
-  top: 0;
-}
-/* line 392, ../sass/app.scss */
-#content ul, #content ol {
-  margin: 10px 30px 10px 30px;
-}
-/* line 394, ../sass/app.scss */
-#content ul li, #content ol li {
-  margin: 0 30px 0 30px;
-}
-/* line 404, ../sass/app.scss */
-#content #technical table {
-  margin: 20px 30px 20px 30px;
-  border: 1px solid #dddddd;
-  border-collapse: collapse;
-}
-/* line 409, ../sass/app.scss */
-#content #technical table th {
-  background-color: #ebebeb;
-  font-weight: bold;
-  border: 1px solid #dddddd;
-  padding: 4px 8px;
-  color: #555555;
-}
-/* line 415, ../sass/app.scss */
-#content #technical table th abbr {
-  color: #555555;
-}
-/* line 421, ../sass/app.scss */
-#content #technical table td {
-  border: 1px solid #dddddd;
-  font: 13px/21px Helvetica, Arial, sans-serif;
-  color: #555555;
-}
-/* line 439, ../sass/app.scss */
-#content #gallery ul {
-  margin: 0 20px 0 20px;
-}
-/* line 441, ../sass/app.scss */
-#content #gallery ul li {
-  margin: 0 0 0 0;
-  float: left;
-  display: inline;
-  padding: 0 13px 20px 12px;
-}
-/* line 446, ../sass/app.scss */
-#content #gallery ul li a {
-  display: block;
-  width: 70px;
-  height: 65px;
-  filter: alpha(opacity=75);
-  -moz-opacity: 0.75;
-  opacity: 0.75;
-}
-/* line 462, ../sass/app.scss */
-#content #awards {
-  margin: 0 0 150px 0;
-}
-
-/* line 467, ../sass/app.scss */
-#footerBg {
-  -webkit-box-shadow: #dddddd 2px 0px 20px;
-  -moz-box-shadow: #dddddd 2px 0px 20px;
-  box-shadow: #dddddd 2px 0px 20px;
-  width: 100%;
-  background-color: #555555;
-  padding: 6px 0;
-}
-/* line 472, ../sass/app.scss */
-#footerBg #footer {
-  text-align: center;
-  color: #f8f8f8;
-}
-/* line 475, ../sass/app.scss */
-#footerBg #footer p {
-  text-shadow: none;
-  padding: 10px 0 0 0;
-}
-
-/* line 482, ../sass/app.scss */
-#contact {
-  z-index: 100;
-}
-/* line 484, ../sass/app.scss */
-#contact .label {
-  background: #f8f8f8;
-  color: #555555;
-}
-/* line 488, ../sass/app.scss */
-#contact .field {
-  margin: 0 30px 0 30px;
-}
-/* line 490, ../sass/app.scss */
-#contact .field #message {
-  max-width: 400px;
-}
-/* line 494, ../sass/app.scss */
-#contact span {
-  float: right;
-  color: red;
-}
-/* line 498, ../sass/app.scss */
-#contact .buttons {
-  float: right;
-  margin: 0 30px 0 30px;
-}
-/* line 501, ../sass/app.scss */
-#contact .buttons .submit {
-  background: #555555;
-  color: #f8f8f8;
-  border: 1px solid #555555;
-  padding: 3px 10px 3px;
-}
-/* line 509, ../sass/app.scss */
-#contact .close-reveal-modal {
-  font-size: 1.5rem;
-}
-
-/* line 514, ../sass/app.scss */
-#alert {
-  z-index: 100;
-}
-/* line 516, ../sass/app.scss */
-#alert h4 {
-  border-bottom: none;
-}
-/* line 519, ../sass/app.scss */
-#alert .buttons {
-  float: right;
-  margin: 0 30px 0 30px;
-}
-/* line 522, ../sass/app.scss */
-#alert .buttons .submit {
-  background: #555555;
-  color: #f8f8f8;
-  border: 1px solid #555555;
-  padding: 3px 10px 3px;
-}
-/* line 530, ../sass/app.scss */
-#alert .close-reveal-modal {
-  font-size: 1.5rem;
-}
-
-/* line 535, ../sass/app.scss */
+/* line 267, ../sass/app.scss */
 [role="complementary"], [role="main"] {
   /* remove the default padding */
   padding: 0;
 }
 
 @media all and (min-width: 768px) {
-  /* line 542, ../sass/app.scss */
+  /* line 274, ../sass/app.scss */
   .js [role="complementary"] {
     /* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
     width: 100%;
   }
 
-  /* line 546, ../sass/app.scss */
+  /* line 278, ../sass/app.scss */
   .js [role="main"] {
     width: 100%;
     padding: 0 0;
   }
 }
 /* end media query */
-/* line 551, ../sass/app.scss */
+/* line 283, ../sass/app.scss */
 [role="main"]:before {
   content: "";
   /* Changes the bg color of the flyout panel */
@@ -6579,58 +6302,250 @@ abbr {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 559, ../sass/app.scss */
-  .nav-bar > li:hover {
-    border-bottom: none;
+  /* line 292, ../sass/app.scss */
+  .mozBorderColorNoneMobile, h2, h3 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
   }
 
-  /* line 562, ../sass/app.scss */
-  .nav-bar > li > a.main {
-    border: none;
+  /* line 299, ../sass/app.scss */
+  body {
+    font: 13px/21px Helvetica, Arial, sans-serif;
+    color: #555555;
+    text-shadow: 1px 1px 0 #f8f8f8;
+    background: #f8f8f8;
   }
 
-  /* line 565, ../sass/app.scss */
-  .menu-button {
-    /* Add a margin betwen the logo and the 'Menu' button */
-    margin-top: 30px;
+  /* line 306, ../sass/app.scss */
+  h1 {
+    font: 21px/31px Helvetica, Arial, sans-serif;
   }
 
-  /* line 569, ../sass/app.scss */
-  .first {
-    padding-bottom: 0 !important;
-    border-bottom: none;
+  /* line 310, ../sass/app.scss */
+  h2 {
+    background-color: #555555;
+    color: #f8f8f8;
+    font: 17px/21px Helvetica, Arial, sans-serif;
+    text-shadow: none;
+    text-transform: uppercase;
   }
 
-  /* line 573, ../sass/app.scss */
-  .full-width {
-    padding-bottom: 10px;
+  /* line 319, ../sass/app.scss */
+  h3 {
+    background-color: #ebebeb;
+    color: #555555;
+    font: bold 15px/21px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
   }
 
-  /* line 575, ../sass/app.scss */
-  .service {
-    /* add a 1px bottom border between the service panels */
-    padding: 15px 15px 30px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /* line 327, ../sass/app.scss */
+  h4 {
+    border-bottom: 1px solid #dddddd;
+    font: 15px/21px Helvetica, Arial, sans-serif;
+    position: relative;
+    color: #555555;
   }
 
-  /* line 580, ../sass/app.scss */
-  .service:last-child {
-    /* Removes the bottom border on the last service panel */
-    border: none;
+  /* line 334, ../sass/app.scss */
+  h5 {
+    border-bottom: 1px solid #dddddd;
+    font: 15px/19px Helvetica, Arial, sans-serif;
+    color: #555555;
   }
 
-  /* ensures that the featured project div fills 100% of its parent */
-  /* line 585, ../sass/app.scss */
-  .featured {
+  /* line 340, ../sass/app.scss */
+  p {
+    margin: 0 30px 16px 30px;
+  }
+
+  /* line 344, ../sass/app.scss */
+  a {
+    color: #66ccdd;
+    text-shadow: none;
+  }
+  /* line 347, ../sass/app.scss */
+  a:hover {
+    text-shadow: #66ccdd 1px 1px 5px, #66ccdd -1px -1px 5px;
+    color: #555555;
+  }
+
+  /* line 355, ../sass/app.scss */
+  #topMenu .button {
+    background: #555555;
+    color: #f8f8f8;
+    border: 1px solid #555555;
+    padding: 3px 10px 3px;
+  }
+  /* line 360, ../sass/app.scss */
+  #topMenu .button:hover {
+    text-shadow: #f8f8f8 1px 1px 5px, #f8f8f8 -1px -1px 5px;
+    color: #66ccdd;
+  }
+
+  /* line 367, ../sass/app.scss */
+  #headerWrapperMobile {
+    background: url("../img/header-bg.png") repeat-x scroll left bottom #ebebeb;
+  }
+  /* line 369, ../sass/app.scss */
+  #headerWrapperMobile #navButtons {
+    margin: 0px;
+  }
+  /* line 371, ../sass/app.scss */
+  #headerWrapperMobile #navButtons p {
+    margin: 5px;
+  }
+  /* line 374, ../sass/app.scss */
+  #headerWrapperMobile #navButtons span {
+    text-align: right;
+    top: 0;
+  }
+
+  /* line 381, ../sass/app.scss */
+  #headerShadow {
+    clear: both;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
     width: 100%;
+    z-index: 100;
   }
 
-  /* Removes the centering of the featured image and resizes the image as the viewport is scaled down */
-  /* line 588, ../sass/app.scss */
-  .featured img {
+  /* line 390, ../sass/app.scss */
+  .callout {
+    padding: 10px 0;
+    margin: 0px;
+  }
+  /* line 393, ../sass/app.scss */
+  .callout p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  /* line 403, ../sass/app.scss */
+  #content {
+    position: relative;
+    top: 0;
+  }
+  /* line 407, ../sass/app.scss */
+  #content ul, #content ol {
+    margin: 10px 30px 10px 30px;
+  }
+  /* line 409, ../sass/app.scss */
+  #content ul li, #content ol li {
+    margin: 0 30px 0 30px;
+  }
+  /* line 414, ../sass/app.scss */
+  #content #educationMobile {
+    padding: 0px;
+  }
+  /* line 419, ../sass/app.scss */
+  #content #technical table {
+    margin: 20px 30px 20px 30px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+  }
+  /* line 424, ../sass/app.scss */
+  #content #technical table th {
+    background-color: #ebebeb;
+    font-weight: bold;
+    border: 1px solid #dddddd;
+    padding: 4px 8px;
+    color: #555555;
+  }
+  /* line 430, ../sass/app.scss */
+  #content #technical table th abbr {
+    color: #555555;
+  }
+  /* line 436, ../sass/app.scss */
+  #content #technical table td {
+    border: 1px solid #dddddd;
+    font: 13px/21px Helvetica, Arial, sans-serif;
+    color: #555555;
+  }
+  /* line 454, ../sass/app.scss */
+  #content #gallery ul {
+    margin: 0 20px 0 20px;
+  }
+  /* line 456, ../sass/app.scss */
+  #content #gallery ul li {
+    margin: 0 0 0 0;
+    float: left;
+    display: inline;
+    padding: 0 13px 20px 12px;
+  }
+  /* line 461, ../sass/app.scss */
+  #content #gallery ul li a {
+    display: block;
+    width: 70px;
+    height: 65px;
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+    opacity: 0.75;
+  }
+  /* line 477, ../sass/app.scss */
+  #content #awards {
+    margin: 0 0 150px 0;
+  }
+
+  /* line 482, ../sass/app.scss */
+  #footerBg {
+    -webkit-box-shadow: #dddddd 2px 0px 20px;
+    -moz-box-shadow: #dddddd 2px 0px 20px;
+    box-shadow: #dddddd 2px 0px 20px;
     width: 100%;
-    left: 0;
-    margin-left: 0;
+    background-color: #555555;
+    padding: 6px 0;
+  }
+  /* line 487, ../sass/app.scss */
+  #footerBg #footer {
+    text-align: center;
+    color: #f8f8f8;
+  }
+  /* line 490, ../sass/app.scss */
+  #footerBg #footer p {
+    text-shadow: none;
+    padding: 10px 0 0 0;
+  }
+
+  /* line 497, ../sass/app.scss */
+  #contactMobile {
+    z-index: 100;
+  }
+  /* line 499, ../sass/app.scss */
+  #contactMobile h4 {
+    margin: 0 0 20px 0;
+  }
+  /* line 502, ../sass/app.scss */
+  #contactMobile .label {
+    background: #f8f8f8;
+    color: #555555;
+  }
+  /* line 508, ../sass/app.scss */
+  #contactMobile .field #message {
+    max-width: auto;
+  }
+  /* line 512, ../sass/app.scss */
+  #contactMobile span {
+    float: right;
+    color: red;
+  }
+  /* line 516, ../sass/app.scss */
+  #contactMobile .buttons {
+    display: inline;
+  }
+  /* line 520, ../sass/app.scss */
+  #contactMobile .buttons .submit {
+    background: #555555;
+    color: #f8f8f8;
+    border: 1px solid #555555;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 }
 /* end media query */

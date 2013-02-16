@@ -262,188 +262,203 @@ abbr{
 }
 
 
-#headerWrapperMobile{
-	@include box-shadow ($boxShadowClr 2px 0px 20px);
-	background: url("../img/header-bg.png") repeat-x scroll left bottom $headerBgClr;
-	clear: both;
-	padding: 10px 0 0 0;
-	overflow: hidden;
-	// position: fixed;
-	width: 100%;
-	z-index: 20;
-	#buttonSmall{
+
+
+[role="complementary"], [role="main"] {
+	/* remove the default padding */
+	padding:0;
+}
+
+@media all and (min-width: 768px) {
+
+	.js [role="complementary"] {
+  	/* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
+  	width: 100%;
+  }
+  .js [role="main"] {
+  	width: 100%; padding: 0 0;
+  }
+} /* end media query */
+
+[role="main"]:before {
+	content:"";
+	/* Changes the bg color of the flyout panel */
+	background-color: #322820;
+}
+
+@media only screen and (max-width: 767px) {
+
+	// Firefox border fix
+	.mozBorderColorNoneMobile{
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+	}
+
+	body{
+		font: 13px/21px $font;
+		color: $bodyTxtClr;
+		text-shadow: 1px 1px 0 $color6;
+		background: $bodyBgClr;
+	}
+
+	h1{
+		font: 21px/31px $font;
+	}
+
+	h2{
+		@extend .mozBorderColorNoneMobile;
+		background-color: $titlePriBgClr;
+		color: $titlePriTxtClr;
+		font: 17px/21px $font;
+		text-shadow: none;
+		text-transform: uppercase;
+	}
+
+	h3{
+		@extend .mozBorderColorNoneMobile;
+		background-color: $titleSecBgClr;
+		color: $titleSecTxtClr;
+		font: bold 15px/21px $font;
+		text-transform: uppercase;
+	}
+
+	h4{
+		border-bottom: 1px solid $color4;
+		font: 15px/21px $font;
+		position: relative;
+		color: $color2;
+	}
+
+	h5{
+		border-bottom: 1px solid $color4;
+		font: 15px/19px $font;
+		color: $color2;
+	}
+
+	p {
+		margin: 0 30px 16px 30px;
+	}
+
+	a{
+		color: $linkTxtClr;
+		text-shadow: none;
+		&:hover{
+			@include text-shadow($color5 1px 1px 5px, $color5 -1px -1px 5px);
+			color: $linkTxtHoverClr;
+		}
+	}
+
+	#topMenu{
+
+		.button{
+			background: $color2;
+			color: $color6;
+			border: 1px solid $color2;
+			padding: 3px 10px 3px;
+			&:hover{
+				@include text-shadow($color6 1px 1px 5px, $color6 -1px -1px 5px);
+				color: $color5;
+			}
+		}
+	}
+
+	#headerWrapperMobile{
+		background: url("../img/header-bg.png") repeat-x scroll left bottom $headerBgClr;
+		#navButtons{
+			margin: 0px;
+			p{
+				margin: 5px;
+			}
+			span{
+				text-align: right;
+				top: 0;
+			}
+		}
+	}
+
+	#headerShadow{
+		clear: both;
+		height: 10px;
 		overflow: hidden;
-		color: $textClr;
-		margin-bottom: 10px;
-		.button {
-			background-color:#dddddd;
-			border-color: #cccccc;
+		position: relative;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.callout {
+		padding:10px 0;
+		margin: 0px;
+		p {
+			font-family:'Open Sans', sans-serif;
+			text-align:center;
+			font-size:2em;
+			font-weight:600;
 			color:#222222;
-			width: 20%;
-			display: inline-block;
+			margin-bottom: 0;
 		}
+	}
 
-		.button:hover {
-			background-color: #bbb;
-    					box-shadow: 0px 0px 10px rgba(0, 0, 0, .8) inset; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
-    					border-color: #444444;
-    					color:#222222;
-    				}
+	#content{
+		position: relative;
+		top: 0;
 
-    				.button:focus {
-    					-webkit-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    					-moz-box-shadow: 0 0 4px #ffffff, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    					box-shadow: 0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    					color: #222;
-    				}
-    				span{
-    					@extend h1;
-    					right: 0px;
-					// text-align: right;
-					&#title{
-						background: url("../img/h1-bg.png") repeat-x scroll left bottom transparent;
-						color: $nameClr;
-						text-transform: uppercase;
-						width: 100%;
-					}
-				}
+		ul, ol{
+			margin: $margin30x10;
+			li{
+				margin: $margin30x0;
 			}
 		}
 
-		#headerShadow{
-			clear: both;
-			height: 25px;
-			overflow: hidden;
-			position: relative;
-			width: 100%;
-			z-index: 100;
+		#educationMobile{
+			padding: 0px;
 		}
 
-		.callout {
-			padding:20px 0;
-			p {
-				font-family:'Open Sans', sans-serif;
-				text-align:center;
-				font-size:2em;
-				font-weight:600;
-				color:#222222;
-				margin-bottom: 0;
-			}
-		}
-		#sidebar {
-			position: absolute;
-			z-index: 10;
-			top: -155px;
-			background: none;
-			text-align: right;
-			width: auto;
-			padding: 0px 0px 0px 70px;
+		#technical{
+			table{
+				margin: 20px 30px 20px 30px;
+				border: 1px solid $tableOutBdrClr;
+				border-collapse: collapse;
 
-			nav	{
-				#avatar {
-					height: 125px;
-					margin: 0 0 45px;
-					top: -190px;
-					z-index: 0;
-
-					a{
-						display: block;
-					}
-				}
-				.nav-bar{
-					background: none;
-					ul{
-						z-index: 1000;
-						&#navMain {
-							li{
-								margin-bottom: 7px;
-
-								a:hover, a:focus, a.selected{
-									background-color: $hoverBgClr;
-									color: $hoverTxtClr;
-								}
-
-								a{
-									@extend .mozBorderColorNone;
-									background-color: $navBgClr;
-									color: $navTxtClr;
-									padding: 2px 8px;
-									text-decoration: none;
-									text-shadow: none;
-									text-transform: uppercase;
-								}
-							}
-						}
-
-					}
-				}
-			}
-			#networkLinks{
-				float: right;
-				padding-top: 30px;
-			}
-		}
-
-
-		#content{
-			position: relative;
-			top: 0;
-
-			ul, ol{
-				margin: $margin30x10;
-				li{
-					margin: $margin30x0;
-				}
-			}
-
-			#education{
-
-			}
-
-			#technical{
-				table{
-					margin: 20px 30px 20px 30px;
-					border: 1px solid $tableOutBdrClr;
-					border-collapse: collapse;
-
-					th{
-						background-color: $tableThBgClr;
-						font-weight: bold;
-						border: 1px solid $tableInBdrClr;
-						padding: 4px 8px;
+				th{
+					background-color: $tableThBgClr;
+					font-weight: bold;
+					border: 1px solid $tableInBdrClr;
+					padding: 4px 8px;
+					color: $tableThTxtClr;
+					abbr{
 						color: $tableThTxtClr;
-						abbr{
-							color: $tableThTxtClr;
-						}
-
 					}
 
-					td{
-						border: 1px solid $tableInBdrClr;
-						font: 13px/21px $font;
-						color: $tableTdTxtClr;
+				}
 
-					}
+				td{
+					border: 1px solid $tableInBdrClr;
+					font: 13px/21px $font;
+					color: $tableTdTxtClr;
+
 				}
 			}
+		}
 
-			#skills{
+		#skills{
 
-			}
+		}
 
-			#work{
+		#work{
 
-			}
+		}
 
-			#gallery{
-				ul{
-					margin: $margin20x0;
-					li{
-						margin: 0 0 0 0;
-						float: left;
-						display: inline;
-						padding: 0 13px 20px 12px;
-						a{
+		#gallery{
+			ul{
+				margin: $margin20x0;
+				li{
+					margin: 0 0 0 0;
+					float: left;
+					display: inline;
+					padding: 0 13px 20px 12px;
+					a{
 					// float: left;
 					display: block;
 					width: 70px;
@@ -479,16 +494,19 @@ abbr{
 	}
 }
 
-#contact{
+#contactMobile{
 	z-index: 100;
+	h4{
+		margin: 0 0 20px 0;
+	}
 	.label{
 		background: $color6;
 		color: $color2;
 	}
 	.field{
-		margin: $margin30x0;
+		// margin: $margin30x0;
 		#message{
-			max-width: 400px;
+			max-width: auto;
 		}
 	}
 	span{
@@ -496,96 +514,20 @@ abbr{
 		color: red;
 	}
 	.buttons{
-		float: right;
-		margin: $margin30x0;
+		// float: right;
+		// margin: $margin30x0;
+			display: inline;
 		.submit{
 			background: $color2;
 			color: $color6;
 			border: 1px solid $color2;
-			padding: 3px 10px 3px;
+			padding: 10px;
+			margin-bottom: 10px;
 
 		}
 	}
-	.close-reveal-modal{
-		font-size: 1.5rem;
-	}
 }
 
-#alert{
-	z-index: 100;
-	h4{
-		border-bottom: none;
-	}
-	.buttons{
-		float: right;
-		margin: $margin30x0;
-		.submit{
-			background: $color2;
-			color: $color6;
-			border: 1px solid $color2;
-			padding: 3px 10px 3px;
-
-		}
-	}
-	.close-reveal-modal{
-		font-size: 1.5rem;
-	}
-}
-
-[role="complementary"], [role="main"] {
-	/* remove the default padding */
-	padding:0;
-}
-
-@media all and (min-width: 768px) {
-
-  .js [role="complementary"] {
-  	/* Sets both the complementary and main sections at 100% width instead of main content / sidebar layout */
-  	width: 100%;
-}
-  .js [role="main"] {
-  	width: 100%; padding: 0 0;
-}
-} /* end media query */
-
-[role="main"]:before {
-	content:"";
-	/* Changes the bg color of the flyout panel */
-	background-color: #322820;
-}
-
-@media only screen and (max-width: 767px) {
-
-	.nav-bar > li:hover {
-		border-bottom: none;}
-
-	.nav-bar > li > a.main {
-		border:none;}
-
-	.menu-button {
-		/* Add a margin betwen the logo and the 'Menu' button */
-		margin-top:30px;}
-
-	.first {
-		padding-bottom:0 !important;
-		border-bottom: none;}
-
-	.full-width {padding-bottom: 10px;}
-
-	.service {
-		/* add a 1px bottom border between the service panels */
-		padding: 15px 15px 30px 15px;
-		border-bottom: 1px solid rgba(0,0,0,.2);}
-
-	.service:last-child {
-		/* Removes the bottom border on the last service panel */
-		border:none;}
-
-	/* ensures that the featured project div fills 100% of its parent */
-	.featured {width:100%;}
-
-	/* Removes the centering of the featured image and resizes the image as the viewport is scaled down */
-	.featured img {width:100%; left:0; margin-left:0;}
 } /* end media query */
 
 
