@@ -1,5 +1,5 @@
 $(function() {
-	var navigation_links = $('nav a');
+	var navigation_links = $('#navMain a');
 	navigation_links.click( function(event) {
 		$.scrollTo(
 			$(this).attr("href"),{

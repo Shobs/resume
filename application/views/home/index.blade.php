@@ -29,38 +29,50 @@
 		<div class="eight columns phone-two" id="content">
 			<!-- Education Section Begins -->
 			<section id="education">
-				@include('includes.education')
-				<!-- end #education -->
+				<div data-magellan-destination='education' class="section" name="section1">
+					@include('includes.education')
+					<!-- end #education -->
+				</div>
 			</section>
 
 			<!-- Technical Expertise Section Begins -->
 			<section id="technical">
-				@include('includes.technical')
-				<!-- end #technical -->
+				<div data-magellan-destination='technical' class="section" name="section2">
+					@include('includes.technical')
+					<!-- end #technical -->
+				</div>
 			</section>
 
 			<!-- Skills Section Begins -->
 			<section id="skills">
-				@include('includes.skills')
-				<!-- end #skills -->
+				<div data-magellan-destination='skills' class="section" name="section3">
+					@include('includes.skills')
+					<!-- end #skills -->
+				</div>
 			</section>
 
 			<!-- Work History Section Begins -->
 			<section id="work">
-				@include('includes.work')
-				<!-- end #work -->
+				<div data-magellan-destination='work' class="section" name="section4">
+					@include('includes.work')
+					<!-- end #work -->
+				</div>
 			</section>
 
 			<!-- Sample Works Section Begins -->
 			<section id="gallery">
-				@include('includes.gallery')
-				<!-- end .gallery 2 -->
+				<div data-magellan-destination='gallery' class="section" name="section5">
+					@include('includes.gallery')
+					<!-- end .gallery 2 -->
+				</div>
 			</section>
 
 			<!-- Awards and Accomplishments Section Begins -->
 			<section id="awards">
-				@include('includes.awards')
-				<!-- end #awards -->
+				<div data-magellan-destination='awards' class="section" name="section6">
+					@include('includes.awards')
+					<!-- end #awards -->
+				</div>
 			</section>
 
 			<!-- end #content -->
@@ -89,12 +101,12 @@
 	<!-- SMALL SCREEN NAVIGATION -->
 	<nav id="topMenu" role="navigation"> <!-- THIS IS KEY -->
 		<ul id="nav" class="nav-bar">
-			<li>{{HTML::link('#educationMobile', 'EDUCATION', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
-			<li>{{HTML::link('#technicalMobile', 'TECHNICAL EXPERTISE', array('data-magellan-arrival'=>'technical'));}}</li>
-			<li>{{HTML::link('#skillsMobile', 'SKILLS', array('data-magellan-arrival'=>'skills'));}}</li>
-			<li>{{HTML::link('#workMobile', 'WORK HISTORY', array('data-magellan-arrival'=>'work'));}}</li>
-			<li>{{HTML::link('#galleryMobile', 'SAMPLE WORKS', array('data-magellan-arrival'=>'gallery'));}}</li>
-			<li>{{HTML::link('#awardsMobile', 'AWARDS &amp; ACCOMPLISHMENTS', array('data-magellan-arrival'=>'awards'));}}</li>
+			<li>{{HTML::link('#educationMobile', 'EDUCATION');}}</li>
+			<li>{{HTML::link('#technicalMobile', 'TECHNICAL EXPERTISE');}}</li>
+			<li>{{HTML::link('#skillsMobile', 'SKILLS');}}</li>
+			<li>{{HTML::link('#workMobile', 'WORK HISTORY');}}</li>
+			<li>{{HTML::link('#galleryMobile', 'SAMPLE WORKS');}}</li>
+			<li>{{HTML::link('#awardsMobile', 'AWARDS &amp; ACCOMPLISHMENTS');}}</li>
 		</ul>
 	</nav>
 	<div class="first full-width color-three">

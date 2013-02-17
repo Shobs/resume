@@ -1,4 +1,4 @@
-<div data-magellan-destination='gallery' class="section" name="section5">
+
 	<h2>Sample Works</h2>
 	<h3>Some Category</h3>
 	<ul class="row">
@@ -30,4 +30,3 @@
 		<li><a title="Custom Title" rel="prettyPhoto" href="images/gallery/preview_image.gif">{{HTML::image('http://placehold.it/70x65', 'image', array('width'=>'70', 'height' => '65'));}}</a> </li>
 		<!-- end .gallery 2 -->
 	</ul>
-</div>

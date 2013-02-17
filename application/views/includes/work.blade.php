@@ -1,4 +1,4 @@
-<div data-magellan-destination='work' class="section" name="section4">
+
 	<h2>Work History</h2>
 	<h3>Yahoo</h3>
 	<h4>Performance Engineer <em class="right">09/2007 - Present</em></h4>
@@ -16,4 +16,3 @@
 	<h4>Role 2 <em class="right">01/2004 - 05/2004</em></h4>
 	<h4>Role 3 <em class="right">08/2003 - 01/2004</em></h4>
 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
