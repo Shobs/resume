@@ -60,11 +60,8 @@ Route::post('contactMe', function()
 	$validation = Validator::make($input, $rules);
 
 	if($validation->fails()){
-		if (Request::ajax()) {
-			echo implode('', $validation->errors->all());
-		}else{
-			Redirect::home()->with_errors($validation)->with_input();
-		}
+		echo implode('', $validation->errors->all());
+
 	}else{
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
