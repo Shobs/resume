@@ -85,235 +85,62 @@
 	<!-- Home -->
         <div data-role="page" id="homeMobile">
             <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
                 <h3>
                     Welcome
                 </h3>
             </div>
             <div data-role="content">
-            	<div id="profile" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.profile')
-				</div>
-				<div id="education" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.education')
-				</div>
-				<div id="technical" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.technical')
-				</div>
-				<div id="work" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.work')
-				</div>
-				<div id="awards" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.awards')
-				</div>
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-
-        <div data-role="page" id="profileMobile">
-            <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-		        <div class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.profile')
-
-				</div>
-
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-        <div data-role="page" id="educationMobile">
-            <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-		        <div class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.education')
-
-				</div>
-
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-
-        <div data-role="page" id="technicalMobile">
-            <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-				<div class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.technical')
-				</div>
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-
-        <div data-role="page" id="workMobile">
-            <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-
-            <div data-role="content">
-				<div class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.work')
-				</div>
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-
-        <div data-role="page" id="awardsMobile">
-            <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-				<div class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.awards')
-				</div>
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-
-        <div data-role="page" id="mobileMenu">
-	        <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#homeMobile" class="ui-btn-left">
-                    Home
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-                <ul data-role="listview" data-divider-theme="a" data-inset="true">
-                    <li data-theme="a">
-                        <a href="#profileMobile" data-transition="slide">
-                            Professional profile
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#educationMobile" data-transition="slide">
-                            Education
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#technicalMobile" data-transition="slide">
-                            Technical Skills
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#workMobile" data-transition="slide">
-                            Work History
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#awardsMobile" data-transition="slide">
-                            Awards and Accomplishments
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
-                <h3>
-                    www.jeanmarcellin.net
-                </h3>
-            </div>
-        </div>
-         <div data-role="page" id="mobileContact">
-	         <div data-theme="a" data-role="header" data-position="fixed">
-                <a data-role="button" data-theme="a" href="#mobileContact" class="ui-btn-right">
-                    Contact
-                </a>
-                <a id="menuButton" data-role="button" data-theme="a" href="#mobileMenu" class="ui-btn-left">
-                    Menu
-                </a>
-                <h3>
-                    Welcome
-                </h3>
-            </div>
-            <div data-role="content">
-                <form id="contactMobile" action="contactMe" method="POST">
+            <p id="introQuote">“Looking for a challenging position as a web developer, <br>with opportunity for advancement.”</p>
+            	<div data-role="collapsible">
+                    <h3>
+                        Professional Profile
+                    </h3>
+	            	<div id="profile" class="four columns service">
+						<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+						@include('includes.profile')
+					</div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Education
+                    </h3>
+					<div id="education" class="four columns service">
+						<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+						@include('includes.education')
+					</div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Technical Skills
+                    </h3>
+					<div id="technical" class="four columns service">
+						<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+						@include('includes.technical')
+					</div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Work History
+                    </h3>
+					<div id="work" class="four columns service">
+						<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+						@include('includes.work')
+					</div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Awards and Accomplishments
+                    </h3>
+					<div id="awards" class="four columns service">
+						<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
+						@include('includes.awards')
+					</div>
+                </div>
+                <div data-role="collapsible">
+                    <h3>
+                        Contact Me
+                    </h3>
+                     <form id="contactMobile" action="contactMe" method="POST">
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup" data-mini="true">
                             <label for="nameMobile">
