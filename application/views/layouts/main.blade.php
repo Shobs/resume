@@ -8,7 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Jean Marcellin</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
         <!-- if you need normalize.css -->
         {{-- HTML::style('css/normalize.min.css') }}
@@ -18,6 +20,7 @@
         {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'screen')) }}
         {{ HTML::style('css/offcanvas.css', array('media' => 'screen')) }}
         {{ HTML::style('css/print-preview.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/mobile.css', array('media' => 'screen')) }}
         {{ HTML::style('css/print.css', array('media' => 'print')) }}
 
         {{ HTML::script('js/foundation/modernizr.foundation.js') }}
@@ -53,6 +56,7 @@
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
         <!-- Use local jQuery lib -->
         {{ HTML::script('js/foundation/jquery.js') }}
+        {{ HTML::script('js/vendor/jquery-mobile.js') }}
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
 
         {{ HTML::script('js/foundation/jquery.foundation.tabs.js') }}

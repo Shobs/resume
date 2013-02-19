@@ -82,50 +82,21 @@
 @endsection
 
 @section('content-mobile')
-	<!-- SMALL SCREEN NAVIGATION -->
-	<nav id="topMenu" role="navigation"> <!-- THIS IS KEY -->
-		<ul id="nav" class="nav-bar">
-			<li>{{HTML::link('#educationMobile', 'EDUCATION');}}</li>
-			<li>{{HTML::link('#technicalMobile', 'TECHNICAL EXPERTISE');}}</li>
-			<li>{{HTML::link('#skillsMobile', 'SKILLS');}}</li>
-			<li>{{HTML::link('#workMobile', 'WORK HISTORY');}}</li>
-			<li>{{HTML::link('#galleryMobile', 'SAMPLE WORKS');}}</li>
-			<li>{{HTML::link('#awardsMobile', 'AWARDS &amp; ACCOMPLISHMENTS');}}</li>
-		</ul>
-	</nav>
-	<div class="first full-width color-three">
-		<header id="headerWrapperMobile" class="row">
-			<div id="navButtons" class="six columns">
-				<p class="show-for-small buttons">
-					<a class='menu-button medium button' id="menuButton" href="#menu">Menu</a><!-- link goes to named anchor -->
-					<a class='sidebar-button medium button' id="sidebarButton" href="#contact" >Contact Me</a>
-				</p> <!-- link goes to named anchor -->
-				</div>
-			<!-- LOGO -->
-			<div class="six columns">
-				<span><a href="#" class="logo" id="labelMobile"><img src="images/site_assets/logo.png" />
-					<h1>Jean Marcellin</h1>
-				</a></span>
-			</div>
-
-		</header>
-	</div><!-- end full width -->
-
-	<section id="content" role="main"> <!-- Main Section - This Is Part Of The Magic -->
-
-		<!-- CALLOUT TEXT -->
-		<div class="full-width color-five">
-			<div class="row callout">
-				<div class="twelve columns">
-					<p>Looking for a challenging position as a web developer, with opportunity for advancement.</p>
-				</div><!-- end columns -->
-			</div><!-- end row -->
-		</div><!-- end full width color five -->
-
-		<!-- SERVICES -->
-		<div class="full-width color-two">
-			<div class="row">
-				<div id="educationMobile" class="four columns service">
+	<!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="d" data-role="header" data-position="fixed">
+                <a data-role="button" data-theme="b" href="#mobileContact" class="ui-btn-right">
+                    Contact
+                </a>
+                <a id="menuButton" data-role="button" data-theme="b" href="#mobileMenu" class="ui-btn-left">
+                    Menu
+                </a>
+                <h3>
+                    Welcome
+                </h3>
+            </div>
+            <div data-role="content">
+	            <div id="educationMobile" class="four columns service">
 					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
 					@include('includes.education')
 
@@ -137,72 +108,118 @@
 
 				</div>
 
-				<div id="skillsMobile" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.skills')
-
-				</div>
 				<div id="workMobile" class="four columns service">
 					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
 					@include('includes.work')
 
 				</div>
-				<div id="galleryMobile" class="four columns service">
-					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
-					@include('includes.gallery')
 
-				</div>
 				<div id="awardsMobile" class="four columns service">
 					<!-- data-icon attribute sets the correct icon font. See line #140 style.css -->
 					@include('includes.awards')
 
 				</div>
-
-			</div><!-- end row -->
-		</div><!-- end full-width -->
-
-	</section> <!-- end of main section -->
-
-	<section id="contactMobile" role="complementary"> <!-- This tells the javascript to take this content out of the main section and into the sidebar on small screens -->
-
-		<!-- CONTACT US -->
-		<div class="full-width">
-			<div class="row">
-				<div class="ten columns centered">
-					<h2>Contact</h2>
-					<h4>Jean Marcellin / Web Developper</h4>
-					<div id="note"></div>
-					{{Form::open('contactMe', 'post', array('id'=>'contactMe'));}}
-						<!-- Change your email id in the config.php file -->
-						<div class="field">
-							{{Form::label('name', 'Name *', array('class' => 'label', 'for' => 'name'));}}
-							<span>{{$errors->first('name')}}</span>
-							{{Form::text('name', Input::old('name'), array('class' => 'text', 'id' => 'name', 'required' => 'sometimes'));}}
-						</div>
-						<div class="field">
-							{{Form::label('email', 'E-mail *', array('class' => 'label', 'for' => 'email'));}}<span>{{$errors->first('email')}}</span>
-							{{Form::email('email', Input::old('email'), array('class' => 'text', 'id' => 'email', 'required' => 'sometimes'));}}
-						</div>
-						<div class="field">
-							{{Form::label('message', 'Message *', array('class' => 'label', 'for' => 'message'));}}<span>{{$errors->first('message')}}</span>
-							{{Form::textarea('message', Input::old('message'), array('cols' => '25', 'rows' => '3', 'class' => 'textbox', 'id' => 'message', 'required' => 'sometimes'));}}
-						</div>
-						<p>* Fields are required.</p>
-						<div class="buttons">
-							{{Form::submit('Submit', array('class' => 'button submit', 'id' => 'submit'));}}
-							{{Form::reset('Reset', array('class' => 'button submit'));}}
-						</div>
-					{{Form::close();}}
-				</div>
-			</div> <!-- end row -->
-		</div><!-- end full width -->
-	</section> <!-- end off canvas sidebar -->
-
-	<!-- FOOTER -->
-	<footer id="footerBg" class=" color-four site-footer row">
-		<div id="footer" class="twelve columns">
-			<p>Jean Marcellin. All Rights Reserved.</p>
-		</div>
-	</footer>
+            </div>
+            <div data-theme="d" data-role="footer" data-position="fixed">
+                <h3>
+                    www.jeanmarcellin.net
+                </h3>
+            </div>
+        </div>
+        <div data-role="page" id="mobileMenu">
+        <div data-theme="d" data-role="header" data-position="fixed">
+                <a data-role="button" data-theme="b" href="#mobileContact" class="ui-btn-right">
+                    Contact
+                </a>
+                <a id="menuButton" data-role="button" data-theme="b" href="#mobileMenu" class="ui-btn-left">
+                    Menu
+                </a>
+                <h3>
+                    Welcome
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Professional profile
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#educationMobile" data-transition="slide">
+                            Education
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#technicalMobile" data-transition="slide">
+                            Technical Skills
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#workMobile" data-transition="slide">
+                            Work History
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#awardsMobile" data-transition="slide">
+                            Awards and Accomplishments
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="d" data-role="footer" data-position="fixed">
+                <h3>
+                    www.jeanmarcellin.net
+                </h3>
+            </div>
+        </div>
+         <div data-role="page" id="mobileContact">
+         <div data-theme="d" data-role="header" data-position="fixed">
+                <a data-role="button" data-theme="b" href="#mobileContact" class="ui-btn-right">
+                    Contact
+                </a>
+                <a id="menuButton" data-role="button" data-theme="b" href="#mobileMenu" class="ui-btn-left">
+                    Menu
+                </a>
+                <h3>
+                    Welcome
+                </h3>
+            </div>
+            <div data-role="content">
+                <form id="contactMobile" action="contactMe" method="POST">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-mini="true">
+                            <label for="nameMobile">
+                                Name *
+                            </label>
+                            <input name="name" id="nameMobile" placeholder="" value="" type="text" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-mini="true">
+                            <label for="emailMobile">
+                                E-Mail *
+                            </label>
+                            <input name="email" id="emailMobile" placeholder="" value="" type="email" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="messageMobile">
+                                Message *
+                            </label>
+                            <textarea name="message" id="messageMobile" placeholder="" data-mini="true">
+                            </textarea>
+                        </fieldset>
+                    </div>
+                    <input id="submit" type="submit" value="Submit" />
+                </form>
+            </div>
+            <div data-theme="d" data-role="footer" data-position="fixed">
+                <h3>
+                    www.jeanmarcellin.net
+                </h3>
+            </div>
+        </div>
 
 @endsection
