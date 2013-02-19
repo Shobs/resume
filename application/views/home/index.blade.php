@@ -43,27 +43,11 @@
 				</div>
 			</section>
 
-			<!-- Skills Section Begins -->
-			<section id="skills">
-				<div data-magellan-destination='skills' class="section" name="section3">
-					@include('includes.skills')
-					<!-- end #skills -->
-				</div>
-			</section>
-
 			<!-- Work History Section Begins -->
 			<section id="work">
 				<div data-magellan-destination='work' class="section" name="section4">
 					@include('includes.work')
 					<!-- end #work -->
-				</div>
-			</section>
-
-			<!-- Sample Works Section Begins -->
-			<section id="gallery">
-				<div data-magellan-destination='gallery' class="section" name="section5">
-					@include('includes.gallery')
-					<!-- end .gallery 2 -->
 				</div>
 			</section>
 

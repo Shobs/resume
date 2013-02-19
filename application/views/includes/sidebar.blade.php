@@ -11,9 +11,7 @@
 			<!-- You can change the order of the menu here -->
 			<li>{{HTML::link('#education', 'education', array('class' => 'selected', 'data-magellan-arrival'=>'education'));}}</li>
 			<li>{{HTML::link('#technical', 'technical expertise', array('data-magellan-arrival'=>'technical'));}}</li>
-			<li>{{HTML::link('#skills', 'skills', array('data-magellan-arrival'=>'skills'));}}</li>
 			<li>{{HTML::link('#work', 'work history', array('data-magellan-arrival'=>'work'));}}</li>
-			<li>{{HTML::link('#gallery', 'sample works', array('data-magellan-arrival'=>'gallery'));}}</li>
 			<li>{{HTML::link('#awards', 'awards &amp; accomplishments', array('data-magellan-arrival'=>'awards'));}}</li>
 			<li>{{HTML::link('#', 'contact me', array('data-reveal-id' => 'contact'));}}</li>
 			<!-- end / #navMain -->

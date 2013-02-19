@@ -250,14 +250,22 @@ abbr{
 		#intro{
 			font-size: 14px;
 			line-height: 27px;
-			p{
-				margin-right: 0;
+
+			#introQuote{
+				margin: 10px 0 0 0;
+				text-align: right;
+				line-height: 1.2;
+				font-style: italic;
+
+			}
+			#profile{
+				margin: 30px 0 0 0;
+				line-height: 1.6;
 			}
 		}
 
-		p{
-			margin-right: 0;
-		}
+
+
 	}
 }
 
@@ -626,7 +634,7 @@ abbr{
 			padding: 3px 10px 3px;
 			&:hover{
 				@include text-shadow($color6 1px 1px 5px, $color6 -1px -1px 5px);
-			color: $linkTxtHoverClr;
+				color: $linkTxtHoverClr;
 			}
 		}
 	}
