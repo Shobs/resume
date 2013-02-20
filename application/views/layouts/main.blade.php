@@ -58,22 +58,22 @@
         {{ HTML::script('js/foundation/jquery.js') }}
         <script>
             if (Modernizr.mq('only screen and (max-width: 768px)')) {
-                Modernizr.load('/js/jquery-mobile.js');
+                Modernizr.load('js/jquery-mobile.js');
             }else{
-                Modernizr.load('/js/jquery.print-preview.js')
-                Modernizr.load('/js/foundation/jquery.foundation.reveal.js');
-                Modernizr.load('/js/foundation/jquery.placeholder.js');
-                Modernizr.load('/js/foundation/jquery.foundation.navigation.js');
-                Modernizr.load('/js/foundation/jquery.foundation.buttons.js');
-                Modernizr.load('/js/foundation/jquery.foundation.alerts.js');
-                Modernizr.load('/js/foundation/jquery.foundation.magellan.js');
-                Modernizr.load('/js/foundation/jquery.foundation.forms.js');
-                Modernizr.load('/js/foundation/app.js');
-                Modernizr.load('/js/jquery.scrollTo-1.4.3.1-min.js');
-                Modernizr.load('/js/happy.js');
-                Modernizr.load('/js/happy.methods.js');
-                Modernizr.load('/js/plugins.js');
-                Modernizr.load('/js/main.js');
+                Modernizr.load('js/jquery.print-preview.js')
+                Modernizr.load('js/foundation/jquery.foundation.reveal.js');
+                Modernizr.load('js/foundation/jquery.placeholder.js');
+                Modernizr.load('js/foundation/jquery.foundation.navigation.js');
+                Modernizr.load('js/foundation/jquery.foundation.buttons.js');
+                Modernizr.load('js/foundation/jquery.foundation.alerts.js');
+                Modernizr.load('js/foundation/jquery.foundation.magellan.js');
+                Modernizr.load('js/foundation/jquery.foundation.forms.js');
+                Modernizr.load('js/foundation/app.js');
+                Modernizr.load('js/jquery.scrollTo-1.4.3.1-min.js');
+                Modernizr.load('js/happy.js');
+                Modernizr.load('js/happy.methods.js');
+                Modernizr.load('js/plugins.js');
+                Modernizr.load('js/main.js');
             }
         </script>
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
