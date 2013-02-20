@@ -85,18 +85,14 @@ Route::post('contactMe', function()
 	}
 });
 
-Route::any('download', function(){
-	$id = Input::get('id');
+Route::get('downloadDoc', function(){
 	$location = 'public/_resumes/';
+	return Response::download($location.'JeanMarcellinCV.docx');
+});
 
-	if($id == 'doc'){
-		return Response::download($location.'JeanMarcellinCV.doc');
-	}else{
-		return Response::download($location.'JeanMarcellinCV.pdf');
-	}
-
-
-
+Route::get('downloadPdf', function(){
+	$location = 'public/_resumes/';
+	return Response::download($location.'JeanMarcellinCV.pdf');
 });
 
 /*

@@ -90,7 +90,7 @@
                 </h3>
             </div>
             <div data-role="content">
-            <p id="introQuote">“Looking for a challenging position as a web developer, <br>with opportunity for advancement.”</p>
+            <p id="introQuote">“Looking for a challenging position as a web developer, with opportunity for advancement.”</p>
             	<div data-role="collapsible">
                     <h3>
                         Professional Profile
