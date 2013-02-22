@@ -16,7 +16,7 @@
 	<!-- end / #headerShadow -->
 </div>
 
-<section role="main"> <!-- Main Section For OffCanvas -->
+<section> <!-- Main Section For OffCanvas -->
 <div class="row">
 	<div class="twelve columns" id="contentWrapper">
 		<div class="four columns hide-for-small">
@@ -30,6 +30,7 @@
 			<!-- Education Section Begins -->
 			<section id="education">
 				<div data-magellan-destination='education' class="section" name="section1">
+					<h2>Education</h2>
 					@include('includes.education')
 					<!-- end #education -->
 				</div>
@@ -38,6 +39,7 @@
 			<!-- Technical Expertise Section Begins -->
 			<section id="technical">
 				<div data-magellan-destination='technical' class="section" name="section2">
+					<h2>Technical Skills</h2>
 					@include('includes.technical')
 					<!-- end #technical -->
 				</div>
@@ -46,6 +48,7 @@
 			<!-- Work History Section Begins -->
 			<section id="work">
 				<div data-magellan-destination='work' class="section" name="section4">
+					<h2>Work History</h2>
 					@include('includes.work')
 					<!-- end #work -->
 				</div>
@@ -54,6 +57,7 @@
 			<!-- Awards and Accomplishments Section Begins -->
 			<section id="awards">
 				<div data-magellan-destination='awards' class="section" name="section6">
+					<h2>Awards and Accomplishments</h2>
 					@include('includes.awards')
 					<!-- end #awards -->
 				</div>
@@ -89,7 +93,7 @@
                     Welcome
                 </h3>
             </div>
-            <div data-role="content">
+            <div data-role="content" data-theme="a">
             <p id="introQuote">“Looking for a challenging position as a web developer, with opportunity for advancement.”</p>
             	<div data-role="collapsible">
                     <h3>

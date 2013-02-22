@@ -13,14 +13,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
         <!-- if you need normalize.css -->
-        {{-- HTML::style('css/normalize.min.css') }}
+        {{ HTML::style('css/normalize.min.css') }}
 
-        {{ HTML::style('css/app.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/social_foundicons.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/offcanvas.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/print-preview.css', array('media' => 'screen')) }}
-        {{ HTML::style('css/mobile.css', array('media' => 'screen')) }}
+        {{ HTML::style('css/mobileTheme.min.css', array('media'=> 'only screen and (max-width: 768px)')) }}
+        {{ HTML::style('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile.structure-1.3.0-rc.1.min.css', array('media'=> 'only screen and (max-width: 768px)')) }}
+        {{ HTML::style('css/app.css', array('media' => 'only screen and (min-width: 768px)')) }}
+        {{ HTML::style('css/social_foundicons.css', array('media' => 'only screen and (min-width: 768px)')) }}
+        {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'only screen and (min-width: 768px)')) }}
+        {{ HTML::style('css/print-preview.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/print.css', array('media' => 'print')) }}
 
         {{ HTML::script('js/foundation/modernizr.foundation.js') }}
@@ -41,11 +41,12 @@
         <![endif]-->
 
         <!-- begin content -->
-        <div class="wrapper container hide-for-small">
+
+        <div id="wrapperScreen" class="wrapper container hide-for-small">
             @yield('content')
         </div>
 
-        <div class="wrapper container show-for-small">
+        <div id="wrapperMobile" class="wrapper container show-for-small">
             @yield('content-mobile')
         </div>
         <!-- end content -->
@@ -58,7 +59,7 @@
         {{ HTML::script('js/foundation/jquery.js') }}
         <script>
             if (Modernizr.mq('only screen and (max-width: 768px)')) {
-                Modernizr.load('js/jquery-mobile.js');
+                Modernizr.load('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js');
             }else{
                 Modernizr.load('js/jquery.print-preview.js')
                 Modernizr.load('js/foundation/jquery.foundation.reveal.js');

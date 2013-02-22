@@ -1,5 +1,3 @@
-
-	<h2>Technical Skills</h2>
 	<h4>Programming / Web</h4>
 	<p>HTML, XHTML, XML, CSS, SASS/SCSS, javascript, jQuery, jQuery Mobile, Ajax, PHP5 and Java.</p>
 	<h4>Framework</h4>
