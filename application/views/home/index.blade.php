@@ -140,11 +140,13 @@
 						@include('includes.awards')
 					</div>
                 </div>
+
+
                 <div data-role="collapsible">
                     <h3>
                         Contact Me
                     </h3>
-                     <form id="contactMobile" action="contactMobile" method="GET">
+                     <form id="contactMobile" action="contactMobile" method="POST">
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup" data-mini="true">
                             <label for="nameMobile">Name *</label>
@@ -167,6 +169,7 @@
                     <input id="submit" type="submit" value="Submit" />
                 </form>
             </div>
+			<div data-role="popup" id="formResponse" class="ui-content" data-position-to="window" data-theme="b" data-overlay-theme="a"></div>
             <div id="footer" data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     www.jeanmarcellin.net

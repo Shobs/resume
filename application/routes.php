@@ -80,8 +80,46 @@ Route::post('contactMe', function()
 	}
 });
 
-Route::GET('contactMobile', function(){
-	echo 'sucess!';
+Route::post('contactMobile', function(){
+	// Aquiring data from contact form
+	$name = Input::get('nameMobile');
+	$email = Input::get('emailMobile');
+	$message = Input::get('messageMobile');
+
+	$input = array(
+		'name' => $name,
+		'email' => $email,
+		'message' => $message
+		);
+
+	$rules = array(
+		'name' => 'required|alpha|max:50',
+		'email' => 'required|email',
+		'message' => 'max:1000'
+		);
+
+	$validation = Validator::make($input, $rules);
+
+	if($validation->fails()){
+		echo implode('', $validation->errors->all());
+	}else{
+		$myEmail = 'marcellinja@gmail.com';
+		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
+		$eMess = 'NAME: '.$name.'<br>';
+		$eMess .= 'MESSAGE: '.$message;
+		$eHead = 'EMAIL" '.$email;
+
+		$mailsend=mail("$myEmail","$subj","$eMess","$eHead");
+
+		if($mailsend){
+			$message = 'Your message has been sucessfuly sent!';
+			echo $message;
+		}else{
+			$message = 'Your message was not sent, please contact me directly at: <a href="mailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
+			echo '<a data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>';
+			echo $message;
+		}
+	}
 
 });
 

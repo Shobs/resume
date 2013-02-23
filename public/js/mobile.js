@@ -1,18 +1,22 @@
-$(document).ready(function(){
-	$("#contactMobile").validate();
-
-	submit.click(function (e){
-		e.preventDefault();
-		if ($(".error:visible", '#contactMobile').length === 0) {
-			$.get('contactMobile', $('#contactMobile').serialize())
-			.done(function (data){
-				$('#alert h4').html(data);
-				$('#alert').reveal();
-			});
-		}
+(function ($){
+	$(document).on("pageinit", "#homeMobile", function(){
+		$("#contactMobile").validate({
+			submitHandler:function(form) {
+				$.post('contactMobile', $('#contactMobile').serialize())
+				.done(function (data){
+					$('#formResponse').popup("open",
+						$( {} ).jqmData("position-to", "window")).html(data);
+					// $('#formResponse p').html(data);
+				});
+			}
+		});
 	});
-});
 
+	$(document).on("mobileinit", function(){
+		$.mobile.defaultPageTransition = "slide";
+	});
+
+})(jQuery);
 
 
 

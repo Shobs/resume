@@ -60,9 +60,9 @@
 
         <script>
             if (Modernizr.mq('only screen and (max-width: 768px)')) {
-                Modernizr.load('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js');
                 Modernizr.load('js/jquery.validate.js');
                 Modernizr.load('js/mobile.js');
+                Modernizr.load('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js');
             }else{
                 Modernizr.load('js/jquery.print-preview.js')
                 Modernizr.load('js/foundation/jquery.foundation.reveal.js');

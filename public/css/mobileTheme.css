@@ -728,6 +728,7 @@ h4 {
 label.error {
   float: right;
   color: red;
+  padding-top: .5em;
   vertical-align: top;
   font-weight: bold;
 }
