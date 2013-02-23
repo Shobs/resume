@@ -723,3 +723,11 @@ h4 {
 #footer {
   background-color: none;
 }
+
+/* line 638, ../sass/mobileTheme.scss */
+label.error {
+  float: right;
+  color: red;
+  vertical-align: top;
+  font-weight: bold;
+}

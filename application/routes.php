@@ -80,6 +80,11 @@ Route::post('contactMe', function()
 	}
 });
 
+Route::GET('contactMobile', function(){
+	echo 'sucess!';
+
+});
+
 Route::get('downloadDoc', function(){
 	$location = 'public/_resumes/';
 	return Response::download($location.'JeanMarcellinCV.docx');

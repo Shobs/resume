@@ -144,29 +144,23 @@
                     <h3>
                         Contact Me
                     </h3>
-                     <form id="contactMobile" action="contactMe" method="POST">
+                     <form id="contactMobile" action="contactMobile" method="GET">
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup" data-mini="true">
-                            <label for="nameMobile">
-                                Name *
-                            </label>
-                            <input name="name" id="nameMobile" placeholder="" value="" type="text" />
+                            <label for="nameMobile">Name *</label>
+                            <input name="nameMobile" id="nameMobile" class="required" minlength="5" type="text" />
                         </fieldset>
                     </div>
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup" data-mini="true">
-                            <label for="emailMobile">
-                                E-Mail *
-                            </label>
-                            <input name="email" id="emailMobile" placeholder="" value="" type="email" />
+                            <label for="emailMobile">E-Mail *</label>
+                            <input name="emailMobile" id="emailMobile" class="required" minlength="5" type="email" />
                         </fieldset>
                     </div>
                     <div data-role="fieldcontain">
                         <fieldset data-role="controlgroup">
-                            <label for="messageMobile">
-                                Message *
-                            </label>
-                            <textarea name="message" id="messageMobile" placeholder="" data-mini="true">
+                            <label for="messageMobile">Message *</label>
+                            <textarea name="messageMobile" id="messageMobile" class="required" minlength="5" data-mini="true">
                             </textarea>
                         </fieldset>
                     </div>
