@@ -93,7 +93,7 @@
                     Welcome
                 </h3>
             </div>
-            <div data-role="content" data-theme="a">
+            <div id="content" data-role="content" data-theme="a">
             <p id="introQuote">“Looking for a challenging position as a web developer, with opportunity for advancement.”</p>
             	<div data-role="collapsible">
                     <h3>
@@ -173,7 +173,7 @@
                     <input id="submit" type="submit" value="Submit" />
                 </form>
             </div>
-            <div data-theme="a" data-role="footer" data-position="fixed">
+            <div id="footer" data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     www.jeanmarcellin.net
                 </h3>

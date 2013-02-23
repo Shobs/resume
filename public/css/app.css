@@ -6561,10 +6561,7 @@ abbr {
   padding: 0;
 }
 
-@media only screen and (min-width: 767px) {
-  /* line 550, ../sass/app.scss */
-  #wrapperMobile {
-    display: none;
-  }
+/* line 548, ../sass/app.scss */
+#wrapperMobile {
+  display: none;
 }
-/* end media query */

@@ -15,12 +15,12 @@
         <!-- if you need normalize.css -->
         {{ HTML::style('css/normalize.min.css') }}
 
-        {{ HTML::style('css/mobileTheme.min.css', array('media'=> 'only screen and (max-width: 768px)')) }}
+        {{ HTML::style('css/mobileTheme.css', array('media'=> 'only screen and (max-width: 768px)')) }}
         {{ HTML::style('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile.structure-1.3.0-rc.1.min.css', array('media'=> 'only screen and (max-width: 768px)')) }}
-        {{ HTML::style('css/app.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/social_foundicons.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/print-preview.css', array('media' => 'only screen and (min-width: 768px)')) }}
+        {{ HTML::style('css/app.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/print.css', array('media' => 'print')) }}
 
         {{ HTML::script('js/foundation/modernizr.foundation.js') }}
@@ -35,18 +35,18 @@
         <![endif]-->
 
     </head>
-    <body id="page" class="off-canvas hide-extras">
+    <body id="page">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
         <!-- begin content -->
 
-        <div id="wrapperScreen" class="wrapper container hide-for-small">
+        <div id="wrapperScreen" class="wrapper">
             @yield('content')
         </div>
 
-        <div id="wrapperMobile" class="wrapper container show-for-small">
+        <div id="wrapperMobile" class="wrapper">
             @yield('content-mobile')
         </div>
         <!-- end content -->
@@ -56,7 +56,10 @@
         <!-- Use Googles online jQuery lib -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
         <!-- Use local jQuery lib -->
-        {{ HTML::script('js/foundation/jquery.js') }}
+        {{HTML::script('js/foundation/jquery.js');}}
+        {{HTML::script('js/happy.js');}}
+        {{HTML::script('js/happy.methods.js');}}
+
         <script>
             if (Modernizr.mq('only screen and (max-width: 768px)')) {
                 Modernizr.load('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js');
@@ -71,8 +74,6 @@
                 Modernizr.load('js/foundation/jquery.foundation.forms.js');
                 Modernizr.load('js/foundation/app.js');
                 Modernizr.load('js/jquery.scrollTo-1.4.3.1-min.js');
-                Modernizr.load('js/happy.js');
-                Modernizr.load('js/happy.methods.js');
                 Modernizr.load('js/plugins.js');
                 Modernizr.load('js/main.js');
             }

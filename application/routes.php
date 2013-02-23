@@ -61,7 +61,6 @@ Route::post('contactMe', function()
 
 	if($validation->fails()){
 		echo implode('', $validation->errors->all());
-
 	}else{
 		$myEmail = 'marcellinja@gmail.com';
 		$subj = 'www.jeanmarcellin.net - Message from: '.$name;
@@ -73,14 +72,10 @@ Route::post('contactMe', function()
 
 		if($mailsend){
 			$message = 'Your message has been sucessfuly sent!';
-
 			echo $message;
-
-
 		}else{
 			$message = 'Your message was not sent, please contact me directly at: <a href="mailto:marcellinja@gmail.com" id="myAddress">marcellinja@gmail.com</a>';
 			echo $message;
-
 		}
 	}
 });
