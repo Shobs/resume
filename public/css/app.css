@@ -6193,22 +6193,6 @@ you can use the generic selector below, but it's slower:
   top: 0;
 }
 
-/* line 192, ../sass/app.scss */
-section {
-  padding: 0;
-  margin: 0;
-  /* Prevents horizontal scrollling for off-canvas elements */
-  overflow-x: hidden;
-}
-
-/* Make sure that the bands stretch to 100% width */
-/* line 200, ../sass/app.scss */
-.full-width, .site-footer {
-  min-width: 100%;
-  position: relative;
-  z-index: 9999;
-}
-
 /**** Styling ****/
 /* line 207, ../sass/app.scss */
 html {

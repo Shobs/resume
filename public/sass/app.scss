@@ -189,19 +189,19 @@ $font: Helvetica,Arial,sans-serif;
 	top: 0;
 }
 
-section {
-	padding:0;
-	margin:0;
-    /* Prevents horizontal scrollling for off-canvas elements */
-    overflow-x: hidden;
-}
+// section {
+// 	padding:0;
+// 	margin:0;
+//     /* Prevents horizontal scrollling for off-canvas elements */
+//     overflow-x: hidden;
+// }
 
-/* Make sure that the bands stretch to 100% width */
-.full-width, .site-footer {
-	min-width:100%;
-	position: relative;
-	z-index:9999;
-}
+// /* Make sure that the bands stretch to 100% width */
+// .full-width, .site-footer {
+// 	min-width:100%;
+// 	position: relative;
+// 	z-index:9999;
+// }
 
 /**** Styling ****/
 html{

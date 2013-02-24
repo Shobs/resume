@@ -70,7 +70,7 @@
                 Modernizr.load('js/foundation/jquery.foundation.magellan.js');
                 Modernizr.load('js/foundation/jquery.foundation.forms.js');
                 Modernizr.load('js/foundation/app.js');
-                Modernizr.load('js/jquery.scrollTo-1.4.3.1-min.js');
+                // Modernizr.load('js/jquery.scrollTo-1.4.3.1-min.js');
                 Modernizr.load('js/happy.js');
                 Modernizr.load('js/happy.methods.js');
                 Modernizr.load('js/plugins.js');
@@ -79,34 +79,6 @@
             }
         </script>
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
-
-        {{-- HTML::script('js/foundation/jquery.foundation.tabs.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.reveal.js', array('media'=>'screen')) }}
-        {{-- HTML::script('js/foundation/jquery.event.swipe.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.joyride.js') }}
-        {{-- HTML::script('js/foundation/jquery.placeholder.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.tooltips.js') }}
-        {{-- HTML::script('js/foundation/jquery.cookie.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.clearing.js') }}
-        {{-- HTML::script('js/foundation/jquery.event.move.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.topbar.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.accordion.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.navigation.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.mediaQueryToggle.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.buttons.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.orbit.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.alerts.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.magellan.js') }}
-        {{-- HTML::script('js/foundation/jquery.foundation.forms.js') }}
-        {{-- HTML::script('js/foundation/jquery.offcanvas.js') }}
-        {{-- HTML::script('js/foundation/app.js') }}
-        {{-- HTML::script('js/waypoints.min.js') }}
-        {{-- HTML::script('js/jquery.scrollTo-1.4.3.1-min.js') }}
-        {{-- HTML::script('js/happy.js');}}
-        {{-- HTML::script('js/happy.methods.js');}}
-        {{-- HTML::script('js/jquery.print-preview.js');}}
-        {{-- HTML::script('js/plugins.js') }}
-        {{-- HTML::script('js/main.js') }}
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

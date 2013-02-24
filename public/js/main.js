@@ -1,13 +1,12 @@
 $(function() {
-	var navigation_links = $('#navMain a');
-	navigation_links.click( function(event) {
-		$('#sidebar').css('padding', '0 0 0 55px' );
-		$.scrollTo(
-			$(this).attr("href"),{
-				duration: 1000,
-				offset: { 'left': 10, 'top':-0.15*$(window).height() }
-			});
-	});
+	// var navigation_links = $('#navMain a');
+	// navigation_links.click( function(event) {
+	// 	$.scrollTo(
+	// 		$(this).attr("href"),{
+	// 			duration: 1000,
+	// 			offset: { 'left': 10, 'top':-0.15*$(window).height() }
+	// 		});
+	// });
 
 	var submit = $('#submit');
 	$('contactMe').isHappy({
