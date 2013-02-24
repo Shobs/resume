@@ -4,8 +4,8 @@
 			submitHandler:function(form) {
 				$.post('contactMobile', $('#contactMobile').serialize())
 				.done(function (data){
-					$('#formResponse').popup("open",
-						$( {} ).jqmData("position-to", "window")).html(data);
+					$('#formResponse').popup({overlayTheme: "a"});
+					$('#formResponse').popup("open").html(data);
 					// $('#formResponse p').html(data);
 				});
 			}

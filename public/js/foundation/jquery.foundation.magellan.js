@@ -60,7 +60,7 @@
         if ($expedition.data("magellan-fixed-position") != fixed_position) {
           $expedition.data("magellan-fixed-position", fixed_position);
           if (fixed_position) {
-            $expedition.css({position: "fixed", top: "65px"});
+            $expedition.css({position: "fixed", top: "65px", padding: "0 0 0 55px"});
           } else {
             $expedition.css({position: "", top: ""});
           }

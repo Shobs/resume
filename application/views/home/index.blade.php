@@ -142,7 +142,7 @@
                 </div>
 
 
-                <div data-role="collapsible">
+                <!--<div data-role="collapsible">
                     <h3>
                         Contact Me
                     </h3>
@@ -168,8 +168,8 @@
                     </div>
                     <input id="submit" type="submit" value="Submit" />
                 </form>
-            </div>
-			<div data-role="popup" id="formResponse" class="ui-content" data-position-to="window" data-theme="b" data-overlay-theme="a"></div>
+            </div>-->
+			<div data-role="popup" data-rel= "dialog" id="formResponse" class="ui-content" data-position-to="window" data-theme="b" data-overlay-theme="a"></div>
             <div id="footer" data-theme="a" data-role="footer" data-position="fixed">
                 <h3>
                     www.jeanmarcellin.net

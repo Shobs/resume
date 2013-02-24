@@ -2,7 +2,7 @@
 	<nav class="hide-for-small">
 	<div id="avatar">
 		<a href="#top">
-			{{HTML::image('http://placehold.it/125x125', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
+			{{HTML::image('img/JeanMarcellin.jpg', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
 		</a>
 	</div>
 	<div class="nav-bar vertical">
@@ -21,31 +21,19 @@
 	<div id="networkLinks" class="hide-for-small">
 		<ul  class="inline-list">
 			<li>
-				<a href="downloadDoc">
-
-					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a .DOC Format'));}}
-				</a>
+				<a href="downloadDoc" class="fs1" aria-hidden="true" data-icon="&#xe002;"></a>
 			</li>
 			<li>
-				<a href="downloadPdf">
-					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Download in a PDF Format'));}}
-				</a>
+				<a href="downloadPdf" class="fs1" aria-hidden="true" data-icon="&#xe003;"></a>
 			</li>
 			<li class="divider">
-				<a href="#" id="print" class="print-preview">
-					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Print Resume'));}}
-				</a>
+				<a href="#" id="print" class="print-preview fs1" aria-hidden="true" data-icon="&#xe000;"></a>
 			</li>
 			<li>
-				<a href="#">
-					<i class="foundicon-008"></i>
-					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Follow me on LinkedIn'));}}
-				</a>
+				<a href="#" class="fs1" aria-hidden="true" data-icon="&#xe001;"></a>
 			</li>
 			<li>
-				<a href="#">
-					{{HTML::image('http://placehold.it/16x16', 'thumbnail', array('width' => 16, 'height' => 16, 'alt' => 'Follow me on Twitter'));}}
-				</a>
+				<a href="#" class="fs1" aria-hidden="true" data-icon="&#xe004;"></a>
 			</li>
 			<!-- end / #networkLinks -->
 		</ul>

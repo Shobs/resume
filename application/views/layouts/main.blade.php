@@ -17,8 +17,6 @@
 
         {{ HTML::style('css/mobileTheme.css', array('media'=> 'only screen and (max-width: 768px)')) }}
         {{ HTML::style('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile.structure-1.3.0-rc.1.min.css', array('media'=> 'only screen and (max-width: 768px)')) }}
-        {{ HTML::style('css/social_foundicons.css', array('media' => 'only screen and (min-width: 768px)')) }}
-        {{ HTML::style('css/social_foundicons_ie7.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/print-preview.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/app.css', array('media' => 'only screen and (min-width: 768px)')) }}
         {{ HTML::style('css/print.css', array('media' => 'print')) }}
@@ -56,7 +54,7 @@
         <!-- Use Googles online jQuery lib -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
         <!-- Use local jQuery lib -->
-        {{HTML::script('http://code.jquery.com/jquery-latest.js');}}
+        {{HTML::script('js/vendor/jquery-1.8.2.min.js');}}
 
         <script>
             if (Modernizr.mq('only screen and (max-width: 768px)')) {
@@ -64,7 +62,6 @@
                 Modernizr.load('js/mobile.js');
                 Modernizr.load('http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js');
             }else{
-                Modernizr.load('js/jquery.print-preview.js')
                 Modernizr.load('js/foundation/jquery.foundation.reveal.js');
                 Modernizr.load('js/foundation/jquery.placeholder.js');
                 Modernizr.load('js/foundation/jquery.foundation.navigation.js');
@@ -77,6 +74,7 @@
                 Modernizr.load('js/happy.js');
                 Modernizr.load('js/happy.methods.js');
                 Modernizr.load('js/plugins.js');
+                Modernizr.load('js/jquery.print-preview.js')
                 Modernizr.load('js/main.js');
             }
         </script>
