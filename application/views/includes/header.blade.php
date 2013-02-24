@@ -10,7 +10,7 @@
 	</p>
 	<!-- end / #label -->
 </div>
-<div class="eight columns hide-for-small" id="intro">
+<div class="eight columns" id="intro">
 	<p id="introQuote">“I am looking for a challenging position as a web developer, <br>with opportunity for advancement.”</p>
 	<!-- end / #intro -->
 	<p id="profile">Excellent communicator and driven professional with broad technical skill set.  Seeking a position that enables me to gain valuable commercial experience and improve the web development and design skills that I gained as part of my web formation and academic studies.</p>

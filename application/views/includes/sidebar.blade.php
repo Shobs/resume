@@ -1,5 +1,5 @@
 <div data-magellan-expedition='fixed' id="sidebar" class="">
-	<nav class="hide-for-small">
+	<nav>
 	<div id="avatar">
 		<a href="#top">
 			{{HTML::image('img/JeanMarcellin.jpg', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
@@ -18,7 +18,7 @@
 		</ul>
 	</nav>
 
-	<div id="networkLinks" class="hide-for-small">
+	<div id="networkLinks">
 		<ul  class="inline-list">
 			<li>
 				<a href="downloadDoc" class="fs1" aria-hidden="true" data-icon="&#xe002;"></a>

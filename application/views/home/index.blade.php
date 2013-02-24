@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header id="headerWrapper" class="hide-for-small">
+<header id="headerWrapper">
 	<div class="row" >
 		<div class="twelve columns" id="header">
 			<!-- Header Wrapper section Begins -->
@@ -19,14 +19,14 @@
 <section> <!-- Main Section For OffCanvas -->
 <div class="row">
 	<div class="twelve columns" id="contentWrapper">
-		<div class="four columns hide-for-small">
+		<div class="four columns">
 			<!-- Side Bar section Begins -->
 			@include('includes.sidebar')
 			<!-- end / #sidebar -->
 		</div>
 
 		<!-- Content section Begins -->
-		<div class="eight columns phone-two" id="content">
+		<div class="eight columns" id="content">
 			<!-- Education Section Begins -->
 			<section id="education">
 				<div data-magellan-destination='education' class="section" name="section1">
@@ -47,7 +47,7 @@
 
 			<!-- Work History Section Begins -->
 			<section id="work">
-				<div data-magellan-destination='work' class="section" name="section4">
+				<div data-magellan-destination='work' class="section" name="section3">
 					<h2>Work History</h2>
 					@include('includes.work')
 					<!-- end #work -->
@@ -56,7 +56,7 @@
 
 			<!-- Awards and Accomplishments Section Begins -->
 			<section id="awards">
-				<div data-magellan-destination='awards' class="section" name="section6">
+				<div data-magellan-destination='awards' class="section" name="section4">
 					<h2>Awards and Accomplishments</h2>
 					@include('includes.awards')
 					<!-- end #awards -->
@@ -70,7 +70,7 @@
 </div>
 </section>
 
-<footer id="footerBg" class="row hide-for-small">
+<footer id="footerBg" class="row">
 	<div class="row" id="footer">
 		<div class="twelve columns"id="copyright">
 			<p>Jean Marcellin. All Rights Reserved.</p>
