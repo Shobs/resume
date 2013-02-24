@@ -4,3 +4,5 @@
 <p>Fluent in English, French with notions of Spanish (North American).</p>
 <h3 class="header3">Citizenships</h3>
 <p>Dual Citizen (French, American).</p>
+<br>
+<br>

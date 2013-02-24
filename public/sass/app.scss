@@ -204,12 +204,16 @@ section {
 }
 
 /**** Styling ****/
+html{
+	overflow-x: hidden;
+	}
 
 body{
 	font: 13px/21px $font;
 	color: $bodyTxtClr;
 	text-shadow: 1px 1px 0 $color6;
 	background: $bodyBgClr;
+
 }
 
 h1{
@@ -450,7 +454,7 @@ abbr{
 				float: right;
 				margin-top: 20px;
 				padding-top: 10px;
-				text-align: center;
+				vertical-align: center;
 			}
 		}
 
