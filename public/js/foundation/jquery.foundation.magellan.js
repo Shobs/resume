@@ -48,7 +48,7 @@
     $(window).on('resize.magellan', function() {
       $('[data-magellan-expedition=fixed]').trigger('magellan.update-position');
     });
-    
+
     $(window).on('scroll.magellan', function() {
       var windowScrollTop = $(window).scrollTop();
       $('[data-magellan-expedition=fixed]').each(function() {
@@ -60,7 +60,7 @@
         if ($expedition.data("magellan-fixed-position") != fixed_position) {
           $expedition.data("magellan-fixed-position", fixed_position);
           if (fixed_position) {
-            $expedition.css({position:"fixed", top:0});
+            $expedition.css({position:"fixed", top:"65px"});
           } else {
             $expedition.css({position:"", top:""});
           }
