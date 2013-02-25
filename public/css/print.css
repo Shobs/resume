@@ -1,0 +1,132 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/print.scss */
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background-color: #FFFFFF;
+  line-height: 1.3;
+}
+
+/* line 16, ../sass/print.scss */
+h1 {
+  font: 21px/31px Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 18, ../sass/print.scss */
+h2 {
+  font: bold 17px/21px Helvetica, Arial, sans-serif;
+  margin-top: 25px;
+  text-transform: uppercase;
+  border-bottom: solid 1px gray;
+}
+
+/* line 20, ../sass/print.scss */
+h3 {
+  font: bold 15px/21px Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 22, ../sass/print.scss */
+h4 {
+  font: bold 15px/21px Helvetica, Arial, sans-serif;
+}
+
+/* line 24, ../sass/print.scss */
+h5 {
+  font: 15px/19px Helvetica, Arial, sans-serif;
+}
+
+/* line 26, ../sass/print.scss */
+aside h2 {
+  font-size: 18pt;
+}
+
+/* line 28, ../sass/print.scss */
+a {
+  color: black;
+}
+
+@page {
+  margin: 0.5cm;
+}
+
+/* line 32, ../sass/print.scss */
+blockquote, ul {
+  margin: 0;
+}
+
+/* line 34, ../sass/print.scss */
+header:after {
+  content: "www.jeanmarcellin.net";
+}
+
+/* line 36, ../sass/print.scss */
+p {
+  padding-left: 10px;
+}
+
+/* line 39, ../sass/print.scss */
+#sidebar {
+  display: none;
+}
+
+/* line 42, ../sass/print.scss */
+#header #label {
+  width: 220px;
+  display: inline-block;
+}
+/* line 46, ../sass/print.scss */
+#header #intro {
+  width: 400px;
+  float: right;
+  display: inline-block;
+  margin: -110px 0 0 0;
+}
+
+/* line 55, ../sass/print.scss */
+#education em {
+  float: right;
+}
+
+/* line 59, ../sass/print.scss */
+#technical table {
+  margin: 20px 30px 20px 30px;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+/* line 64, ../sass/print.scss */
+#technical table th {
+  background-color: #ebebeb;
+  font-weight: bold;
+  border: 1px solid #dddddd;
+  padding: 4px 8px;
+}
+/* line 71, ../sass/print.scss */
+#technical table td {
+  border: 1px solid #dddddd;
+  font: 13px/21px Helvetica, Arial, sans-serif;
+}
+
+/* line 79, ../sass/print.scss */
+#work em {
+  float: right;
+}
+
+/* line 83, ../sass/print.scss */
+#gallery {
+  display: none;
+}
+
+/* line 85, ../sass/print.scss */
+#contact {
+  display: none;
+}
+
+/* line 87, ../sass/print.scss */
+#alert {
+  display: none;
+}
