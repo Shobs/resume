@@ -1,7 +1,7 @@
 <div data-magellan-expedition='fixed' id="sidebar" class="">
 	<nav>
 	<div id="avatar">
-		<a href="#top" id="top">
+		<a href="#top">
 			{{HTML::image('img/JeanMarcellin.jpg', 'thumbnail', array('width' => 125, 'height' => 125, 'alt' => 'Jean Marcellin'));}}
 		</a>
 	</div>

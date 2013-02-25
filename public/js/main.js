@@ -4,7 +4,7 @@ $(function() {
 	// 	$.scrollTo(
 	// 		$(this).attr("href"),{
 	// 			duration: 1000,
-	// 			offset: { 'left': 10, 'top':-0.15*$(window).height() }
+	// 			offset: { 'left': 0, 'top':-0.15*$(window).height() }
 	// 		});
 	// });
 
