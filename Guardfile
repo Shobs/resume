@@ -13,15 +13,17 @@ end
 # and then guard calles livereload to automatically reload
 # your browser for you.
 #
-#guard 'livereload' do
-#  watch(%r{application/views/.+/.+\.(php|html|twig)$})
-#  watch(%r{application/controllers/(.+)\.php$})
-#  watch(%r{application/controllers/(.+)/(.+)\.php$})
-#  watch(%r{application/models/(.+)\.php$})
-#  watch(%r{application/config/.+\.php$})
-#  watch(%r{application/.+\.php$})
-#  watch(%r{public/.+/.+\.(css|js)$})
-#end
+
+
+guard 'livereload' do
+  watch(%r{application/views/.+/.+\.(php|html|twig)$})
+  watch(%r{application/controllers/(.+)\.php$})
+  watch(%r{application/controllers/(.+)/(.+)\.php$})
+  watch(%r{application/models/(.+)\.php$})
+  watch(%r{application/config/.+\.php$})
+  watch(%r{application/.+\.php$})
+  watch(%r{public/.+/.+\.(css|js)$}) { |m| "assets/#{m[1]}" }
+end
 
 # Automatic UnitTesting with PHPUNit using guard-phpunit
 # You need to have the rubygem "guard-phpunit" installed.
