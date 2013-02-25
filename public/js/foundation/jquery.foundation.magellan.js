@@ -8,19 +8,19 @@
 
 /*jslint unparam: true, browser: true, indent: 2 */
 
-(function ($, window, undefined) {
+;(function ($, window, undefined) {
   'use strict';
 
-  $.fn.foundationMagellan = function (options) {
+  $.fn.foundationMagellan = function(options) {
     var defaults = {
-      threshold: 350,
-      activeClass: 'selected'
+      threshold: 25,
+      activeClass: 'active'
     },
 
     options = $.extend({}, defaults, options);
 
     // Indicate we have arrived at a destination
-    $(document).on('magellan.arrival', '[data-magellan-arrival]', function (e) {
+    $(document).on('magellan.arrival', '[data-magellan-arrival]', function(e) {
       var $expedition = $(this).closest('[data-magellan-expedition]'),
           activeClass = $expedition.attr('data-magellan-active-class') || options.activeClass;
       $(this)
@@ -37,21 +37,21 @@
       .addClass($expedition.attr('data-magellan-active-class') || options.activeClass);
 
     // Update fixed position
-    $('[data-magellan-expedition=fixed]').on('magellan.update-position', function () {
+    $('[data-magellan-expedition=fixed]').on('magellan.update-position', function(){
       var $el = $(this);
-      $el.data("magellan-fixed-position", "");
+      $el.data("magellan-fixed-position","");
       $el.data("magellan-top-offset", "");
     });
 
     $('[data-magellan-expedition=fixed]').trigger('magellan.update-position');
 
-    $(window).on('resize.magellan', function () {
+    $(window).on('resize.magellan', function() {
       $('[data-magellan-expedition=fixed]').trigger('magellan.update-position');
     });
-
-    $(window).on('scroll.magellan', function () {
+    
+    $(window).on('scroll.magellan', function() {
       var windowScrollTop = $(window).scrollTop();
-      $('[data-magellan-expedition=fixed]').each(function () {
+      $('[data-magellan-expedition=fixed]').each(function() {
         var $expedition = $(this);
         if ($expedition.data("magellan-top-offset") === "") {
           $expedition.data("magellan-top-offset", $expedition.offset().top);
@@ -60,18 +60,18 @@
         if ($expedition.data("magellan-fixed-position") != fixed_position) {
           $expedition.data("magellan-fixed-position", fixed_position);
           if (fixed_position) {
-            $expedition.css({position: "fixed", top: "65px"});
+            $expedition.css({position:"fixed", top:0});
           } else {
-            $expedition.css({position: "", top: ""});
+            $expedition.css({position:"", top:""});
           }
         }
       });
     });
 
     // Determine when a destination has been reached, ah0y!
-    $(window).on('scroll.magellan', function (e) {
+    $(window).on('scroll.magellan', function(e){
       var windowScrollTop = $(window).scrollTop();
-      $('[data-magellan-destination]').each(function () {
+      $('[data-magellan-destination]').each(function(){
         var $destination = $(this),
             destination_name = $destination.attr('data-magellan-destination'),
             topOffset = $destination.offset().top - windowScrollTop;

@@ -9,10 +9,8 @@ sass_dir = "public/sass"
 images_dir = "public/img"
 javascripts_dir = "public/js"
 
-environment = :development
-
 # You can select your preferred output style here (can be overridden via the command line):
-#output_style = :compact
+# output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
